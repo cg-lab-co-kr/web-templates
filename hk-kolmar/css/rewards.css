@@ -1,0 +1,145 @@
+@charset 'utf-8';
+
+.sns {
+  margin-top: 12rem;
+}
+
+.sns .sns-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sns-item {
+  width: 41rem;
+  margin-top: 3.125vw;
+}
+
+.sns-item figure {
+  width: 100%;
+  aspect-ratio: 1/0.6337;
+  /* height: 30.7rem; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sns-item:hover figure img {
+  transform: scale(110%);
+}
+
+.sns-txt p {
+  margin-top: 1.0417vw;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.sns-txt p + p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  margin-top: 0.5rem;
+}
+
+.faq {
+  margin: 12rem 0 6.25vw 0;
+}
+
+.faq-wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3.125vw;
+}
+
+.info-wrap li {
+  border-top: 2px solid var(--black20);
+  padding: 3rem 3.5rem;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.info-wrap li:first-child {
+  border-top: 4px solid var(--main-color);
+}
+
+.info-wrap li:last-child {
+  border-bottom: 2px solid var(--black20);
+}
+
+.info-wrap li.on {
+  background: var(--main-color10);
+}
+
+.info-wrap li::after {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  right: 3%;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background: url(../img/arrow-m-bottom.png) no-repeat 50%;
+  transition: 0.4s;
+}
+
+.info-wrap li.on::after {
+  rotate: -180deg;
+}
+
+.faq-title {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.faq-title i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--white100);
+  background: var(--main-color);
+}
+
+.faq-txt {
+  width: 80%;
+}
+
+.faq-txt h4 {
+  font-size: clamp(2.2rem, 2vw, 3rem);
+  font-weight: 700;
+  color: var(--title-color);
+  word-break: keep-all;
+}
+
+.answer-wrap {
+  margin-top: 4rem;
+  display: none;
+  font-size: 1.8rem;
+  word-break: keep-all;
+}
+
+.answer-wrap strong {
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.answer-con {
+  display: flex;
+  gap: 3rem;
+}
+
+@media (max-width: 1440px) {
+  .reward-item {
+    flex-direction: column;
+  }
+}

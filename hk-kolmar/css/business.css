@@ -1,0 +1,171 @@
+@charset 'utf-8';
+
+.breadcrumb {
+  display: none;
+}
+
+.tip-list li:nth-child(1) {
+  background-image: url(https://www.kolmar.co.kr/img/business/i1.gif);
+}
+.tip-list li:nth-child(2) {
+  background-image: url(https://www.kolmar.co.kr/img/business/i1_2.gif);
+}
+.tip-list li:nth-child(3) {
+  background-image: url(https://www.kolmar.co.kr/img/business/i1_3.gif);
+}
+
+.tip-list li:hover::after {
+  content: "";
+  height: 100%;
+  background: var(--main-color70);
+}
+
+.vip .sec-title {
+  margin-top: 6.25vw;
+}
+
+.vip-service {
+  margin: 6rem 0 12rem 0;
+  padding: 3rem 12.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.vip-service li {
+  width: 36.9rem;
+  min-width: 22.5rem;
+  aspect-ratio: 1/1;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  padding: 0 5.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  word-break: keep-all;
+  background: var(--main-color30);
+  box-shadow: 0px 0px 30px rgba(39, 110, 241, 0.25);
+}
+
+.vip-service li:hover {
+  background: var(--main-color);
+}
+
+.vip-service dl {
+  position: relative;
+}
+
+.vip-service dt {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--main-color);
+  transform: translateY(70%);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dt {
+  color: var(--white100);
+  transform: translateY(0);
+}
+
+.vip-service dd {
+  margin-top: 0.3rem;
+  transform: translateY(350%);
+  color: var(--white70);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dd {
+  transform: translateY(0);
+}
+
+.allergie {
+  margin: 12rem 0;
+}
+
+.allergie-slider-wrap {
+  width: 100%;
+}
+
+.allergie-slider {
+  width: 100%;
+}
+
+.allergie .swiper-wrapper {
+  width: 100%;
+}
+
+.allergie-slider {
+  margin-top: 4rem;
+}
+
+.allergie-item {
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.allergie-item::after {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color70);
+  opacity: 0;
+}
+
+.allergie-item:hover::after {
+  opacity: 1;
+}
+
+.allergie-item strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: var(--white100);
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s;
+  /* font-size: 3rem; */
+  font-size: clamp(2.4rem, 14.7783%, 3rem);
+  font-weight: 700;
+  z-index: 1;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.allergie-item i {
+  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 8.867%, 1.8rem);
+  font-weight: 400;
+}
+
+.allergie-item:hover strong {
+  opacity: 1;
+}
+
+.allergie-slider-wrap .swiper-pagination {
+  position: relative; /* 변경: absolute에서 relative로 */
+  bottom: -5rem; /* 필요에 따라 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1800px) {
+  .vip-service {
+    justify-content: flex-start;
+    padding: 3rem 0;
+  }
+}

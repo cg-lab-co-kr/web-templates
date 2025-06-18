@@ -1,0 +1,64 @@
+@charset 'utf-8';
+
+.breadcrumb {
+  display: none;
+}
+
+.tip-list li:nth-child(1) {
+  background-image: url(https://www.kolmar.co.kr/img/main/m5_2.jpg);
+}
+.tip-list li:nth-child(2) {
+  background-image: url(https://www.kolmar.co.kr/img/main/m5_1.jpg);
+}
+.tip-list li:nth-child(3) {
+  background-image: url(https://www.kolmar.co.kr/img/main/m5_3.jpg);
+}
+
+.tip-list li::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(39, 110, 241, 0),
+    rgba(39, 110, 241, 0),
+    rgba(39, 110, 241, 0.7)
+  );
+}
+
+.tip-list li:hover::after {
+  background: var(--main-color);
+}
+
+.news {
+  /* margin-top: 8.0208vw; */
+  margin: 15.4rem 0 6.25vw 0;
+}
+
+.news-list {
+  margin-top: 2.0833vw;
+  padding: 0 2rem;
+}
+
+.news-swiper figure {
+  margin-top: 2.6rem;
+  width: 100%;
+  aspect-ratio: 1/1.09259;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 6px 11px rgba(0, 0, 0, 0.25);
+}
+
+.news-swiper figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color70);
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.news-swiper figure:hover::after {
+  opacity: 1;
+}
