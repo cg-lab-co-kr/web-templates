@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파리크라상</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="파리크라상 공식 홈페이지 | 정통 프랑스 베이커리의 깊은 풍미를 경험하세요. 신선한 크루아상, 빵, 케이크, 디저트를 만나보세요."
+    />
+    <meta
+      name="keywords"
+      content="파리크라상, Paris Croissant, 베이커리, 크루아상, 케이크, 디저트, 프랑스 빵, 브런치, 프리미엄 베이커리, 카페"
+    />
+    <link rel="canonical" href="https://dany339.github.io/paris-croissant/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="파리크라상 | 정통 프랑스 베이커리 & 디저트"
+    />
+    <meta
+      property="og:description"
+      content="프랑스 정통 베이커리의 깊은 맛과 풍미! 파리크라상에서 신선한 크루아상, 빵, 케이크, 디저트를 즐겨보세요."
+    />
+    <meta
+      property="og:url"
+      content="https://dany339.github.io/paris-croissant/"
+    />
+    <meta
+      property="og:image"
+      content="https://www.paris-croissant.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="파리크라상 | 정통 프랑스 베이커리 & 디저트"
+    />
+    <meta
+      name="twitter:description"
+      content="프랑스 정통 베이커리의 깊은 맛과 풍미! 파리크라상에서 신선한 크루아상, 빵, 케이크, 디저트를 즐겨보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.paris-croissant.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">메디큐브</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">PRODUCTS</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">PRODUCTS</a></li>
+              <li><a href="menu.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#introduce">INTRODUCE</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">PRODUCTS</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">PRODUCTS</a></li>
+              <li><a href="menu.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#introduce">INTRODUCE</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <div class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"
+            ><a href="index.html">Home</a> > PRODUCTS</strong
+          >
+          <div class="visual-title">
+            <h2>PRODUCTS</h2>
+            <p>
+              엄선된 고급 원료와 남다른 기술력을 기반으로 완성된 파리크라상의
+              특별한 제품들을 만나보세요.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic2.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu" id="menu">
+        <div class="inner">
+          <div class="menu-title">
+            <h3 data-aos="fade-down" data-aos-offset="-100">PRODUCTS</h3>
+          </div>
+
+          <ul class="menu-tab" data-aos="fade-up" data-aos-offset="-50">
+            <li>
+              <a href="#"><p>케이터링</p></a>
+            </li>
+            <li>
+              <a href="#"><p>주문 제작</p></a>
+            </li>
+            <li>
+              <a href="#"><p>선물세트</p></a>
+            </li>
+          </ul>
+
+          <!-- .menu-con>ul.menu-list>div*7>(figure>img)+p+p -->
+          <div class="menu-cons">
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20240412/848ed020ee61ab80625b2e12e49ed3d3.jpg"
+                      alt="티미팅 세트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>190,000원</p>
+                  </div>
+                  <p>티미팅 세트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20240115/cddb48349d4685b3dded1f885484dfb6.jpg"
+                      alt="스페셜 홈파티 세트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>240,000원</p>
+                  </div>
+                  <p>스페셜 홈파티 세트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20240115/cb98fc38c9203333ebd96b5eb755ea76.jpg"
+                      alt="시그니처 세트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>220,000원</p>
+                  </div>
+                  <p>시그니처 세트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20240115/7f7169fc547a85bd560b35f5c7ad8ac6.jpg"
+                      alt="와인 홈 파티 세트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>260,000원</p>
+                  </div>
+                  <p>와인 홈 파티 세트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20240115/375d73f671590eec999a0c7e0bdf738d.jpg"
+                      alt="프리미엄 고메 세트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>340,000원</p>
+                  </div>
+                  <p>프리미엄 고메 세트</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20230606/8553e3eca7b5505381d7cdc8e63c9765.jpg"
+                      alt="딸기 요거트 케이크 (특별 제작)"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>59,000원</p>
+                  </div>
+                  <p>딸기 요거트 케이크 (특별 제작)</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20230606/5fdd423e41e9f27de5ac2ad7a2fe6111.jpg"
+                      alt="딸기 생크림 케이크 (특별 제작)"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>58,000원</p>
+                  </div>
+                  <p>딸기 생크림 케이크 (특별 제작)</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20230606/b54a4e5bd433403f13ac41f7d0d1a0ce.jpg"
+                      alt="바움쿠헨 플레인"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>24,000원</p>
+                  </div>
+                  <p>바움쿠헨 플레인</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20230606/7cff572beb17c2e17e8f4118916187b8.jpg"
+                      alt="파운드 케이크 5종"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>23,000원</p>
+                  </div>
+                  <p>파운드 케이크 5종</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20230606/854c1637da4ec2a6009bd2acf7e5d34a.jpg"
+                      alt="카스텔라 3종"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>21,000원</p>
+                  </div>
+                  <p>카스텔라 3종</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20230606/3f1e7d886a457ca48ad7017e9d8aed21.jpg"
+                      alt="구움 과자 선물 세트 (스페셜)"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>67,000원</p>
+                  </div>
+                  <p>구움 과자 선물 세트 (스페셜)</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/product/medium/20230606/37705e1796e79855fb1374ffb06bdcf9.jpg"
+                      alt="구움 과자 선물 세트 (중)"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>45,000원</p>
+                  </div>
+                  <p>구움 과자 선물 세트 (중)</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+
+      <!-- s: faq -->
+      <section class="faq" id="faq">
+        <div class="inner">
+          <div
+            class="sec-title"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-offset="-100"
+          >
+            <strong>FAQ</strong>
+            <h3>궁금해요!</h3>
+          </div>
+
+          <div
+            class="faq-wrap"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-offset="-100"
+          >
+            <!-- .info-wrap>ul>li*5>(i.hidden{question}+.faq-title>strong+h4)+.answer-wrap>i.hidden{answer}+p -->
+            <div
+              class="info-wrap"
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-offset="-100"
+            >
+              <ul>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>케이터링 환불은 어떻게 처리되나요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        파리크라상 케이터링 박스 서비스는 고객님의 주문에 따라
+                        생산 및 조리되는 제품입니다.<br />
+                        배송 요청일에 임박하여 주문을 취소 할 경우 주문 완료된
+                        원·부재료 폐기 등으로 공급자의 중대한 피해 발생이 예상
+                        되는 바,<br />
+                        본 서비스 이용시 다음과 같은 환불 정책이 적용되오니,
+                        서비스 이용에 참고 부탁드립니다.<br /><br />
+
+                        ▶ 배송 요청일 3일 전 : 100% 환불<br />
+                        ▶ 배송 요청일 2일 전 : 50% 환불<br />
+                        ▶ 배송 요청일 1일 전 : 30% 환불<br />
+                        ▶ 배송 요청일 당일 : 환불 불가<br /><br />
+
+                        감사합니다. 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>케이터링 배달은 어떻게 오나요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        GOGOVAN이라는 딜리버리 전문 업체를 통하여 음식 세팅이
+                        망가지지 않도록 안전하게 배송해 드리고 있습니다.<br />
+                        자세한 사항은 파리크라상 반포서래점 (02-3478-9139)
+                        로 문의해주시면 상세히 안내드리겠습니다:)
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>파리크라상 공식 홈페이지 OPEN</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        안녕하세요, 고객님 :)  '파리크라상' 입니다.<br /><br />
+
+                        파리크라상에서 고객님들께 더 많은 소식들과 정보를 전하기
+                        위해 홈페이지를 오픈했습니다~!<br /><br />
+
+                        케이터링 주문 서비스, 선물 세트 전국 택배 배송, 다양한
+                        프로모션 혜택 안내까지!<br />
+                        정통 프렌치 스타일의 프리미엄 베이커리를
+                        경험해보세요.<br /><br />
+
+                        감사합니다 :-)
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: faq -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#">안전보건경영방침 확인하기</a>
+            </li>
+            <li>
+              <a href="#">고정형영상정보처리기기운영관리방침</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+            </div>
+            <p>법인명: 파리크라상 서래점 ㅣ 대표자: 경재형</p>
+            <p>
+              주소: 06576 서울특별시 서초구 서래로5길 2 (반포동) | E-mail :
+              hbkim@spc.co.kr
+            </p>
+            <p>
+              사업자등록번호: [114-85-14042] ㅣ 통신판매업신고번호:
+              2020-서울서초-2594호
+            </p>
+            <p>&copy; Copyright, PARIS CROISSANT Corp. All rights reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="파리크라상" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+    <a href="#talk" class="btn-talk"><i class="hidden">TALK</i></a>
+  </body>
+</html>

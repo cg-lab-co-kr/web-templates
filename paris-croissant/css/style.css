@@ -1,0 +1,177 @@
+@charset 'utf-8';
+
+/* ------------ 슬라이드01 - 이미지(세로형) ------------ */
+
+.slider-menu-wrap {
+  padding-top: 12rem;
+  display: flex;
+  gap: 2rem;
+  /* border: 1px solid #000; */
+}
+
+.menu-card {
+  position: relative;
+  width: 42.7rem;
+  /* width: 22.2396vw; */
+  aspect-ratio: 1/1.2272;
+  border-radius: 10px;
+  overflow: hidden;
+  /* margin: 0 1rem; */
+  margin-right: 2rem;
+  word-break: keep-all;
+}
+
+.menu-txt-slider {
+  flex: 1 0 48%;
+}
+
+.menu-con-slider-wrap {
+  flex: 1 0 48%;
+}
+
+.menu-text-card {
+  background: #fff;
+  padding-right: 2rem;
+}
+
+.menu-text-card strong {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-top: 2rem;
+}
+
+.menu-text-card h3 {
+  font: 9rem/1.1 "Poppins", sans-serif;
+  font-size: clamp(5rem, 5vw, 9rem);
+  font-weight: 700;
+  color: var(--title-color);
+  word-break: keep-all;
+  margin-top: 2.8rem;
+}
+
+.menu-text-card p {
+  width: 30vw;
+  margin-top: 1.5rem;
+  word-break: keep-all;
+}
+
+.menu-text-card .btn-more {
+  margin-top: 6rem;
+}
+
+.menu-con-slider {
+  width: 50vw;
+  height: 52.4rem;
+}
+
+.menu-con-slider-wrap .swiper-pagination {
+  top: 105% !important;
+  color: var(--main-color);
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--main-color);
+}
+
+.menu-card figure {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-card .menu-name {
+  opacity: 0;
+  transition: 0.4s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10.2rem;
+  background: var(--main-color70);
+  color: var(--white100);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.menu-card:hover .menu-name {
+  opacity: 1;
+}
+
+.menu-card:hover::before {
+  opacity: 0;
+}
+
+@media (max-width: 1024px) {
+  .slider-menu-wrap {
+    flex-wrap: wrap;
+  }
+
+  .menu-con-slider {
+    height: 51.1719vw;
+  }
+
+  .menu-text-card {
+    text-align: center;
+  }
+
+  .menu-text-card p {
+    width: 80%;
+    margin: 0.7rem auto 0 auto;
+  }
+
+  .menu-text-card .btn-more {
+    margin: 2rem auto 0 auto;
+  }
+
+  .menu-card {
+    width: 100%;
+  }
+
+  .menu-con-slider-wrap {
+    width: 100%;
+  }
+
+  .menu-con-slider {
+    width: 100%;
+  }
+}
+
+/* ------------ 슬라이드02 - 이미지(정사각형) ------------ */
+
+.news {
+  /* margin-top: 8.0208vw; */
+  margin: 15.4rem 0 6.25vw 0;
+}
+
+.news-list {
+  margin-top: 2.0833vw;
+  padding: 0 2rem;
+}
+
+.news-swiper figure {
+  margin-top: 2.6rem;
+  width: 100%;
+  aspect-ratio: 1/1.09259;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 6px 11px rgba(0, 0, 0, 0.25);
+}
+
+.news-swiper figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color70);
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.news-swiper figure:hover::after {
+  opacity: 1;
+}
