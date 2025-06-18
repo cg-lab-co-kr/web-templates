@@ -1,0 +1,59 @@
+@charset 'utf-8';
+
+/* ------------ 목록01 ------------ */
+.list {
+  margin-top: var(--margin-xl);
+}
+
+.list-item {
+  margin-top: var(--margin-s);
+  display: flex;
+  gap: var(--gap-m);
+}
+
+.list-item li {
+  width: 100%;
+  gap: var(--gap-m);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f8f8f8;
+  border-radius: var(--card-radius);
+  word-break: keep-all;
+  padding: 3rem;
+}
+
+.list-item li figure {
+  width: 9.3rem;
+  min-width: 8.3rem;
+  aspect-ratio: 1/1;
+  border-radius: var(--circle-radius);
+  overflow: hidden;
+}
+
+.list-txt {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+
+.list-txt strong {
+  font-weight: var(--font-weight-semibold);
+  color: var(--main-color);
+}
+
+.list-txt p {
+  font-size: var(--font-m);
+}
+
+@media (max-width: 1440px) {
+  .list-item {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .list-txt {
+    text-align: center;
+  }
+}

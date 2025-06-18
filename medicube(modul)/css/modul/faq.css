@@ -1,0 +1,113 @@
+@charset 'utf-8';
+
+/* ------------ 질문 목록 ------------ */
+.faq {
+  margin-top: var(--margin-xl);
+}
+
+.faq-wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--gap-m);
+}
+
+.info-wrap li {
+  border-top: 2px solid var(--black10);
+  padding: 3rem;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.info-wrap li:first-child {
+  border-top: 4px solid var(--main-color);
+}
+
+.info-wrap li:last-child {
+  border-bottom: 2px solid var(--black10);
+}
+
+.info-wrap li.on {
+  background: var(--main-color10);
+}
+
+.info-wrap li .faq-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-wrap li .faq-title i,
+.info-wrap li .answer-wrap i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--circle-radius);
+  font-size: var(--font-l);
+  font-weight: var(--font-weight-bold);
+  color: var(--white100);
+  background: var(--main-color);
+  aspect-ratio: 1/1;
+}
+
+.info-wrap li .answer-wrap i {
+  background: var(--black10);
+}
+
+.info-wrap li .faq-txt {
+  display: flex;
+  gap: var(--gap-s);
+  align-items: center;
+}
+
+.info-wrap li .faq-txt h4 {
+  font-size: var(--font-l);
+  font-weight: var(--font-weight-bold);
+  color: var(--title-color);
+  word-break: keep-all;
+}
+
+.info-wrap li span {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  transform: rotate(90deg);
+  transition: var(--trans-speed-nomal);
+  background: url(../../img/arrow-m-right.png) no-repeat 50%;
+}
+
+.info-wrap li.on span {
+  transform: rotate(-90deg);
+}
+
+.info-wrap li .answer-wrap {
+  margin-top: var(--margin-s);
+  display: none;
+  word-break: keep-all;
+}
+
+.info-wrap li .answer-con {
+  display: flex;
+  gap: var(--gap-m);
+}
+
+.info-wrap li .answer-con p {
+  font-size: var(--font-m);
+}
+
+@media (max-width: 768px) {
+  .info-wrap li {
+    padding: 3rem 2rem;
+  }
+
+  .info-wrap li .faq-title i {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* 'A' 아이콘 넣을지 말지 고민. 공간을 많이 차지해서 답변이 보기 불편하게 떨어짐 */
+  .info-wrap li .answer-wrap i {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+.visual-mobile-pic {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .visual-pic {
+    display: none;
+  }
+
+  .visual-mobile-pic {
+    display: block;
+  }
+}
