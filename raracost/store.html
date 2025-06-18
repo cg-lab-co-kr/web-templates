@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>raracost</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="라라코스트 공식 홈페이지 | 패밀리 레스토랑에서 맛보는 스테이크, 파스타, 피자, 다양한 수제 요리를 즐겨보세요. 전국 매장 정보와 메뉴를 확인하세요."
+    />
+    <meta
+      name="keywords"
+      content="라라코스트, RARACOST, 패밀리 레스토랑, 스테이크, 파스타, 피자, 수제버거, 외식, 맛집, 브런치, 패밀리 레스토랑 추천"
+    />
+    <link rel="canonical" href="https://dany339.github.io/raracost/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="라라코스트 | 패밀리 레스토랑에서 즐기는 특별한 맛"
+    />
+    <meta
+      property="og:description"
+      content="맛있는 한 끼를 위한 최적의 선택, 라라코스트! 스테이크, 파스타, 피자부터 다양한 수제 요리까지. 전국 매장 정보와 메뉴를 공식 홈페이지에서 확인하세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/raracost/" />
+    <meta
+      property="og:image"
+      content="https://www.raracost.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="라라코스트 | 패밀리 레스토랑에서 즐기는 특별한 맛"
+    />
+    <meta
+      name="twitter:description"
+      content="맛있는 한 끼를 위한 최적의 선택, 라라코스트! 스테이크, 파스타, 피자부터 다양한 수제 요리까지. 전국 매장 정보와 메뉴를 공식 홈페이지에서 확인하세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.raracost.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/store.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="logo">
+        <a href="index.html"><i class="hidden">raracost</i></a>
+      </h1>
+      <div class="util-menu">
+        <button class="btn-menu">
+          <i class="hidden">메뉴</i
+          ><span class="menu-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+            ><span class="bar3"></span
+          ></span>
+        </button>
+      </div>
+      <div class="sns-list">
+        <button class="btn-instargram"><i class="hidden">인스타그램</i></button>
+        <button class="btn-facebook"><i class="hidden">페이스북</i></button>
+      </div>
+
+      <div class="gnb">
+        <figure>
+          <img
+            src="https://www.raracost.com/images/franchise2/menu_bg1_240122.png"
+            alt=""
+          />
+        </figure>
+        <div class="gnb-menu">
+          <nav>
+            <ul class="main-menu">
+              <li>
+                <h3><a href="company.html">MENU</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="company.html#learning">MENU</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="brand.html">BRAND</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="brand.html#brand-vision">BRAND VISION</a></li>
+                  <li>
+                    <a href="brand.html#clio-way">PRIDE</a>
+                  </li>
+                  <li><a href="brand.html#ideology">CONCEPT</a></li>
+                  <li><a href="brand.html#ideology">GO TOGETHER</a></li>
+                  <li><a href="brand.html#ideology">창업비용</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="news.html">NEWS</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="news.html#news">NEWS</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="store.html">STORE</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="store.html#map">STORE</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="inguiry.html">INGUIRY</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="inguiry.html#faq">FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button type="button" class="btn-close">
+          <i class="hidden">close</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <a class="btn-main" href="index.html"><i class="hidden">raracost</i></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread">Home > STORE</strong>
+          <div class="visual-title">
+            <h2>STORE</h2>
+            <p>가까운 라라코스트 매장을 손쉽게 찾아보세요.</p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="https://www.raracost.com/images/sub/view/1.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <section class="map" id="map">
+        <div class="map-wrap">
+          <div class="map-view">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1645756.3603199008!2d125.43681164574163!3d36.32763267662368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357189e4d6ad9de5%3A0x75fa548f939bb06b!2z6528652867iM66CI65OcIOyDgeustOygkA!5e0!3m2!1sko!2skr!4v1738904403064!5m2!1sko!2skr"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="map-search">
+            <button type="button" class="btn-fold">
+              <i class="hidden">매장찾기 리스트 닫기</i>
+            </button>
+            <strong>매장 선택</strong>
+            <div class="search">
+              <input type="text" id="text" />
+              <label for="text">매장명을 검색해주세요.</label>
+              <button><i class="hidden">검색</i></button>
+            </div>
+            <div class="map-area">
+              <div>
+                <select>
+                  <option value="">시/도 선택</option>
+                  <option value="">서울</option>
+                  <option value="">인천</option>
+                  <option value="">경기</option>
+                  <option value="">강원</option>
+                  <option value="">대전</option>
+                  <option value="">세종</option>
+                  <option value="">대구</option>
+                  <option value="">광주</option>
+                  <option value="">부산</option>
+                  <option value="">울산</option>
+                  <option value="">충북</option>
+                  <option value="">충남</option>
+                  <option value="">전북</option>
+                  <option value="">전남</option>
+                  <option value="">경북</option>
+                  <option value="">경남</option>
+                  <option value="">제주</option>
+                </select>
+              </div>
+
+              <div>
+                <select>
+                  <option value="">구/군 선택</option>
+                </select>
+              </div>
+            </div>
+            <div class="map-filter">
+              <strong>제공 서비스 선택</strong>
+              <ul>
+                <li>
+                  <input type="checkbox" id="fil-queens" />
+                  <label for="fil-queens">전체</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="fil-wine" />
+                  <label for="fil-wine">주차가능</label>
+                </li>
+                <li>
+                  <input class="on" type="checkbox" id="fil-beer" />
+                  <label for="fil-beer">배달</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="fil-child" />
+                  <label for="fil-child">키즈존</label>
+                </li>
+              </ul>
+            </div>
+            <!-- ul.map-info>li*3>(dl>dt+dd*2)+ul.map-ico>li*3 -->
+            <ul class="map-info">
+              <li>
+                <dl>
+                  <dt>광주상무점</dt>
+                  <dd>전화번호: 미등록</dd>
+                  <dd>광주 서구 치평동 1208-5 2층</dd>
+                </dl>
+                <ul class="map-ico">
+                  <li class="on"><i class="hidden">주차가능</i></li>
+                  <li class="on"><i class="hidden">배달</i></li>
+                  <li><i class="hidden">키즈존</i></li>
+                </ul>
+              </li>
+              <li>
+                <dl>
+                  <dt>다사죽곡점</dt>
+                  <dd>전화번호: 미등록</dd>
+                  <dd>대구 달성군 다사읍 달구벌대로 855 2층</dd>
+                </dl>
+                <ul class="map-ico">
+                  <li><i class="hidden">주차가능</i></li>
+                  <li class="on"><i class="hidden">배달</i></li>
+                  <li><i class="hidden">키즈존</i></li>
+                </ul>
+              </li>
+              <li>
+                <dl>
+                  <dt>동성로점</dt>
+                  <dd>전화번호: 053-744-3455</dd>
+                  <dd>대구 수성구 달구벌대로496길 6 1층</dd>
+                </dl>
+                <ul class="map-ico">
+                  <li class="on"><i class="hidden">주차가능</i></li>
+                  <li class="on"><i class="hidden">배달</i></li>
+                  <li class="on"><i class="hidden">키즈존</i></li>
+                </ul>
+              </li>
+              <li>
+                <dl>
+                  <dt>나성점</dt>
+                  <dd>전화번호: 044-862-3230</dd>
+                  <dd>세종특별자치시 한누리대로 283 세진팰리스 2층</dd>
+                </dl>
+                <ul class="map-ico">
+                  <li class="on"><i class="hidden">주차가능</i></li>
+                  <li class="on"><i class="hidden">배달</i></li>
+                  <li class="on"><i class="hidden">키즈존</i></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://www.raracost.com/intranet">가맹점 공간</a>
+            </li>
+            <li>
+              <a
+                href="https://www.raracost.com/pg/bbs/write.php?bo_table=chain05"
+                >가맹상담신청</a
+              >
+            </li>
+            <li>
+              <a href="https://www.raracost.com/doc/privacy.php"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://www.raracost.com/doc/email.php"
+                >이메일무단수집거부</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <strong>가맹문의 <i>070.8884.3265</i></strong>
+            <p>
+              상호명: ㈜라라에프앤비 F&B대표: 안영진 사업자등록번호:
+              552-88-00775
+            </p>
+            <p>고객센터: 070-8884-3235 평일 09:00-17:50 점심 12:00-13:00</p>
+            <p>사업장소재지: 대구광역시 수성구 들안로 33-1 3층 일부, 4층</p>
+            <p>
+              서울본부: 서울특별시 마포구 만리재로 14. 르네상스타워 16F 1609호
+            </p>
+            <p>Copyright&copy;RARACOST All rights Reserved</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="CLIO COSMETICS" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

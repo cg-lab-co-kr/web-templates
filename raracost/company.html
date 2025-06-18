@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>raracost</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="라라코스트 공식 홈페이지 | 패밀리 레스토랑에서 맛보는 스테이크, 파스타, 피자, 다양한 수제 요리를 즐겨보세요. 전국 매장 정보와 메뉴를 확인하세요."
+    />
+    <meta
+      name="keywords"
+      content="라라코스트, RARACOST, 패밀리 레스토랑, 스테이크, 파스타, 피자, 수제버거, 외식, 맛집, 브런치, 패밀리 레스토랑 추천"
+    />
+    <link rel="canonical" href="https://dany339.github.io/raracost/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="라라코스트 | 패밀리 레스토랑에서 즐기는 특별한 맛"
+    />
+    <meta
+      property="og:description"
+      content="맛있는 한 끼를 위한 최적의 선택, 라라코스트! 스테이크, 파스타, 피자부터 다양한 수제 요리까지. 전국 매장 정보와 메뉴를 공식 홈페이지에서 확인하세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/raracost/" />
+    <meta
+      property="og:image"
+      content="https://www.raracost.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="라라코스트 | 패밀리 레스토랑에서 즐기는 특별한 맛"
+    />
+    <meta
+      name="twitter:description"
+      content="맛있는 한 끼를 위한 최적의 선택, 라라코스트! 스테이크, 파스타, 피자부터 다양한 수제 요리까지. 전국 매장 정보와 메뉴를 공식 홈페이지에서 확인하세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.raracost.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="logo">
+        <a href="index.html"><i class="hidden">raracost</i></a>
+      </h1>
+      <div class="util-menu">
+        <button class="btn-menu">
+          <i class="hidden">메뉴</i
+          ><span class="menu-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+            ><span class="bar3"></span
+          ></span>
+        </button>
+      </div>
+      <div class="sns-list">
+        <button class="btn-instargram"><i class="hidden">인스타그램</i></button>
+        <button class="btn-facebook"><i class="hidden">페이스북</i></button>
+      </div>
+
+      <div class="gnb">
+        <figure>
+          <img
+            src="https://www.raracost.com/images/franchise2/menu_bg1_240122.png"
+            alt=""
+          />
+        </figure>
+        <div class="gnb-menu">
+          <nav>
+            <ul class="main-menu">
+              <li>
+                <h3><a href="company.html">MENU</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="company.html#menu">MENU</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="brand.html">BRAND</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="brand.html#brand-vision">BRAND VISION</a></li>
+                  <li>
+                    <a href="brand.html#pride">PRIDE</a>
+                  </li>
+                  <li><a href="brand.html#concept">CONCEPT</a></li>
+                  <li><a href="brand.html#go-together">GO TOGETHER</a></li>
+                  <li><a href="brand.html#cost">창업비용</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="news.html">NEWS</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="news.html#news">NEWS</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="store.html">STORE</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="store.html#map">STORE</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="inguiry.html">INGUIRY</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="inguiry.html#faq">FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button type="button" class="btn-close">
+          <i class="hidden">close</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <a class="btn-main" href="index.html"><i class="hidden">raracost</i></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread">Home > COMMENUPANY</strong>
+          <div class="visual-title">
+            <h2>MENU</h2>
+            <p>
+              라라코스트에서 다양성, 즐거움이라는 가치를 바탕으로한 행복한 식사
+              시간을 만끽해보세요.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://www.raracost.com/images/sub/brandStory_BG1-1.png"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu" id="menu">
+        <div class="inner">
+          <div class="menu-title">
+            <h3 data-aos="fade-down">MENU</h3>
+          </div>
+
+          <ul class="menu-tab" data-aos="fade-up" data-aos-delay="400">
+            <li>
+              <a href="#"><p>어린이 추천</p></a>
+            </li>
+            <li>
+              <a href="#"><p>파스타</p></a>
+            </li>
+            <li>
+              <a href="#"><p>스테이크</p></a>
+            </li>
+            <li>
+              <a href="#"><p>피자</p></a>
+            </li>
+            <li>
+              <a href="#"><p>필라프</p></a>
+            </li>
+            <li>
+              <a href="#"><p>샐러드</p></a>
+            </li>
+          </ul>
+
+          <!-- .menu-con>ul.menu-list>div*7>(figure>img)+p+p -->
+          <div class="menu-cons">
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/salad4.png"
+                      alt="치킨 텐더 샐러드"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHICKEN TENDER SALAD</p>
+                  </div>
+                  <p>치킨 텐더 샐러드</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/steak1_230504.png"
+                      alt="수제 포크 커틀렛"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>HANDMADE PORK CUTLET</p>
+                  </div>
+                  <p>수제 포크 커틀렛</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pasta_tomato2.png"
+                      alt="오븐 토마토 파스타"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>OVEN TOMATO PASTA</p>
+                  </div>
+                  <p>오븐 토마토 파스타</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pasta_cream3.png"
+                      alt="까르보나라"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CARBONARA PASTA</p>
+                  </div>
+                  <p>까르보나라</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pilaf2.png"
+                      alt="불고기 필라프(순한맛)"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>BULGOGI PILAF</p>
+                  </div>
+                  <p>불고기 필라프(순한맛)</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/side2.png"
+                      alt="크림치즈볼"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CREAM CHEESE BALLS</p>
+                  </div>
+                  <p>크림치즈볼</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/drink8_240902.png"
+                      alt="포켓몬 음료"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>POKEMON</p>
+                  </div>
+                  <p>포켓몬 음료</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pasta_oil8.png"
+                      alt="감바스 오일 파스타"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>GAMBAS OIL PASTA</p>
+                  </div>
+                  <p>감바스 오일 파스타</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pasta_oil7.png"
+                      alt="봉골레 파스타"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>VONGOLE PASTA</p>
+                  </div>
+                  <p>봉골레 파스타</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.raracost.com/images/sub/pasta_oil6.png"
+                      alt="레드 봉골레 파스타"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>RED VONGOLE PASTA</p>
+                  </div>
+                  <p>레드 봉골레 파스타</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pasta_oil5.png"
+                      alt="봉골레 크림 파스타"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>VONGOLE CREAM PASTA</p>
+                  </div>
+                  <p>봉골레 크림 파스타</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pasta_oil4.png"
+                      alt="부대찌개 오일 파스타"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>SAUSAGE STEW OIL PASTA</p>
+                  </div>
+                  <p>부대찌개 오일 파스타</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pasta_oil2.png"
+                      alt="알리오 올리오 파스타"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>AGLIO E OLIO PASTA</p>
+                  </div>
+                  <p>알리오 올리오 파스타</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pasta_oil1.png"
+                      alt="할라피뇨 어니언 파스타"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>JALAPENO ONION PASTA</p>
+                  </div>
+                  <p>할라피뇨 어니언 파스타</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/steak13.png"
+                      alt="비프 찹 스테이크"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>BEEF CHOP STEAK</p>
+                  </div>
+                  <p>비프 찹 스테이크</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.raracost.com/images/sub/steak10_230921.png"
+                      alt="블랙 스톤 스테이크"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>BLACK STONE STEAK</p>
+                  </div>
+                  <p>블랙 스톤 스테이크</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/steak9.png"
+                      alt="더블 포크 스테이크"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>DOUBLE PORK STEAK</p>
+                  </div>
+                  <p>더블 포크 스테이크</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/steak7.png"
+                      alt="수제 치즈 함박 스테이크"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>HANDMADE CHEESE HAMBURG STEAK</p>
+                  </div>
+                  <p>수제 치즈 함박 스테이크</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/steak3.png"
+                      alt="갈릭 포크 스테이크"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>GARLIC PORK STEAK</p>
+                  </div>
+                  <p>갈릭 포크 스테이크</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/steak5_230504.png"
+                      alt="삼겹살 스테이크"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>PORK BELLY STEAK</p>
+                  </div>
+                  <p>삼겹살 스테이크</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/steak16.png"
+                      alt="더블 삼겹살 스테이크"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>DOUBLE PORK BELLY STEAK</p>
+                  </div>
+                  <p>더블 삼겹살 스테이크</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/steak4.png"
+                      alt="포크 스테이크"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>PORK STEAK</p>
+                  </div>
+                  <p>포크 스테이크</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/steak2.png"
+                      alt="갈릭 로스트 치킨 스테이크"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>GARLIC ROAST CHICKEN STEAK</p>
+                  </div>
+                  <p>갈릭 로스트 치킨 스테이크</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/steak1_230504.png"
+                      alt="수제 포크 커틀렛"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>HANDMADE PORK CUTLET</p>
+                  </div>
+                  <p>수제 포크 커틀렛</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pizza_sign9.png"
+                      alt="트러플 머쉬룸 피자"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>TRUFFLE MUSHROOM PIZZA</p>
+                  </div>
+                  <p>트러플 머쉬룸 피자</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pizza_sign6.png"
+                      alt="콘 크런치 피자"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CORN CRUNCH PIZZA</p>
+                  </div>
+                  <p>콘 크런치 피자</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.raracost.com/images/sub/pizza_sign7.png"
+                      alt="치즈버거 피자"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHEESE BURGER PIZZA</p>
+                  </div>
+                  <p>치즈버거 피자</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pizza_sign2.png"
+                      alt="시카고 쉬림프 피자"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHICAGO SHRIMP PIZZA</p>
+                  </div>
+                  <p>시카고 쉬림프 피자</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pizza_sign1_230504.png"
+                      alt="시카고 페퍼로니 피자"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHICAGO PEPPERONI PIZZA</p>
+                  </div>
+                  <p>시카고 페퍼로니 피자</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pizza_sign3.png"
+                      alt="시카고 불고기 피자"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHICAGO BULGOGI PIZZA</p>
+                  </div>
+                  <p>시카고 불고기 피자</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pilaf9.png"
+                      alt="해물 스파이시 필라프"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>SEAFOOD SPICY PILAF</p>
+                  </div>
+                  <p>해물 스파이시 필라프</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pilaf5.png"
+                      alt="새우 베이컨 필라프"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>SHRIMP BACON PILAF</p>
+                  </div>
+                  <p>새우 베이컨 필라프</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.raracost.com/images/sub/pilaf6.png"
+                      alt="갈릭 씨푸드 필라프"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>GARLIC SEAFOOD PILAF</p>
+                  </div>
+                  <p>갈릭 씨푸드 필라프</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.raracost.com/images/sub/pilaf3_230504.png"
+                      alt="목살 필라프"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>BLACK BEAN SAUCE PORK PILAF</p>
+                  </div>
+                  <p>목살 필라프</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pilaf1.png"
+                      alt="치킨 필라프"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHICKEN PILAF</p>
+                  </div>
+                  <p>치킨 필라프</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/pilaf2.png"
+                      alt="불고기 필라프"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>BULGOGI PILAF</p>
+                  </div>
+                  <p>불고기 필라프</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.raracost.com/images/sub/salad2.png"
+                      alt="모짜렐라 샐러드"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MOZZARELLA SALAD</p>
+                  </div>
+                  <p>모짜렐라 샐러드</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/salad6.png"
+                      alt="프레시 리코타 샐러드"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>FRESH RICOTTA SALAD</p>
+                  </div>
+                  <p>프레시 리코타 샐러드</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/salad8.png"
+                      alt="부채살 시저 샐러드"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>TOP BLADE CAESAR SALAD</p>
+                  </div>
+                  <p>부채살 시저 샐러드</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/salad4.png"
+                      alt="치킨 텐더 샐러드"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHICKEN TENDER SALAD</p>
+                  </div>
+                  <p>치킨 텐더 샐러드</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/salad3.png"
+                      alt="스테이크 샐러드"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>STEAK SALAD</p>
+                  </div>
+                  <p>스테이크 샐러드</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.raracost.com/images/sub/salad1.png"
+                      alt="하우스 샐러드"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>HOUSE SALAD</p>
+                  </div>
+                  <p>하우스 샐러드</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://www.raracost.com/intranet">가맹점 공간</a>
+            </li>
+            <li>
+              <a
+                href="https://www.raracost.com/pg/bbs/write.php?bo_table=chain05"
+                >가맹상담신청</a
+              >
+            </li>
+            <li>
+              <a href="https://www.raracost.com/doc/privacy.php"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://www.raracost.com/doc/email.php"
+                >이메일무단수집거부</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <strong>가맹문의 <i>070.8884.3265</i></strong>
+            <p>
+              상호명: ㈜라라에프앤비 F&B대표: 안영진 사업자등록번호:
+              552-88-00775
+            </p>
+            <p>고객센터: 070-8884-3235 평일 09:00-17:50 점심 12:00-13:00</p>
+            <p>사업장소재지: 대구광역시 수성구 들안로 33-1 3층 일부, 4층</p>
+            <p>
+              서울본부: 서울특별시 마포구 만리재로 14. 르네상스타워 16F 1609호
+            </p>
+            <p>Copyright&copy;RARACOST All rights Reserved</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="CLIO COSMETICS" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

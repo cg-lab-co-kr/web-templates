@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>raracost</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="라라코스트 공식 홈페이지 | 패밀리 레스토랑에서 맛보는 스테이크, 파스타, 피자, 다양한 수제 요리를 즐겨보세요. 전국 매장 정보와 메뉴를 확인하세요."
+    />
+    <meta
+      name="keywords"
+      content="라라코스트, RARACOST, 패밀리 레스토랑, 스테이크, 파스타, 피자, 수제버거, 외식, 맛집, 브런치, 패밀리 레스토랑 추천"
+    />
+    <link rel="canonical" href="https://dany339.github.io/raracost/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="라라코스트 | 패밀리 레스토랑에서 즐기는 특별한 맛"
+    />
+    <meta
+      property="og:description"
+      content="맛있는 한 끼를 위한 최적의 선택, 라라코스트! 스테이크, 파스타, 피자부터 다양한 수제 요리까지. 전국 매장 정보와 메뉴를 공식 홈페이지에서 확인하세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/raracost/" />
+    <meta
+      property="og:image"
+      content="https://www.raracost.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="라라코스트 | 패밀리 레스토랑에서 즐기는 특별한 맛"
+    />
+    <meta
+      name="twitter:description"
+      content="맛있는 한 끼를 위한 최적의 선택, 라라코스트! 스테이크, 파스타, 피자부터 다양한 수제 요리까지. 전국 매장 정보와 메뉴를 공식 홈페이지에서 확인하세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.raracost.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header id="header">
+      <h1 class="logo">
+        <a href="index.html"><i class="hidden">raracost</i></a>
+      </h1>
+      <div class="util-menu">
+        <button class="btn-menu">
+          <i class="hidden">메뉴</i
+          ><span class="menu-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+            ><span class="bar3"></span
+          ></span>
+        </button>
+      </div>
+      <div class="sns-list">
+        <button class="btn-instargram"><i class="hidden">인스타그램</i></button>
+        <button class="btn-facebook"><i class="hidden">페이스북</i></button>
+      </div>
+
+      <div class="gnb">
+        <figure>
+          <img
+            src="https://www.raracost.com/images/franchise2/menu_bg1_240122.png"
+            alt=""
+          />
+        </figure>
+        <div class="gnb-menu">
+          <nav>
+            <ul class="main-menu">
+              <li>
+                <h3><a href="company.html">MENU</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="company.html#menu">MENU</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="brand.html">BRAND</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="brand.html#brand-vision">BRAND VISION</a></li>
+                  <li>
+                    <a href="brand.html#pride">PRIDE</a>
+                  </li>
+                  <li><a href="brand.html#concept">CONCEPT</a></li>
+                  <li><a href="brand.html#go-together">GO TOGETHER</a></li>
+                  <li><a href="brand.html#cost">창업비용</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="news.html">NEWS</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="news.html#news">NEWS</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="store.html">STORE</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="store.html#map">STORE</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="inguiry.html">INGUIRY</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="inguiry.html#faq">FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button type="button" class="btn-close">
+          <i class="hidden">close</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <a class="btn-main" href="index.html"><i class="hidden">raracost</i></a>
+      </div>
+    </header>
+
+    <aside class="breadcrumb">
+      <button class="prev"><i class="hidden">이전</i></button>
+      <p>인기메뉴</p>
+      <button class="next"><i class="hidden">다음</i></button>
+    </aside>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <div class="visual-title">
+            <div class="visual-title">
+              <h2>RARA COST</h2>
+              <p>
+                클리오는 화장품을 통하여 새로운 변화를 즐기는 사람에게 자신감과
+                즐거움을 제공합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://www.raracost.com/images/franchise2/fr_sv2.jpg"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu">
+        <!-- (.menu-txt>strong+(ul.menu-txt-list>li*6>h3+p)+a.btn-more)+(.menu-con>ul>li*6>(figure>img)+p) -->
+        <div class="inner">
+          <div class="slider-menu-wrap" data-aos="fade-right">
+            <div class="swiper menu-txt-slider">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide menu-text-card">
+                  <strong>NEW! MENU</strong>
+                  <h3>가지튀김 오븐 파스타</h3>
+                  <p>부드러운 가지튀김이 올라간 치즈 오븐 리가토니 파스타</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>NEW! MENU</strong>
+                  <h3>크림 포테이토 리가토니</h3>
+                  <p>부드러운 감자와 크림소스가 어우러진 리가토니 파스타</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>NEW! MENU</strong>
+                  <h3>페퍼로니 라이트 크림 파스타</h3>
+                  <p>페퍼로니의 풍미가 가득한 고소한 크림 파스타</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>NEW! MENU</strong>
+                  <h3>트러플 머쉬룸 피자</h3>
+                  <p>트러플 풍미가 가득한 버섯 피자</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>NEW! MENU</strong>
+                  <h3>콰트로 피자</h3>
+                  <p>
+                    바질크림치즈, 페퍼로니, 고르곤졸라, 불고기, 네 가지 맛을 한
+                    판에!
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>NEW! MENU</strong>
+                  <h3>감바스 토마토 파스타</h3>
+                  <p>통통한 새우와 토마토 소스의 풍미가 인상적인 파스타</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>NEW! MENU</strong>
+                  <h3>스테이크 피자</h3>
+                  <p>
+                    바삭하게 구워낸 피자 위에 질 좋은 비프스테이크와 샐러드가
+                    토핑 된 피자
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-con-slider-wrap"
+              data-aos="fade-left"
+              data-aod-delay="800"
+            >
+              <div class="swiper menu-con-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/pasta_tomato8.png"
+                        alt="가지튀김 오븐 파스타"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>가지튀김 오븐 파스타</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/pasta_cream14.png"
+                        alt="크림 포테이토
+                      리가토니"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>크림 포테이토 리가토니</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/pasta_cream15.png"
+                        alt="페퍼로니 라이트 크림 파스타"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>페퍼로니 라이트 크림 파스타</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/pizza_sign9.png"
+                        alt="트러플 머쉬룸 피자"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>트러플 머쉬룸 피자</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/pizza16.png"
+                        alt="CLU콰트로 피자B"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>콰트로 피자</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/pasta_tomato9.png"
+                        alt="감바스 토마토 파스타"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>감바스 토마토 파스타</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/pizza17.png"
+                        alt="스테이크 피자"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>스테이크 피자</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+
+      <!-- s: event -->
+      <section class="event">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>INTERIOR</strong>
+            <h3>라라코스트 인테리어</h3>
+          </div>
+        </div>
+
+        <!-- .event-list>ul.event-i>li*10>a>figure>img -->
+        <div class="event-lists" data-aos="fade-up" data-aos-delay="600">
+          <div class="event-list">
+            <div class="swiper event-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/brandStory_interior2_240528.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/brandStory_interior3.png"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/brandStory_interior5.png"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/brandStory_interior6.png"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/brandStory_interior7.png"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/view/1.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/view/2.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/view/3.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/view/3.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/view/4.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/view/5.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.raracost.com/images/sub/view/6.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: event -->
+    </main>
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://www.raracost.com/intranet">가맹점 공간</a>
+            </li>
+            <li>
+              <a
+                href="https://www.raracost.com/pg/bbs/write.php?bo_table=chain05"
+                >가맹상담신청</a
+              >
+            </li>
+            <li>
+              <a href="https://www.raracost.com/doc/privacy.php"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://www.raracost.com/doc/email.php"
+                >이메일무단수집거부</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <strong>가맹문의 <i>070.8884.3265</i></strong>
+            <p>
+              상호명: ㈜라라에프앤비 F&B대표: 안영진 사업자등록번호:
+              552-88-00775
+            </p>
+            <p>고객센터: 070-8884-3235 평일 09:00-17:50 점심 12:00-13:00</p>
+            <p>사업장소재지: 대구광역시 수성구 들안로 33-1 3층 일부, 4층</p>
+            <p>
+              서울본부: 서울특별시 마포구 만리재로 14. 르네상스타워 16F 1609호
+            </p>
+            <p>Copyright&copy;RARACOST All rights Reserved</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="CLIO COSMETICS" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>
