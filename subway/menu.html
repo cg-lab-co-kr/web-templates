@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>써브웨이</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="써브웨이 공식 홈페이지 | 신선한 재료로 만드는 맞춤형 샌드위치. 다양한 메뉴와 건강한 선택을 즐겨보세요. 전국 매장 정보 및 주문 서비스 제공."
+    />
+    <meta
+      name="keywords"
+      content="써브웨이, Subway, 샌드위치, 맞춤형 샌드위치, 신선한 샌드위치, 건강식, 패스트푸드, 다이어트 식단, 샐러드, 테이크아웃"
+    />
+    <link rel="canonical" href="https://dany339.github.io/subway/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="써브웨이 | 신선한 맞춤형 샌드위치" />
+    <meta
+      property="og:description"
+      content="신선한 재료로 나만의 샌드위치를 즐기세요! 써브웨이는 건강하고 맛있는 샌드위치, 샐러드를 제공합니다. 전국 매장에서 만나보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/subway/" />
+    <meta
+      property="og:image"
+      content="https://www.subway.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="써브웨이 | 신선한 맞춤형 샌드위치" />
+    <meta
+      name="twitter:description"
+      content="신선한 재료로 나만의 샌드위치를 즐기세요! 써브웨이는 건강하고 맛있는 샌드위치, 샐러드를 제공합니다. 전국 매장에서 만나보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.subway.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">써브웨이</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BUSINESS</a>
+            <ul class="submenu">
+              <li><a href="brand.html#franchise">프랜차이즈</a></li>
+              <li><a href="brand.html#open">개설절차</a></li>
+              <li><a href="brand.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">인스타그램</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BUSINESS</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#franchise">프랜차이즈</a></li>
+              <li><a href="brand.html#open">개설절차</a></li>
+              <li><a href="brand.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <div class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > MENU</strong>
+          <div class="visual-title">
+            <h2>MENU</h2>
+            <p>
+              언제나 신선한 최상의 야채와 매일 직접 구워 낸 신선한 샌드위치
+              빵으로 건강하고 맛있는 한끼를 즐겨보세요.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic2.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu" id="menu">
+        <div class="inner">
+          <div class="menu-title">
+            <h3 data-aos="fade-down" data-aos-offset="-100">SUBWAY'S MENU</h3>
+          </div>
+
+          <ul class="menu-tab" data-aos="fade-up" data-aos-offset="-50">
+            <li>
+              <a href="#"><p>샌드위치</p></a>
+            </li>
+            <li>
+              <a href="#"><p>랩·기타</p></a>
+            </li>
+            <li>
+              <a href="#"><p>샐러드</p></a>
+            </li>
+            <li>
+              <a href="#"><p>아침메뉴</p></a>
+            </li>
+            <li>
+              <a href="#"><p>스마일썹</p></a>
+            </li>
+            <li>
+              <a href="#"><p>단체메뉴</p></a>
+            </li>
+          </ul>
+
+          <!-- .menu-con>ul.menu-list>div*7>(figure>img)+p+p -->
+          <div class="menu-cons">
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/Tuna_20211231095535268.png"
+                      alt="참치"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Tuna</p>
+                  </div>
+                  <p>참치</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/Ham_20211231094833168.png"
+                      alt="햄"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Ham</p>
+                  </div>
+                  <p>햄</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/Egg-Mayo_20211231094817112.png"
+                      alt="에그마요"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Egg Mayo</p>
+                  </div>
+                  <p>에그마요</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/B.L.T_20211231094744175.png"
+                      alt="비엘티"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>B.L.T</p>
+                  </div>
+                  <p>비엘티</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/Italian_B.M.T_20211231094910899.png"
+                      alt="이탈리안 비엠티"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Italian B.M.T.™</p>
+                  </div>
+                  <p>이탈리안 비엠티</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.subway.co.kr/upload/menu/steak_n_cheese_avocado_wrap_20210315105638140.jpg"
+                      alt="스테이크&치즈 아보카도 랩"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Steak&Cheese Avocado Wrap</p>
+                  </div>
+                  <p>스테이크&치즈 아보카도 랩</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.subway.co.kr/upload/menu/shrimp_egg_mayo_wrap_20210315105650669.jpg"
+                      alt="쉬림프 에그마요 랩"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Shrimp Egg Mayo Wrap</p>
+                  </div>
+                  <p>쉬림프 에그마요 랩</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.subway.co.kr/upload/menu/chicken_bacon_mini_wrap_20210315105919945.jpg"
+                      alt="치킨 베이컨 미니 랩"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Chicken Bacon Mini Wrap</p>
+                  </div>
+                  <p>치킨 베이컨 미니 랩</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/%EC%95%88%EC%B0%BD%20%EB%B9%84%ED%94%84%20%EC%83%90%EB%9F%AC%EB%93%9C%20%EB%8B%A8%ED%92%88_20240902084806796.png"
+                      alt="안창 비프"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Beef</p>
+                  </div>
+                  <p>안창 비프</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/%EC%95%88%EC%B0%BD%20%EB%B9%84%ED%94%84%20&%20%EB%A8%B8%EC%89%AC%EB%A3%B8%20%EC%83%90%EB%9F%AC%EB%93%9C%20%EB%8B%A8%ED%92%88_20240902085009998.png"
+                      alt="안창 비프&머쉬룸"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Beef&Mushroom</p>
+                  </div>
+                  <p>안창 비프&머쉬룸</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/%EB%A8%B8%EC%89%AC%EB%A3%B8%20%EC%83%90%EB%9F%AC%EB%93%9C%20%EB%8B%A8%ED%92%88_20240902084926865.png"
+                      alt="머쉬룸"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Mushroom</p>
+                  </div>
+                  <p>머쉬룸</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/%EC%B9%98%ED%82%A8%20%EB%B2%A0%EC%9D%B4%EC%BB%A8%20%EC%95%84%EB%B3%B4%EC%B9%B4%EB%8F%84%20%EC%83%90%EB%9F%AC%EB%93%9C_20241107121329570.png"
+                      alt="터키 베이컨 아보카도"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Turkey Bacon Avocado</p>
+                  </div>
+                  <p>터키 베이컨 아보카도</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/%EC%8D%A8%EB%B8%8C%EC%9B%A8%EC%9D%B4%20%ED%81%B4%EB%9F%BD(%EC%B9%98%ED%82%A8)%20%EC%83%90%EB%9F%AC%EB%93%9C_20241107121448630.png"
+                      alt="써브웨이 클럽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Subway Club</p>
+                  </div>
+                  <p>써브웨이 클럽</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/%ED%96%84,%20%EC%97%90%EA%B7%B8&%EC%B9%98%EC%A6%88%20%EB%8B%A8%ED%92%88_20220407064307837.png"
+                      alt="햄, 에그&치즈"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Ham, Egg&Cheese</p>
+                  </div>
+                  <p>햄, 에그&치즈</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/%EC%9B%A8%EC%8A%A4%ED%84%B4,%20%EC%97%90%EA%B7%B8%20&%20%EC%B9%98%EC%A6%88%20%EB%8B%A8%ED%92%88_20220407064319864.png"
+                      alt="웨스턴, 에그&치즈"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Western, Egg&Cheese</p>
+                  </div>
+                  <p>웨스턴, 에그&치즈</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.subway.co.kr/upload/menu/ham_egg_n_cheese_wrap_20210315010301754.png"
+                      alt="햄, 에그&치즈 랩"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Ham, Egg&Cheese Wrap</p>
+                  </div>
+                  <p>햄, 에그&치즈 랩</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/western_egg_n_cheese_wrap_20210315125949618.png"
+                      alt="웨스턴, 에그&치즈 랩"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Western, Egg&Cheese Wrap</p>
+                  </div>
+                  <p>웨스턴, 에그&치즈 랩</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/%EB%8B%A8%ED%98%B8%EB%B0%95%EC%8A%A4%ED%94%84_20241111092548709.png"
+                      alt="단호박 수프"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Sweet Pumpkin Soup</p>
+                  </div>
+                  <p>단호박 수프</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.subway.co.kr/upload/menu/Mushroom-soup_20231204012446176.png"
+                      alt="머쉬룸 스프"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Mushroom Soup</p>
+                  </div>
+                  <p>머쉬룸 스프</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/%EB%AF%BC%ED%8A%B8%EC%B4%88%EC%BD%94_570X400_20250204124919047.jpg"
+                      alt="민트초코"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Mint Choco</p>
+                  </div>
+                  <p>민트초코</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.subway.co.kr/upload/menu/chocolate_chip_20210315021446423.jpg"
+                      alt="초코칩"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Chocolate Chip</p>
+                  </div>
+                  <p>초코칩</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="	https://www.subway.co.kr/upload/menu/double_chocolate_chip_20210315021500386.jpg"
+                      alt="더블 초코칩"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Couble Chocolate Chip</p>
+                  </div>
+                  <p>더블 초코칩</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/fresh_party_platter_20210315013350015.jpg"
+                      alt="프레쉬 파티플래터"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Fresh Party Platter</p>
+                  </div>
+                  <p>프레쉬 파티플래터</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/best_party_platter_20210315013336164.jpg"
+                      alt="베스트 파티플래터"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Best Party Platter</p>
+                  </div>
+                  <p>베스트 파티플래터</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.subway.co.kr/upload/menu/gient_sub_3feet_20210315013326025.jpg"
+                      alt="자이언트 써브 90cm"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>Giant Sub 3feet</p>
+                  </div>
+                  <p>자이언트 써브 90cm</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#">써브카드</a>
+            </li>
+            <li>
+              <a href="#">점주관리자</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-facebook">
+                <i class="hidden">페이스북</i>
+              </button>
+            </div>
+            <p>
+              서울시 서초구 강남대로 535 프린스빌딩 15층 대표 : INSOO
+              CHO(인수조)
+            </p>
+            <p>전화 : 02-797-5036 사업자등록번호 : 101-84-04143</p>
+            <p>
+              SUBWAY® is a Registered Trademark of Subway IP LLC. &copy; 2025
+              Subway IP LLC. All Rights Reserved.
+            </p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="써브웨이이" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>써브웨이</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="써브웨이 공식 홈페이지 | 신선한 재료로 만드는 맞춤형 샌드위치. 다양한 메뉴와 건강한 선택을 즐겨보세요. 전국 매장 정보 및 주문 서비스 제공."
+    />
+    <meta
+      name="keywords"
+      content="써브웨이, Subway, 샌드위치, 맞춤형 샌드위치, 신선한 샌드위치, 건강식, 패스트푸드, 다이어트 식단, 샐러드, 테이크아웃"
+    />
+    <link rel="canonical" href="https://dany339.github.io/subway/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="써브웨이 | 신선한 맞춤형 샌드위치" />
+    <meta
+      property="og:description"
+      content="신선한 재료로 나만의 샌드위치를 즐기세요! 써브웨이는 건강하고 맛있는 샌드위치, 샐러드를 제공합니다. 전국 매장에서 만나보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/subway/" />
+    <meta
+      property="og:image"
+      content="https://www.subway.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="써브웨이 | 신선한 맞춤형 샌드위치" />
+    <meta
+      name="twitter:description"
+      content="신선한 재료로 나만의 샌드위치를 즐기세요! 써브웨이는 건강하고 맛있는 샌드위치, 샐러드를 제공합니다. 전국 매장에서 만나보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.subway.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rewards.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">써브웨이</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BUSINESS</a>
+            <ul class="submenu">
+              <li><a href="brand.html#franchise">프랜차이즈</a></li>
+              <li><a href="brand.html#open">개설절차</a></li>
+              <li><a href="brand.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">인스타그램</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BUSINESS</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#franchise">프랜차이즈</a></li>
+              <li><a href="brand.html#open">개설절차</a></li>
+              <li><a href="brand.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <div class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > EVENT</strong>
+          <div class="visual-title">
+            <h2>EVENT</h2>
+            <p>써브웨이의 다양한 이벤트들과 새로운 소식을 만나보세요.</p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic4.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: sns -->
+      <section class="sns" id="sns">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-offset="-100">
+            <strong>EVENT</strong>
+            <h3>이벤트 / 혜택</h3>
+          </div>
+          <div class="sns-wrap">
+            <div class="sns-list">
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://www.subway.co.kr/upload/event/%EC%8D%B9%ED%94%BD%20%ED%80%B4%EC%A6%88_%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%83%81%EB%8B%A8%20%EB%B0%B0%EB%84%88_20250217020941986.jpg"
+                    alt="퀴즈 이벤트"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>퀴즈 이벤트</p>
+                  <p>2025.02.18 ~ 2025.03.17</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://www.subway.co.kr/upload/event/%EC%8D%B9%ED%94%BD%20%EC%9C%88%EB%8F%84%EC%9A%B0_%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%83%81%EB%8B%A8%20%EB%B0%B0%EB%84%88_20250204014531097.jpg"
+                    alt="SUBPICK"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>SUBPICK</p>
+                  <p>2025.02.04 ~</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://www.subway.co.kr/upload/event/%EB%AF%BC%ED%8A%B8%EC%B4%88%EC%BD%94%EC%BF%A0%ED%82%A4_%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EC%83%81%EB%8B%A8%20%EB%B0%B0%EB%84%88_20250204124234474.jpg"
+                    alt="민트 초코 쿠키"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>민트 초코 쿠키</p>
+                  <p>2025.02.04 ~ 한정 판매</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://www.subway.co.kr/upload/event/%EB%8B%A8%ED%98%B8%EB%B0%95%20%EC%88%98%ED%94%84_%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A9%94%EC%9D%B8%20%EC%83%81%EB%8B%A8_20241111052058490.jpg"
+                    alt="오늘의 수프"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>오늘의 수프</p>
+                  <p>2024.11.11 ~</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://www.subway.co.kr/upload/event/%EC%86%90%EC%A3%BC%EB%AC%B8%20%EC%84%A0%EC%A3%BC%EB%AC%B8_%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A9%94%EC%9D%B8%20%EC%83%81%EB%8B%A8_20240811115824448.jpg"
+                    alt="손주문 선주문 써브웨이 앱"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>손주문 선주문 써브웨이 앱</p>
+                  <p>2024.08.12 ~</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://www.subway.co.kr/upload/event/%EC%BD%B0%ED%8A%B8%EB%A1%9C%20%EC%B9%98%EC%A6%88_%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A9%94%EC%9D%B8%20%EC%83%81%EB%8B%A8_20241203080243148.jpg"
+                    alt="콰트로 치즈 컬렉션"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>콰트로 치즈 컬렉션</p>
+                  <p>이벤트가 종료되었습니다.</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://www.subway.co.kr/upload/event/%EC%95%88%EC%B0%BD%20%EB%B9%84%ED%94%84_%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A9%94%EC%9D%B8%20%EC%83%81%EB%8B%A8_20240902080826399.jpg"
+                    alt="안창 비프 컬렉션"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>안창 비프 컬렉션</p>
+                  <p>이벤트가 종료되었습니다.</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://www.subway.co.kr/upload/event/%EC%BF%A0%ED%82%A4%20%EC%9D%B4%EB%B2%A4%ED%8A%B8(%ED%8B%B0%EC%A7%95)_%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A9%94%EC%9D%B8%20%EC%83%81%EB%8B%A8_20240830075855061.jpg"
+                    alt="앱 첫 주문 무료 쿠키 이벤트"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>앱 첫 주문 무료 쿠키 이벤트</p>
+                  <p>이벤트가 종료되었습니다.</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://www.subway.co.kr/upload/event/%EC%BF%A0%ED%82%A4%20%EC%9D%B4%EB%B2%A4%ED%8A%B8_%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A9%94%EC%9D%B8%20%EC%83%81%EB%8B%A8_20240827110209722.jpg"
+                    alt="앱 첫 주문 무료 쿠키 이벤트"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>앱 첫 주문 무료 쿠키 이벤트</p>
+                  <p>이벤트가 종료되었습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: sns -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#">써브카드</a>
+            </li>
+            <li>
+              <a href="#">점주관리자</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-facebook">
+                <i class="hidden">페이스북</i>
+              </button>
+            </div>
+            <p>
+              서울시 서초구 강남대로 535 프린스빌딩 15층 대표 : INSOO
+              CHO(인수조)
+            </p>
+            <p>전화 : 02-797-5036 사업자등록번호 : 101-84-04143</p>
+            <p>
+              SUBWAY® is a Registered Trademark of Subway IP LLC. &copy; 2025
+              Subway IP LLC. All Rights Reserved.
+            </p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="써브웨이이" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>
