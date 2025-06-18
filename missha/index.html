@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MISSHA</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="미샤 공식 온라인몰 | 스킨케어부터 메이크업까지, 합리적인 가격과 뛰어난 품질의 뷰티 제품을 만나보세요. 미샤의 베스트셀러와 신제품을 지금 확인하세요."
+    />
+    <meta
+      name="keywords"
+      content="미샤, MISSHA, 스킨케어, 메이크업, 쿠션, 비비크림, 앰플, 화장품, 뷰티, K-뷰티, 톤업, 비타씨"
+    />
+    <link rel="canonical" href="https://dany339.github.io/missha/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="미샤 공식 온라인몰 | 합리적인 뷰티, 미샤"
+    />
+    <meta
+      property="og:description"
+      content="합리적인 가격과 뛰어난 품질의 뷰티 브랜드, 미샤. 비비크림, 앰플, 쿠션 등 다양한 스킨케어 & 메이크업 제품을 공식몰에서 만나보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/missha/" />
+    <meta
+      property="og:image"
+      content="https://www.missha.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="미샤 공식 온라인몰 | 합리적인 뷰티, 미샤"
+    />
+    <meta
+      name="twitter:description"
+      content="합리적인 가격과 뛰어난 품질의 뷰티 브랜드, 미샤. 비비크림, 앰플, 쿠션 등 다양한 스킨케어 & 메이크업 제품을 공식몰에서 만나보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.missha.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header id="header">
+      <h1 class="logo">
+        <a href="index.html"><i class="hidden">MISSHA</i></a>
+      </h1>
+      <div class="util-menu">
+        <button class="btn-menu">
+          <i class="hidden">메뉴</i
+          ><span class="menu-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+            ><span class="bar3"></span
+          ></span>
+        </button>
+      </div>
+      <div class="sns-list">
+        <button class="btn-facebook"><i class="hidden">페이스북</i></button>
+        <button class="btn-youtube"><i class="hidden">유튜브</i></button>
+        <button class="btn-tiktok"><i class="hidden">틱톡</i></button>
+      </div>
+
+      <div class="gnb">
+        <figure>
+          <img src="./img/gnb-pic.jpg" alt="" />
+        </figure>
+        <div class="gnb-menu">
+          <nav>
+            <ul class="main-menu">
+              <li>
+                <h3><a href="products.html">PRODUCTS</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="products.html#products">PRODUCTS</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="introduce.html">BRAND</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="introduce.html#vision">VISION</a></li>
+                  <li>
+                    <a href="introduce.html#pride">PRIDE</a>
+                  </li>
+                  <li><a href="introduce.html#story">STORY</a></li>
+                  <li>
+                    <a href="introduce.html#history">HISTORY</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3><a href="event.html">EVENT</a></h3>
+                <ul class="sub-menu">
+                  <li><a href="event.html#event">EVENT</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button type="button" class="btn-close">
+          <i class="hidden">close</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <a class="btn-main" href="index.html"><i class="hidden">MISSHA</i></a>
+      </div>
+    </header>
+
+    <aside class="breadcrumb">
+      <button class="prev"><i class="hidden">이전</i></button>
+      <p>인기메뉴</p>
+      <button class="next"><i class="hidden">다음</i></button>
+    </aside>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <div class="visual-title">
+            <h2>MISSHA</h2>
+            <p>
+              아름다움은 우리들 일상 모든 순간 속에 있습니다. 미샤의 모든
+              제품들은 바로 그런 생각과 노력의 결정체들입니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://missha.com/upload/main/brandstory/20240626105144e0e7a300-7b8a-4d11-8add-99aeb529eb73.jpg"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu">
+        <!-- (.menu-txt>strong+(ul.menu-txt-list>li*6>h3+p)+a.btn-more)+(.menu-con>ul>li*6>(figure>img)+p) -->
+        <div class="inner">
+          <div class="slider-menu-wrap" data-aos="fade-right">
+            <div class="swiper menu-txt-slider">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide menu-text-card">
+                  <strong>TYPE</strong>
+                  <h3>SKIN CARE</h3>
+                  <p>
+                    안티에이징의 시작, 피부 밑바당이 달라지는 14일 첫 단계
+                    에센스를 경험해보세요.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>TYPE</strong>
+                  <h3>MAKE UP</h3>
+                  <p>피부에 답답함을 거부하는 초밀착 커버 쿠션</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>TYPE</strong>
+                  <h3>BODY & HAIR</h3>
+                  <p>
+                    신선하고 톡톡 튀는 생동감 넘치는 향의 데어 바디 라인으로
+                    당신의 순간을 완성하세요!
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-con-slider-wrap"
+              data-aos="fade-left"
+              data-aod-delay="800"
+            >
+              <div class="swiper menu-con-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://missha.com/upload/main/productlineintroduce/20220712140134b230ded6-fd81-4651-8160-9d45cb0fde0e.jpg"
+                        alt="SKIN CARE"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>SKIN CARE</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://missha.com/upload/main/productlineintroduce/202207121412170da21922-1692-4ce4-8aed-105c06a04ece.jpg"
+                        alt="MAKE UP"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>MAKE UP</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://missha.com/upload/main/productlineintroduce/20210427094712b19a1e48-2c26-47ee-b8fe-2ab9bf9426f5.jpg"
+                        alt="BODY & HAIR"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>BODY & HAIR</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+
+      <!-- s: event -->
+      <section class="event">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>#MISSHA</strong>
+            <h3>미샤의 제품들</h3>
+            <a
+              href="rewards.html#sns"
+              class="view-more"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              >VIEW MORE</a
+            >
+          </div>
+        </div>
+
+        <!-- .event-list>ul.event-i>li*10>a>figure>img -->
+        <div class="event-lists" data-aos="fade-up" data-aos-delay="600">
+          <div class="event-list">
+            <div class="swiper event-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://missha.com/upload/sharpmissha/20210507151655d3405345-fdf9-46ae-9ea4-8120e9c93869.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://missha.com/upload/sharpmissha/2021072010565054bd6193-b1d8-42dd-b269-c9239e6f6498.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://missha.com/upload/sharpmissha/20210602143918961f59e3-f704-4e87-b2c6-83e6364b7138.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://missha.com/upload/sharpmissha/202105071505444201d54c-aed4-47c8-ae14-401212c3e968.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://missha.com/upload/sharpmissha/20210602143352d734954e-bf75-42bc-bbf6-5f2527a82571.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://missha.com/upload/sharpmissha/2021050715155220fdc634-29eb-4758-99e9-24620fc244a2.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://missha.com/upload/sharpmissha/202105071507274066ab68-a27e-419d-ab91-552dd22975b2.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: event -->
+
+      <!-- s: allergie -->
+      <section class="allergie" id="illustration">
+        <!-- .inner>(.allergie-txt>(.sec-title>strong+h3)+p+a.view-more)+.sllergie-slider-wrap>.allergie-list>.allergie-item*14>(figure>img)+strong -->
+        <div class="inner">
+          <div class="allergie-txt">
+            <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+              <strong>EDITON</strong>
+              <h3>미샤의 특별 에디션</h3>
+            </div>
+            <a
+              href="#"
+              class="view-more"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              >VIEW MORE</a
+            >
+          </div>
+          <div class="allergie-slider-wrap">
+            <div
+              class="allergie-slider swiper"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://missha.com/upload/missha/xmissha/202103090930142dbfd56f-d6b6-46ee-824e-4e32a8720081.png"
+                      alt="한국화가 최지윤 X 초공진라인"
+                    />
+                  </figure>
+                  <strong>한국화가 최지윤 X 초공진라인</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://missha.com/upload/missha/xmissha/20210407092822ca5a5ac2-c8e8-4b15-8ad9-a8b37c9253d3.jpg"
+                      alt="라인프렌즈 에디션"
+                    />
+                  </figure>
+                  <strong>라인프렌즈 에디션</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://missha.com/upload/missha/xmissha/202104141059376b9af032-1520-4ff3-9341-1bfcf652b8af.jpg"
+                      alt="비욘드클로젯에디션"
+                    />
+                  </figure>
+                  <strong>비욘드클로젯에디션</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://missha.com/upload/missha/xmissha/202104192242028f05b6da-ceec-43a7-9107-b39f7bcda939.jpg"
+                      alt="위베어베어스 에디션"
+                    />
+                  </figure>
+                  <strong>위베어베어스 에디션</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://missha.com/upload/missha/xmissha/202105042014565d258f30-bba8-453e-9144-12f1c20cf912.jpg"
+                      alt="미니언즈 에디션"
+                    />
+                  </figure>
+                  <strong>미니언즈 에디션</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://missha.com/upload/missha/xmissha/2021050420154072a95a90-1c6f-4e12-a953-631f74cbccef.jpg"
+                      alt="유튜버 회사원A"
+                    />
+                  </figure>
+                  <strong>유튜버 회사원A</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://missha.com/upload/missha/xmissha/20210504201622318f9d97-39be-4f85-ac20-6eaed5b8fb8d.jpg"
+                      alt="라인프렌즈 에디션"
+                    />
+                  </figure>
+                  <strong>라인프렌즈 에디션</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://missha.com/upload/missha/xmissha/202105042017044d3110ad-5e22-4205-a6e3-6ec7580fec41.jpg"
+                      alt="원더우먼 에디션"
+                    />
+                  </figure>
+                  <strong>원더우먼 에디션</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://missha.com/upload/missha/xmissha/20210504201220f8cbf4f3-b7ad-4755-aec0-a95f202787ad.jpg"
+                      alt="베티붑 X 매직쿠션"
+                    />
+                  </figure>
+                  <strong>베티붑 X 매직쿠션</strong>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: allergie -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="http://library.ablecnc.com/">PARTNER ZONE</a>
+            </li>
+            <li>
+              <a href="https://missha.com/kr/terms">이용약관</a>
+            </li>
+            <li>
+              <a
+                href="https://www.ableshop.kr/customer/terms/privacy-policy-main"
+                >개인정보처리방침</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="https://www.mynunc.com/main">nunc</a></li>
+              <li><a href="https://www.apieu.com/">A’pieu</a></li>
+              <li><a href="http://ablecnc.com/">ABLE C&C</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="foot-sns-list">
+              <button class="btn-facebook">
+                <i class="hidden">페이스북</i>
+              </button>
+              <button class="btn-youtube"><i class="hidden">유튜브</i></button>
+              <button class="btn-tiktok"><i class="hidden">틱톡</i></button>
+            </div>
+            <p>고객상담실 (수신자요금부담) <strong>080-023-5454</strong></p>
+            <p>운영시간 : 월-금 09:00 ~ 18:00</p>
+            <p>
+              &copy; <strong>AMOREPACIFIC</strong> CORPORATION. ALL RIGHTS
+              RESERVED.
+            </p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="https://missha.com/static/img/footer_logo.png" alt="" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>
