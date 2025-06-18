@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+.event-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem 2rem;
+
+  margin-top: 5%;
+}
+
+.event-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 49.2rem;
+  width: 32.3684%;
+
+  flex: 1 1 30%;
+}
+
+.event-list li a,
+.event-list li figure img {
+  width: 100%;
+}
+
+.event-list > li figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--main-color);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.event-list > li:hover figure::after {
+  opacity: 0.9;
+}
+
+.event-con {
+  position: absolute;
+  top: 75%;
+
+  left: 50%; /* 부모의 중앙 위치 */
+  transform: translate(-50%, -50%); /* 중앙 정렬을 위한 변환 */
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.event-list li:hover .event-con {
+  opacity: 1;
+  top: 50%;
+}
+
+.event-con {
+  font-weight: 700;
+  background: var(--Light-100);
+
+  padding: 3rem 10rem;
+  padding: 6.0976% 20.3252%;
+  font-size: clamp(1.8rem, 1.0416vw, 2rem);
+}
+
+.event-con dt {
+  font-size: clamp(1.5rem, 1.25vw, 2.4rem);
+  font-weight: 800;
+  color: var(--Darck-100);
+}
+
+.event-con dd {
+  padding-top: 1rem;
+  font-size: clamp(1.3rem, 1.042vw, 2rem);
+  font-weight: 600;
+  color: var(--main-color3);
+}
+
+/* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+@media (max-width: 768px) {
+  .event-list li {
+    flex: 1 1 40%;
+  }
+}
+
+@media (max-width: 425px) {
+  .event-list li {
+    flex: 1 1 100%;
+  }
+}

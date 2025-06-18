@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/* about */
+.about-text {
+  flex: 1 1 max(46%);
+  /* border: 1px solid #000; */
+}
+
+.about-con {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.about-con li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5%;
+}
+
+.about-con li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.about-con dl dt {
+  padding-top: 3rem;
+  font-size: 4rem;
+  font-weight: 700;
+
+  padding-top: 4.4313%;
+  font-size: clamp(2.2rem, 2.0833vw, 4rem);
+}
+
+.about-con dl dd {
+  padding-top: 2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--Darck-60);
+
+  padding-top: 2.9542%;
+  font-size: clamp(1.5rem, 1.25vw, 2.4rem);
+}
+
+.about-con figure {
+  height: 47rem;
+
+  flex: 1 1 max(40%, 300px);
+}
+
+.about-con figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* about end */
+
+/* question */
+
+.question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin-top: 2.6316%;
+}
+
+.question-list li {
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+
+  padding: 2.3026% 0;
+}
+
+.question-list strong {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  font-size: clamp(1.8rem, 1.302vw, 2.5rem);
+}
+
+.question-list strong::after {
+  content: "";
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../img/arrow.svg) no-repeat 50% / contain;
+  transition: 0.4s;
+
+  width: 3.0172%;
+}
+
+.answer-wrap {
+  display: none;
+
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--Darck-100);
+
+  padding-top: 0.8%;
+
+  font-size: clamp(1.3rem, 1.0416vw, 2rem);
+}
+
+.answer-wrap p {
+  padding-top: 1%;
+}
+
+.question-list li.on > strong::after {
+  transform: rotate(180deg); /* trftY */
+}
+
+/* question  end*/
+
+/* s.commpany */
+.company-all {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.company .brand-story {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  width: 58.6rem;
+  width: 41.2676%;
+}
+
+.company figure {
+  width: 59.7rem;
+  height: 65.9rem;
+  aspect-ratio: 1/1.1039;
+}
+
+.company figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.company-text strong {
+  font-weight: 800;
+  font-size: 4rem;
+  font-size: clamp(2rem, 2.817vw, 4rem);
+
+  color: #000;
+}
+
+.company-text p {
+  font-weight: 300;
+  font-size: 2.4rem;
+  font-size: clamp(1.4rem, 1.6901vw, 2.4rem);
+
+  color: var(--Darck-60);
+  margin-top: 0.7rem;
+}
+
+.more-btn {
+  width: 24rem;
+  height: 7.2rem;
+  background: var(--btn);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 3.6rem;
+
+  font-weight: 700;
+  font-size: clamp(1.4rem, 1.0416vw, 2rem);
+  color: #fff;
+
+  transition: 0.4s;
+}
+
+.more-btn:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.company-all .brand-story:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+/* e.commpany */
+
+/* 반응형0000000000000000000000000000000000000000000000000000000000 */
+
+@media screen and (max-width: 1440px) {
+  /* company */
+  .content {
+    width: 44.2rem;
+    width: 47.8355%;
+  }
+
+  .brand-story .more-btn {
+    width: 18.4rem;
+    width: 41.8182%;
+    height: 6.3rem;
+  }
+
+  .brand-story .more-btn::after {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .company figure {
+    width: 38.8rem;
+    width: 41.9913%;
+  }
+  /* company */
+}
+
+@media (max-width: 1024px) {
+  .about-con figure {
+    height: 28.6rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .about-text {
+    padding-bottom: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* company */
+  .company .brand-story {
+    display: flex;
+
+    flex-direction: column !important;
+    align-items: center;
+    position: relative;
+  }
+
+  .brand-story .more-btn {
+    width: 17.5rem;
+    height: 5.1rem;
+    position: absolute;
+    bottom: 3rem;
+    margin: 0 11rem 0;
+    gap: 1.5rem;
+    z-index: 1;
+  }
+
+  .company-text {
+    padding: 0.5rem 0 0.5rem;
+  }
+
+  .content {
+    width: 39rem;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .company figure {
+    width: 39rem;
+    height: 22.8rem;
+    margin-top: 1rem;
+  }
+
+  .company figure img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4);
+  }
+}
+
+@media (max-width: 400px) {
+  .about-con li :last-child {
+    margin-bottom: 2.5rem;
+  }
+}

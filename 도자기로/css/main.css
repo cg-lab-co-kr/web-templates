@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+/* s.event */
+
+.event-list {
+  padding-top: 8.4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+
+  padding-top: 5.5263%;
+}
+
+.event-list > li {
+  width: 47rem;
+  width: 30.9211%;
+}
+
+.event-list > li a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.event-list > li figure {
+  position: relative;
+  width: 100%;
+  height: 47rem;
+  border-radius: 2.4rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.event-list > li figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(169, 129, 66, 0.2);
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.event-list > li img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-list > li a {
+  text-align: center;
+  position: relative;
+}
+
+.event-text {
+  position: absolute;
+  top: 75%;
+
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.event-text {
+  font-weight: 700;
+  color: var(--Light-100);
+
+  font-size: clamp(1.8rem, 1.0416vw, 2rem);
+}
+
+.event-list li:hover .event-text {
+  opacity: 1;
+  top: 50%;
+}
+
+.event-list li:hover figure::after {
+  content: "";
+  background: rgba(169, 129, 66, 0.5);
+}
+/* e,event */
+
+/* s.commpany */
+.company-all {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.company .brand-story {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company .brand-story:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.content {
+  width: 58.6rem;
+  width: 41.2676%;
+}
+
+.company figure {
+  width: 59.7rem;
+  height: 65.9rem;
+  aspect-ratio: 1/1.1039;
+
+  border-radius: 4rem;
+  overflow: hidden;
+}
+
+.company figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.company-title {
+  font-weight: 700;
+  font-size: 3.2rem;
+  font-size: clamp(1.4rem, 2.2535vw, 3.2rem);
+
+  color: var(--bg);
+}
+
+.company-text {
+  padding-top: 2rem;
+}
+
+.company-text strong {
+  font-weight: 800;
+  font-size: 4rem;
+  font-size: clamp(2rem, 2.817vw, 4rem);
+
+  color: #000;
+}
+
+.company-text p {
+  font-weight: 300;
+  font-size: 2.4rem;
+  font-size: clamp(1.4rem, 1.6901vw, 2.4rem);
+
+  color: var(--Darck-60);
+  margin-top: 0.7rem;
+}
+
+.more-btn {
+  width: 23rem;
+  height: 7.2rem;
+  border-radius: 5rem;
+  background: var(--btn);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.6rem;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-size: clamp(1.4rem, 1.0416vw, 2rem);
+
+  color: var(--Light-100);
+}
+
+.more-btn:hover {
+  background: var(--main-color);
+  color: var(--Light-100);
+}
+/* e.commpany */
+
+/* 반응형000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 */
+@media (max-width: 1600px) {
+  .event-list > li {
+    flex: 1 1 40%;
+  }
+
+  .event-list {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  /* company */
+  .content {
+    width: 44.2rem;
+    width: 47.8355%;
+  }
+
+  .brand-story .more-btn {
+    width: 18.4rem;
+    width: 41.8182%;
+    height: 6.3rem;
+  }
+
+  .brand-story .more-btn::after {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .company figure {
+    width: 38.8rem;
+    width: 41.9913%;
+
+    height: 42.9rem;
+    border-radius: 3rem;
+    overflow: hidden;
+  }
+
+  /* company */
+}
+
+@media screen and (max-width: 980px) {
+  /* company */
+  .company .brand-story,
+  .company .brand-story:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .company-text {
+    padding: 0.5rem 0 0.5rem;
+  }
+
+  .content {
+    width: 39rem;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .company figure {
+    width: 39rem;
+    height: 22.8rem;
+    margin-top: 1rem;
+  }
+
+  .company .brand-story figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    filter: brightness(0.4);
+  }
+
+  .brand-story .more-btn {
+    width: 17.5rem;
+    height: 5.1rem;
+    position: absolute;
+    bottom: 3rem;
+    margin: 0 11rem 0;
+
+    gap: 1.5rem;
+    z-index: 1;
+  }
+
+  .brand-story .more-btn::after {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+  /* company */
+}
+
+@media (max-width: 940px) {
+  .event-list {
+    padding-top: 4rem;
+  }
+  .event-list > li figure {
+    height: 28.2rem;
+  }
+
+  .event-list > li {
+    flex: 1 1 100%;
+  }
+}
