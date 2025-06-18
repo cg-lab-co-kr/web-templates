@@ -1,0 +1,380 @@
+@charset 'utf-8';
+
+.breadcrumb {
+  display: none;
+}
+
+.slider-menu-wrap {
+  padding-top: 12rem;
+  display: flex;
+  gap: 2rem;
+  /* border: 1px solid #000; */
+}
+
+.menu-txt-slider {
+  flex: 1 0 48%;
+}
+
+.menu-con-slider-wrap {
+  flex: 1 0 48%;
+}
+
+.menu-text-card {
+  background: #fff;
+  padding-right: 2rem;
+}
+
+.menu-text-card strong {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-top: 2rem;
+}
+
+.menu-text-card h3 {
+  font: 9rem/1.1 "Poppins", sans-serif;
+  font-size: clamp(5rem, 5vw, 9rem);
+  font-weight: 700;
+  color: var(--title-color);
+  word-break: keep-all;
+  margin-top: 2.8rem;
+}
+
+.menu-text-card p {
+  width: 30vw;
+  margin-top: 1.5rem;
+  word-break: keep-all;
+}
+
+.menu-text-card .btn-more {
+  margin-top: 6rem;
+}
+
+.menu-con-slider {
+  /* border: 1px solid #f00; */
+  /* width: 1000px; */
+  width: 50vw;
+  height: 52.4rem;
+}
+
+.menu-card {
+  position: relative;
+  width: 42.7rem;
+  /* width: 22.2396vw; */
+  aspect-ratio: 1/1.2272;
+  border-radius: 10px;
+  overflow: hidden;
+  /* margin: 0 1rem; */
+  margin-right: 2rem;
+  word-break: keep-all;
+}
+
+.menu-card figure {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-card .menu-name {
+  opacity: 0;
+  transition: 0.4s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10.2rem;
+  background: var(--main-color80);
+  color: var(--white100);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.menu-card:hover .menu-name {
+  opacity: 1;
+}
+
+.menu-card:hover::before {
+  opacity: 0;
+}
+
+.tip {
+  margin: 12rem 0;
+}
+
+.tip-list {
+  margin-top: 3.125vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.tip-list li {
+  /* border: 1px solid #000; */
+  width: 32rem;
+  aspect-ratio: 1/1.65625;
+  flex: 1 0 18%;
+  padding: 3rem;
+  word-break: keep-all;
+  border-radius: 10px;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  text-align: center;
+}
+
+.tip-list li:hover {
+  justify-content: center;
+}
+
+.tip-list li:nth-child(1) {
+  background-image: url(../img/menu-pic1.jpg);
+}
+.tip-list li:nth-child(2) {
+  background-image: url(../img/menu-pic2.jpg);
+}
+.tip-list li:nth-child(3) {
+  background-image: url(../img/menu-pic3.jpg);
+}
+.tip-list li:nth-child(4) {
+  background-image: url(../img/menu-pic4.jpg);
+}
+.tip-list li:nth-child(5) {
+  background-image: url(../img/menu-pic5.jpg);
+}
+
+.tip-list li::after {
+  content: "";
+  transition: 0.7s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(190, 22, 30, 0),
+    rgba(190, 22, 30, 0),
+    rgba(190, 22, 30, 0.7)
+  );
+}
+
+.tip-list li:hover::after {
+  content: "";
+  height: 100%;
+  background: var(--main-color70);
+}
+
+.tip-list li strong {
+  /* font-size: 2.8rem; */
+  font-size: clamp(2rem, 2vw, 2.6rem);
+  font-weight: 700;
+  color: var(--white100);
+  position: relative;
+  z-index: 1;
+  top: 80%;
+  transition: 0.4s;
+}
+
+.tip-list li p {
+  margin-top: 2rem;
+  color: var(--white70);
+  position: relative;
+  z-index: 1;
+  top: 120%;
+}
+
+.tip-list li:hover strong {
+  /* font-size: 3rem; */
+  font-size: clamp(2.2rem, 2vw, 2.8rem);
+  top: 35%;
+}
+
+.tip-list li:hover p {
+  top: 35%;
+  transition: 0.6s;
+}
+
+.allergie {
+  margin: 12rem 0;
+}
+
+.allergie-slider-wrap {
+  width: 100%;
+}
+
+.allergie-slider {
+  width: 100%;
+}
+
+.allergie .swiper-wrapper {
+  width: 100%;
+}
+
+.allergie-txt p {
+  margin-top: 2.2727vw;
+  width: 40%;
+  word-break: keep-all;
+}
+
+.allergie-slider {
+  margin-top: 4rem;
+}
+
+.allergie-item {
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.allergie-item::after {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color70);
+  opacity: 0;
+}
+
+.allergie-item:hover::after {
+  opacity: 1;
+}
+
+.allergie-item strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: var(--white100);
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s;
+  /* font-size: 3rem; */
+  font-size: clamp(2.4rem, 14.7783%, 3rem);
+  font-weight: 700;
+  z-index: 1;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.allergie-item i {
+  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 8.867%, 1.8rem);
+  font-weight: 400;
+}
+
+.allergie-item:hover strong {
+  opacity: 1;
+}
+
+.allergie-slider-wrap .swiper-pagination {
+  position: relative; /* 변경: absolute에서 relative로 */
+  bottom: -5rem; /* 필요에 따라 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4%);
+  }
+}
+
+@media (max-width: 1440px) {
+  .tip-list li:hover strong {
+    top: 12%;
+  }
+
+  .tip-list li:hover p {
+    top: 12%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-title {
+    width: 50vw;
+    min-width: 35rem;
+  }
+
+  .slider-menu-wrap {
+    flex-wrap: wrap;
+  }
+
+  .menu-text-card {
+    text-align: center;
+  }
+
+  .menu-text-card p {
+    width: 80%;
+    margin: 0.7rem auto 0 auto;
+  }
+
+  .menu-text-card .btn-more {
+    margin: 6rem auto 0 auto;
+  }
+
+  .menu-card {
+    width: 100%;
+  }
+
+  .menu-con-slider-wrap {
+    width: 100%;
+  }
+
+  .menu-con-slider {
+    width: 100%;
+  }
+
+  .tip-list {
+    flex-direction: column;
+  }
+
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.3333;
+  }
+
+  .tip-list li p {
+    margin-top: 1rem;
+  }
+
+  .allergie-txt p {
+    width: 80%;
+  }
+
+  .allergie .view-more {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .allergie-txt p {
+    width: 100%;
+  }
+
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.6;
+  }
+
+  .online-txt p {
+    width: 100%;
+  }
+
+  .tip-list li:hover strong {
+    top: 20%;
+  }
+
+  .tip-list li:hover p {
+    top: 20%;
+  }
+}

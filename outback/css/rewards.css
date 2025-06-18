@@ -1,0 +1,276 @@
+@charset 'utf-8';
+
+.sns {
+  margin: 6.25vw 0;
+}
+
+.sns-tab {
+  display: flex;
+  gap: 1.8939%;
+  justify-content: center;
+  /* margin-top: 11rem; */
+  margin-top: 5.7292vw;
+  flex-shrink: 0;
+  overflow: auto;
+}
+
+.sns-tab li {
+  display: block;
+  width: 12rem;
+  min-width: 9.6rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+}
+
+.sns-tab li a::before {
+  content: "";
+  display: block;
+  width: 2.6rem;
+  aspect-ratio: 1/1;
+  background: no-repeat 50%;
+  transition: 0.4s;
+}
+
+.sns-tab li.on,
+.sns-tab li:hover {
+  background: var(--main-color);
+  transition: 0.6s;
+}
+
+.sns-tab a {
+  transform: translateY(-20%);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.sns-tab li.on a {
+  color: var(--white100);
+}
+
+.sns-tab li:hover a {
+  color: var(--white100);
+}
+
+.sns .sns-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sns-item {
+  width: 41rem;
+  margin-top: 3.125vw;
+}
+
+.sns-item figure {
+  width: 100%;
+  aspect-ratio: 1/0.6415;
+  /* height: 30.7rem; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sns-item:hover figure img {
+  transform: scale(110%);
+}
+
+.sns-txt p {
+  margin-top: 1.0417vw;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.sns-txt p + p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  margin-top: 0.5rem;
+}
+
+.reward {
+  margin: 6.25vw 0;
+}
+
+.tab-item {
+  flex-wrap: wrap;
+}
+
+.reward-item {
+  /* margin-top: 3rem; */
+  margin-top: 1.5625vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.reward-item li {
+  width: 32%;
+  height: 17.8rem;
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-color10);
+  border-radius: 10px;
+  padding: 0 3rem;
+  word-break: keep-all;
+}
+
+.reward-item figure {
+  width: 10rem;
+  aspect-ratio: 1/1;
+}
+
+.reward-item figure img {
+  object-fit: contain;
+}
+
+.reward-item li p {
+  font: 2.2rem/1.3 "Pretendard", sans-serif;
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+.reward-list:nth-child(1) .reward-item li b {
+  color: #eda09f;
+}
+.reward-list:nth-child(2) .reward-item li b {
+  color: #eab42d;
+}
+.reward-list:nth-child(3) .reward-item li b {
+  color: #a98ddc;
+}
+
+.reward-item li i {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.info-wrap {
+  margin-top: 4.1667vw;
+}
+
+.info-wrap li {
+  border-top: 2px solid var(--black20);
+  padding: 3rem 3.5rem;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.info-wrap li:first-child {
+  border-top: 4px solid var(--main-color);
+}
+
+.info-wrap li:last-child {
+  border-bottom: 2px solid var(--black20);
+}
+
+.info-wrap li.on {
+  background: var(--main-color10);
+}
+
+.info-wrap li::after {
+  content: "";
+  position: absolute;
+  top: 3.6rem;
+  right: 3%;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background: url(../img/arrow-m-bottom.png) no-repeat 50%;
+  transition: 0.4s;
+}
+
+.info-wrap li.on::after {
+  rotate: -180deg;
+}
+
+.faq-title {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.faq-title i,
+.answer-wrap i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--white100);
+  background: var(--main-color);
+}
+
+.answer-wrap i {
+  aspect-ratio: 1/1;
+  background: var(--black20);
+}
+
+.faq-txt {
+  width: 80%;
+}
+
+.faq-txt h4 {
+  font-size: clamp(2.2rem, 2vw, 3rem);
+  font-weight: 700;
+  color: var(--title-color);
+  word-break: keep-all;
+}
+
+.answer-wrap {
+  margin-top: 4rem;
+  display: none;
+  font-size: 1.8rem;
+  word-break: keep-all;
+}
+
+.answer-con {
+  display: flex;
+  gap: 3rem;
+}
+
+.answer-con b {
+  color: var(--main-color);
+}
+
+@media (max-width: 1440px) {
+  .sns-tab li {
+    width: 10rem;
+  }
+
+  .reward-item {
+    flex-direction: column;
+  }
+
+  .reward-item li {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 710px) {
+  .reward .sec-title {
+    margin-top: 20.4167vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .sns-tab {
+    justify-content: flex-start;
+  }
+}

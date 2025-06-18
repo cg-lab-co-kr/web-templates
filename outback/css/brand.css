@@ -1,0 +1,263 @@
+@charset 'utf-8';
+
+.card-benefit {
+  padding: 10.6rem 0 10.2rem 0;
+  background: #651d16;
+}
+
+.card-reward {
+  padding: 10.6rem 0 10.2rem 0;
+  background: var(--main-color);
+}
+
+.memdership-card .sec-title,
+.memdership-card strong {
+  color: var(--white100);
+}
+
+.app-con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2.8rem;
+  gap: 2rem;
+}
+
+.app-icon {
+  width: 41.7rem;
+  height: 29.6rem;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  background: var(--white10);
+  border-radius: 10px;
+  padding: 5rem 4rem;
+  position: relative;
+}
+
+.app-icon:hover {
+  box-shadow: 0 0 10px rgba(250, 255, 242, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+.app-icon dl::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 9.5rem;
+  aspect-ratio: 1/1.0526;
+  background: no-repeat 50%;
+}
+
+.boomerang-icon dl::before {
+  width: 6.5rem;
+}
+
+.app-icon dl.app-icon-1::before {
+  background-image: url(https://www.outback.co.kr/asset/images/content/main_benefit_icon_01.png);
+}
+
+.app-icon dl.app-icon-2::before {
+  background-image: url(https://www.outback.co.kr/asset/images/content/main_benefit_icon_02.png);
+}
+
+.app-icon dl.app-icon-3::before {
+  background-image: url(https://www.outback.co.kr/asset/images/content/main_benefit_icon_03.png);
+}
+
+.app-icon dl.boomerang-ico1::before {
+  background-image: url(../img/boomerang-ico1.png);
+}
+.app-icon dl.boomerang-ico2::before {
+  background-image: url(../img/boomerang-ico2.png);
+}
+.app-icon dl.boomerang-ico3::before {
+  background-image: url(../img/boomerang-ico3.png);
+}
+.app-icon dl.boomerang-ico4::before {
+  background-image: url(../img/boomerang-ico4.png);
+}
+.app-icon dl.boomerang-ico5::before {
+  background-image: url(../img/boomerang-ico5.png);
+}
+.app-icon dl.boomerang-ico6::before {
+  background-image: url(../img/boomerang-ico6.png);
+}
+
+.app-icon dl dt {
+  font-size: 3rem;
+  font-size: clamp(2.4rem, 6vw, 3rem);
+  font-weight: 700;
+  color: var(--white100);
+  margin-top: 1rem;
+}
+
+.app-icon dl dd {
+  margin-top: 1.2rem;
+  color: var(--white40);
+  word-break: keep-all;
+}
+
+.card-benefit .app-icon dl dd {
+  margin-top: 0.5rem;
+}
+
+.online {
+  padding: 6.25vw 0;
+}
+
+.online-slider-wrap {
+  width: 100%;
+}
+
+.online-slider {
+  width: 100%;
+}
+
+.online .swiper-wrapper {
+  width: 100%;
+}
+
+.online-txt p {
+  margin-top: 2.2727vw;
+  /* margin-top: 3rem; */
+  width: 50%;
+}
+
+.online-slider {
+  margin-top: 4rem;
+}
+
+.online-item {
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.online-item::after {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color70);
+  opacity: 0;
+}
+
+.online-item:hover::after {
+  opacity: 1;
+}
+
+.online-item strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: var(--white100);
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s;
+  /* font-size: 3rem; */
+  font-size: clamp(2.4rem, 14.7783%, 3rem);
+  font-weight: 700;
+  z-index: 1;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.online-item i {
+  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 8.867%, 1.8rem);
+  font-weight: 400;
+}
+
+.online-item:hover strong {
+  opacity: 1;
+}
+
+.online-slider-wrap .swiper-pagination {
+  position: relative; /* 변경: absolute에서 relative로 */
+  bottom: -5rem; /* 필요에 따라 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+}
+
+.price {
+  margin: 10.4167vw 0;
+}
+
+.price .tab-con {
+  margin-top: 5vw;
+  overflow: auto;
+}
+
+.price-con-item {
+  /* margin-top: 7.7rem; */
+  margin-top: 3.0104vw;
+  text-align: center;
+}
+
+.price-con-item thead {
+  background: var(--main-color10);
+  border-top: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--black20);
+  height: 7rem;
+}
+
+.price-con-item tbody tr {
+  border-bottom: 2px solid var(--black20);
+  height: 13.7rem;
+}
+
+.price-con-item th,
+.price-con-item td {
+  vertical-align: middle;
+}
+
+.price-con-item tr th,
+.price-con-item tr td:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.price-con-item tr td:nth-child(1),
+.price-con-item tr th:nth-child(1) {
+  border-right: 2px solid var(--black20);
+}
+
+@media (max-width: 1440px) {
+  .app-con li {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .online-txt {
+    margin-top: 10rem;
+  }
+
+  .online-txt p {
+    width: 80%;
+  }
+
+  .online .view-more {
+    margin-top: 2rem;
+  }
+
+  .price .sec-title {
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-icon {
+    width: 100%;
+  }
+}

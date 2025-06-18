@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아웃백 스테이크 하우스</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="아웃백 스테이크하우스 공식 홈페이지 | 프리미엄 스테이크, 폭립, 파스타 등 정통 아메리칸 그릴 요리를 경험하세요. 전국 매장 정보 및 메뉴 확인 가능."
+    />
+    <meta
+      name="keywords"
+      content="아웃백, 아웃백 스테이크하우스, Outback, 스테이크, 폭립, 파스타, 외식, 패밀리 레스토랑, 맛집, 스테이크 전문점"
+    />
+    <link rel="canonical" href="https://dany339.github.io/outback/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="아웃백 스테이크하우스 | 프리미엄 스테이크 & 아메리칸 그릴"
+    />
+    <meta
+      property="og:description"
+      content="정통 아메리칸 그릴 요리를 맛볼 수 있는 아웃백 스테이크하우스! 프리미엄 스테이크, 폭립, 파스타 등 다양한 메뉴를 즐겨보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/outback/" />
+    <meta
+      property="og:image"
+      content="https://www.outback.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="아웃백 스테이크하우스 | 프리미엄 스테이크 & 아메리칸 그릴"
+    />
+    <meta
+      name="twitter:description"
+      content="정통 아메리칸 그릴 요리를 맛볼 수 있는 아웃백 스테이크하우스! 프리미엄 스테이크, 폭립, 파스타 등 다양한 메뉴를 즐겨보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.outback.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rewards.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">Outback</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">MEMBERSHIP</a>
+            <ul class="submenu">
+              <li><a href="brand.html#benefit">BENEFIT</a></li>
+              <li><a href="brand.html#partnership">PARTNERSHIP</a></li>
+              <li><a href="brand.html#discount">DISCOUNT</a></li>
+              <li><a href="brand.html#boomerang">REWARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">BENEFIT</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">CARD</a></li>
+              <li><a href="event.html#reward">GIFT CARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">MEMBERSHIP</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#benefit">BENEFIT</a></li>
+              <li><a href="brand.html#partnership">PARTNERSHIP</a></li>
+              <li><a href="brand.html#discount">DISCOUNT</a></li>
+              <li><a href="brand.html#boomerang">REWARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">BENEFIT</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">CARD</a></li>
+              <li><a href="event.html#reward">GIFT CARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <div class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > BENEFIT</strong>
+          <div class="visual-title">
+            <h2>BENEFIT</h2>
+            <p>
+              다양한 카드사의 제휴를 동해 아웃백을 더욱 저렴하고 맛있게
+              즐겨보세요!
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic3.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: sns -->
+      <section class="sns" id="sns">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down">
+            <strong>CARD</strong>
+            <h3>아웃백을 더욱 저렴하게 즐겨보세요!</h3>
+          </div>
+          <div class="sns-wrap">
+            <div class="sns-tab-con">
+              <ul class="sns-tab" data-aos="fade-up" data-aos-delay="200">
+                <li><a href="#">삼성카드</a></li>
+                <li><a href="#">신한카드</a></li>
+                <li><a href="#">BC카드</a></li>
+                <li><a href="#">기타카드</a></li>
+                <li><a href="#">매장별 카드</a></li>
+              </ul>
+            </div>
+            <div class="sns-list-wrap">
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221207/20221207093518156004.png"
+                      alt="아메리칸 엑스프레스 리저브 카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>아메리칸 엑스프레스 리저브 카드</p>
+                    <p>3만원 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221207/20221207093600514006.png"
+                      alt="아메리칸 엑스프레스 그린 by 삼성카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>아메리칸 엑스프레스 그린 by 삼성카드</p>
+                    <p>3만원 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221207/20221207093633951008.png"
+                      alt="아메리칸 엑스프레스 골드 by 삼성 카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>아메리칸 엑스프레스 골드 by 삼성 카드</p>
+                    <p>3만원 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221207/20221207093700325010.png"
+                      alt="삼성 THE O"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>삼성 THE O</p>
+                    <p>3만원 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221213/20221213165339751040.png"
+                      alt="삼성카드 1"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>삼성카드 1</p>
+                    <p>3만원 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221207/20221207093723559012.png"
+                      alt="삼성 더 플래티늄 아멕스 카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>삼성 더 플래티늄 아멕스 카드</p>
+                    <p>3만원 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221213/20221213165421813042.png"
+                      alt="삼성카드 2+ ~7+ / 신세계 이마트 7+"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>삼성카드 2+ ~7+ / 신세계 이마트 7+</p>
+                    <p>30% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221213/20221213165505515044.png"
+                      alt="삼성카드 3"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>삼성카드 3</p>
+                    <p>20% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221213/20221213170236348048.png"
+                      alt="삼성 SFC 카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>삼성 SFC 카드</p>
+                    <p>10% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221207/20221207093829323016.png"
+                      alt="삼성 애니패스 포인트 카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>삼성 애니패스 포인트 카드</p>
+                    <p>10% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221207/20221207093845823018.png"
+                      alt="삼성 지엔미 카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>삼성 지엔미 카드</p>
+                    <p>10% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20221207/20221207093939587020.png"
+                      alt="국민행복 삼성체크카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>국민행복 삼성체크카드</p>
+                    <p>10% 현장 할인</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20200224/20200224150822312038.png"
+                      alt="
+                    신한 아웃백 카드 (Lady/2030)"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>신한 아웃백 카드 (Lady/2030)</p>
+                    <p>30% ~ 최대 40% 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20180419/20180419133821200069.png"
+                      alt="
+                    신한카드 Love"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>신한카드 Love</p>
+                    <p>20% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20180420/20180420111706029005.png"
+                      alt="
+                    신한카드 Love Platinum#"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>신한카드 Love Platinum#</p>
+                    <p>20% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20180420/20180420111802586007.png"
+                      alt="신한카드 Lady"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>신한카드 Lady</p>
+                    <p>20% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20180420/20180420111816392009.png"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>신한카드 2030</p>
+                    <p>20% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20180523/20180523142444266006.png"
+                      alt="
+                    신한카드 나라사랑"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>신한카드 나라사랑</p>
+                    <p>20% 현장 할인</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20180502/20180502181950040031.png"
+                      alt="하나 아웃백 클럽 카드(신용)"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>하나 아웃백 클럽 카드(신용)</p>
+                    <p>20% ~ 최대 30% 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20180523/20180523141938539004.png"
+                      alt="하나 아웃백 클럽 카드(체크)"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>하나 아웃백 클럽 카드(체크)</p>
+                    <p>20%~ 최대 30% 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20181120/20181120103209139010.png"
+                      alt="IBK 나라사랑 카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>IBK 나라사랑 카드</p>
+                    <p>20% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20181120/20181120103520806014.png"
+                      alt="다둥이행복카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>다둥이행복카드</p>
+                    <p>20% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20200224/20200224150337819036.png"
+                      alt="카드의 정석 다이렉트 (구, 다모아 할인 다이렉트)"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>카드의 정석 다이렉트 (구, 다모아 할인 다이렉트)</p>
+                    <p>20% 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20191129/20191129152429347066.png"
+                      alt="우리 가나다 카드(할인/포인트형)"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>우리 가나다 카드(할인/포인트형)</p>
+                    <p>20% 현장 할인</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20211110/20211110112453722027.png"
+                      alt="현대 아메리칸 익스프레스 더 플래티넘 카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>현대 아메리칸 익스프레스 더 플래티넘 카드</p>
+                    <p>3만원 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20230608/20230608093528539059.png"
+                      alt="HERITAGE Reserve (포인트형)"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>HERITAGE Reserve (포인트형)</p>
+                    <p>3만원 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20230608/20230608093608570061.png"
+                      alt="HERITAGE Reserve (스카이패스형)"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>HERITAGE Reserve (스카이패스형)</p>
+                    <p>3만원 현장 할인</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20211110/20211110112348661025.png"
+                      alt="현대 아메리칸 익스프레스 골드 카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>현대 아메리칸 익스프레스 골드 카드</p>
+                    <p>3만원 현장 할인</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/upload/partner/20180419/20180419183304078120.png"
+                      alt="전북은행 카드"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>전북은행 카드</p>
+                    <p>매장명 : 전주 효자점 / 20% 현장 할인</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: sns -->
+
+      <!-- s: reward -->
+      <section class="reward" id="reward">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>앱 사용 혜택</strong>
+            <h3>등급별 다양한 혜택을 만나보세요!</h3>
+          </div>
+          <div class="tab-con">
+            <ul class="tab-item reward-tab">
+              <li data-aos="fade-up" data-aos-delay="300">
+                <a href="#">구매 안내</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="400">
+                <a href="#">이용 안내</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="500">
+                <a href="#">충전 안내</a>
+              </li>
+            </ul>
+          </div>
+          <div class="reward-con">
+            <div class="reward-list">
+              <ul class="reward-item">
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_10.png"
+                      alt="카드/권종 선택"
+                    />
+                  </figure>
+                  <p>카드/권종 선택<br /><i>구매할 기프트카드 권종 선택</i></p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_11.png"
+                      alt="결제"
+                    />
+                  </figure>
+                  <p>
+                    결제<br /><i
+                      >결제수단(신용카드, 현금)을 제공하고 결제를 요청</i
+                    >
+                  </p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_18.png"
+                      alt="포장완료"
+                    />
+                  </figure>
+                  <p>
+                    포장완료<br /><i
+                      >카드 케이스 및 봉투에 세팅된 기프트 카드를 수령</i
+                    >
+                  </p>
+                </li>
+              </ul>
+              <div class="info-wrap" data-aos="fade-up" data-aos-delay="500">
+                <ul>
+                  <li>
+                    <div class="faq-title">
+                      <i>Q</i>
+                      <div class="faq-txt">
+                        <h4>구매 조건 / 유의 사항</h4>
+                      </div>
+                    </div>
+                    <div class="answer-wrap">
+                      <div class="answer-con">
+                        <i>A</i>
+                        <p>
+                          - 아웃백 전 매장에서 구매가 가능한 무기명 선불카드
+                          입니다.<br />
+                          - 카드 플레이트만 별도로 판매하지 않습니다.<br />
+                          - 5만원권, 10만원권에 한해 구매 가능합니다.<br />
+                          - 아웃백 지류 상품권/기타 제휴 상품권/디지털 상품권 등
+                          으로 기프트 카드를 구매하실 수 없습니다.<br />
+                          - 기프트 카드 구매 시 할인 및 적립 적용되지
+                          않습니다.<br /><br />
+
+                          <b
+                            >아웃백 매장이 아닌, 다음과 같은 경로를 통해 구매한
+                            경우 사용이 불가함을 안내 드립니다.</b
+                          ><br /><br />
+
+                          - 개인 거래의 경우, 사기 피해가 발생하는 경우가
+                          많으므로 유의하시기 바랍니다.<br />
+                          - 인증번호만 제시하는 경우(반드시, 기프트 카드를 소지
+                          시에만 결제가 가능)<br />
+                          - 개인 거래나 중고 사이트를 통해 구매한 경우
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="faq-title">
+                      <i>Q</i>
+                      <div class="faq-txt">
+                        <h4>구매 방법</h4>
+                      </div>
+                    </div>
+                    <div class="answer-wrap">
+                      <div class="answer-con">
+                        <i>A</i>
+                        <p>
+                          <b>개인 신용 카드로 구매시</b><br />
+
+                          - 월 100만원까지 구매 가능합니다.(신분증 지참)<br /><br />
+                          <b>법인 신용카드로 구매시</b><br />
+
+                          - 개인명의 법인카드 : 카드 소유자 본인만
+                          구입가능합니다.(대리인불가/신분증 지참) 공용 법인카드
+                          : 사업자등록증, 구입자 신분증, 사원증(또는 명함) 지참
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="faq-title">
+                      <i>Q</i>
+                      <div class="faq-txt">
+                        <h4>구매 취소</h4>
+                      </div>
+                    </div>
+                    <div class="answer-wrap">
+                      <div class="answer-con">
+                        <i>A</i>
+                        <p>
+                          <b
+                            >기프트 카드 구매 후, 결제 변경 및 반품 시에는
+                            반드시 영수증과 결제 수단(결제 당시 카드 등) /
+                            구매한 기프트 카드를 사용하지 않은 상태로 함께 소지
+                            시 취소가 가능합니다.</b
+                          ><br /><br />
+
+                          - 영수증<br />
+                          - 구매한 결제 수단<br />
+                          - 기프트 카드(여러 개의 카드를 구입했을 경우, 모두
+                          소지 시에만 취소 가능)
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="faq-title">
+                      <i>Q</i>
+                      <div class="faq-txt">
+                        <h4>단체 및 기업 대량 구매</h4>
+                      </div>
+                    </div>
+                    <div class="answer-wrap">
+                      <div class="answer-con">
+                        <i>A</i>
+                        <p>
+                          <b
+                            >단체 및 기업 대량 구매의 경우, 발행처인 Pay`s
+                            서비스 / 다우기술로 문의 시 안내 받으실 수
+                            있습니다.</b
+                          ><br /><br />
+
+                          - 문의<br />
+                          * Pay`s : 070-4020-5228(평일 09:00~18:00) /
+                          order_gift@paysservice.com<br />
+                          * 다우기술 고객센터 : 1599-6567 (평일 09:00~17:30)
+                          070-4020-5228(평일 오전 9시~6시) /
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="reward-list">
+              <ul class="reward-item">
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_09.png"
+                      alt="시점"
+                    />
+                  </figure>
+                  <p>시점<br /><i>아웃백 방문하여 식사후 결제 시</i></p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_14.png"
+                      alt="카드등록"
+                    />
+                  </figure>
+                  <p>카드등록<br /><i>아웃백 기프트 카드 온라인 등록</i></p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_11.png"
+                      alt="결제방법"
+                    />
+                  </figure>
+                  <p>
+                    결제방법<br /><i
+                      >① 아웃백 실물 기프트 카드 제시<br />
+                      ② 등록된 아웃백 바코드 제시</i
+                    >
+                  </p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_13.png"
+                      alt="완료"
+                    />
+                  </figure>
+                  <p>
+                    완료<br /><i>사용 금액만큼 결제 후 잔액 및 영수증 확인</i>
+                  </p>
+                </li>
+              </ul>
+              <div class="info-wrap" data-aos="fade-up" data-aos-delay="500">
+                <ul>
+                  <li>
+                    <div class="faq-title">
+                      <i>Q</i>
+                      <div class="faq-txt">
+                        <h4>사용 조건</h4>
+                      </div>
+                    </div>
+                    <div class="answer-wrap">
+                      <div class="answer-con">
+                        <i>A</i>
+                        <p>
+                          - 본 카드는 아웃백 전 매장에서 사용 가능한 잔액 관리형
+                          선불 전자 결제 수단입니다.<br />
+                          - 아웃백 매장 내 결제 후 남은 잔액은 유효기간 내
+                          재사용 할 수 있습니다.<br />
+                          - 아웃백 매장에서 제품 결제 시 현금영수증을 발행
+                          가능합니다.<br />
+                          - 아웃백 코리아에서 판매되는 카드는 국내에서만 사용이
+                          가능합니다. (외국에서 발행한 기프트 카드는 국내에서
+                          사용 불가)<br />
+                          - 기프트 카드는 아웃백 홈페이지 PC / MOBILE / APP에서
+                          등록 후 충전하여 이용하실 수 있습니다. (온라인 회원
+                          전용 서비스)<br />
+                          - 기프트 카드를 사용하여 결제한 경우, 제휴 할인 적용
+                          및 멤버십 포인트 적립 가능합니다.<br />
+                          - 기프트 카드로 아웃백 상품권(유가증권)은 구매할 수
+                          없습니다.<br />
+                          - 기프트 카드로 당사에서 지정한 제외 상품 등은 구매할
+                          수 없습니다.<br />
+                          - 고객의 관리 소홀로 인한 카드의 분실/도난/훼손/도용
+                          시 발행자 및 판매자는 책임지지 않습니다.<br />
+                          - 기프트 카드를 아웃백 PC/MOBILE/APP에 등록하여 사용할
+                          수 있습니다. (온라인 회원 전용 서비스)<br />
+                          - 등록된 기프트 카드는 MOBILE 또는 APP에서 바코드 제시
+                          후 사용 가능합니다.<br />
+                          - 아웃백 PC/MOBILE/APP에서 등록된 기프트 카드의
+                          이용내역조회/해지/재등록이 가능합니다.<br />
+                          - C/MOBILE/APP에서 전체이용내역조회가 가능합니다.<br />
+                          - 재등록 시 실물 기프트 카드가 있어야 번호 등록 후
+                          사용이 가능합니다.<br />
+                          - 등록된 기프트 카드와 실물 카드는 동시에 사용이
+                          가능합니다.<br />
+                          - 카드 등록 시 5회 이상 실패할 경우 로그인 비밀번호
+                          확인 후 재등록이 가능합니다.<br />
+                          - ay’s 고객센터 운영시간 : 평일 09:30~18:00(주말 및
+                          공휴일 상담 불가)<br />
+                          - ay’s 고객센터 : 1644 – 5368 / 잔액조회
+                          http://www.paysgift.com 접속 후 조회가능<br />
+                          - 다우기술 고객센터 운영시간 : 평일 09:00 - 17:30(주말
+                          및 공휴일 상담 불가) - 다우기술 고객센터 : 1599-6567
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="faq-title">
+                      <i>Q</i>
+                      <div class="faq-txt">
+                        <h4>사용 여부 및 잔액 조회</h4>
+                      </div>
+                    </div>
+                    <div class="answer-wrap">
+                      <div class="answer-con">
+                        <i>A</i>
+                        <p>
+                          - 사용 여부 및 잔액조회, 잔액 환불은 Pay`s / 다우기술
+                          고객센터에서 확인 가능합니다.<br />
+                          - 등록된 카드의 경우에 한하여 사용여부 및 잔액조회는
+                          PC/MOBILE/APP에서 가능합니다.<br />
+                          - Pay’s 고객센터 운영시간 : 평일 09:30~18:00(주말 및
+                          공휴일 상담 불가)<br />
+                          - Pay’s 고객센터 : 1644 – 5368 / 잔액조회
+                          http://www.paysgift.com 접속 후 조회가능<br />
+                          - 다우기술 고객센터 운영시간 : 평일 09:00 - 17:30(주말
+                          및 공휴일 상담 불가)<br />
+                          - 다우기술 고객센터 : 1599-6567
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="faq-title">
+                      <i>Q</i>
+                      <div class="faq-txt">
+                        <h4>구매 환불 규정 / 잔액 환불 규정 / 유효기간 연장</h4>
+                      </div>
+                    </div>
+                    <div class="answer-wrap">
+                      <div class="answer-con">
+                        <i>A</i>
+                        <p>
+                          - 기프트카드 구매 후, 결제 변경 및 반품시에는 반드시
+                          구매한 영수증/ 결제수단(결제카드 등)/
+                          기프트카드(사용하지 않은 원 상태의 카드) 모두 소지한
+                          경우에만 가능합니다.<br />
+                          - 기프트카드로 결제 후, 재결제 및 반품을 진행하는
+                          경우에는 반드시 원 결제 시 사용한 기프트카드를 소지한
+                          경우에만 재 결제 처리가 가능합니다.<br />
+                          (기프트카드 미소지 시 처리 불가)<br /><br />
+                          <b>신유형 상품권 표준 약관에 의거</b><br /><br />
+
+                          - 권면가액 대비 일정 금액(60% 이상) 사용 시 잔액에
+                          대해 환불 가능합니다.<br />
+                          - 기프트 카드 잔액에 대한 환불은 아웃백 매장에서
+                          불가하며, Pay`s / 다우기술 고객센터를 통해 처리가
+                          가능합니다.<br />
+                          - Pay’s 고객센터 운영시간 : 평일 09:30~18:00(주말 및
+                          공휴일 상담 불가)<br />
+                          - Pay’s 고객센터 : 1644 – 5368 / 잔액조회
+                          http://www.paysgift.com 접속 후 조회가능<br />
+                          - 다우기술 고객센터 운영시간 : 평일 09:00 - 17:30(주말
+                          및 공휴일 상담 불가)<br />
+                          - 다우기술 고객센터 : 1599-6567<br /><br />
+                          <b>최초 유효기간 기준 잔액 환불 비율</b><br /><br />
+
+                          - 유효기간 1년 이내 잔액 환불 시 : 잔액 100% 환불<br />
+                          - 유효기간 1년 초과 잔액 환불 시 : 잔액 90% 환불<br />
+                          - 환불 기간 : 최초 구매일로부터 최대 5년까지<br />
+                          - 환불 주체 : Pay`s 서비스 / 다우기술<br /><br />
+                          <b>유효기간 연장 안내</b><br /><br />
+
+                          - PC / MOBILE / APP에서 기프트 카드 등록 후 최대 3번
+                          까지 연장 가능합니다.<br />
+                          - 로그인 후 > 마이아웃백 > MY 기프트카드에서 연장
+                          가능합니다.<br />
+                          - 1회 연장 시 3개월 단위로 연장됩니다. - 홈페이지
+                          기간연장 요청 횟수가 3번을 초과할 경우 고객센터에서
+                          유선 통화로 기간연장 신청을 할 수 있습니다.<br />
+                          * Pay`s 고객센터 : 1644-5368<br />
+                          * 다우기술 고객센터 : 1599-6567
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="reward-list">
+              <ul class="reward-item">
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_14.png"
+                      alt="카드등록"
+                    />
+                  </figure>
+                  <p>카드등록<br /><i>아웃백 기프트 카드 온라인 등록 </i></p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_15.png"
+                      alt="충전금액 선택"
+                    />
+                  </figure>
+                  <p>
+                    충전금액 선택<br /><i
+                      >① 최대 50만원까지 충전 가능<br />
+                      ② 합계 잔액 50만원 초과 불가</i
+                    >
+                  </p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_16.png"
+                      alt="결제"
+                    />
+                  </figure>
+                  <p>결제<br /><i>신용카드 결제만 가능</i></p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="800">
+                  <figure>
+                    <img
+                      src="https://www.outback.co.kr/asset/images/icon/icon_mobile_gift_card_img_17.png"
+                      alt="완료"
+                    />
+                  </figure>
+                  <p>완료<br /><i>아웃백 매장에서 결제 시 사용</i></p>
+                </li>
+              </ul>
+              <div class="info-wrap" data-aos="fade-up" data-aos-delay="500">
+                <ul>
+                  <li>
+                    <div class="faq-title">
+                      <i>Q</i>
+                      <div class="faq-txt">
+                        <h4>이용 안내</h4>
+                      </div>
+                    </div>
+                    <div class="answer-wrap">
+                      <div class="answer-con">
+                        <i>A</i>
+                        <p>
+                          - 기프트 카드 충전은 PC/MOBILE/APP에서 카드 등록 후
+                          이용하실 수 있습니다. (온라인 회원 전용 서비스)<br />
+                          - 등록/충전된 기프트 카드는 MOBILE 또는 APP에서 바코드
+                          제시 후 사용 가능합니다.<br />
+                          - 온라인 접속 환경 및 충전 방법에 따라 충전 시 결제
+                          수단에 차이가 있을 수 있습니다.<br />
+                          - 기프트 카드 충전 금액에 대한 현금영수증은 충전
+                          시에는 발행되지 않으며, 매장에서 실제로 구매 결제 시
+                          발행됩니다.<br />
+                          - 기프트 카드 유효기간은 구매일로부터 기본 1년이고,
+                          1회 충전 시 자동으로 1년 추가됩니다.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="faq-title">
+                      <i>Q</i>
+                      <div class="faq-txt">
+                        <h4>온라인 충전 취소</h4>
+                      </div>
+                    </div>
+                    <div class="answer-wrap">
+                      <div class="answer-con">
+                        <i>A</i>
+                        <p>
+                          - 재충전 이후 거래 이력(이용내역)이 없는 경우,
+                          충전일로부터 최대 7일 내 온라인에서 충전 취소가
+                          가능합니다.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="faq-title">
+                      <i>Q</i>
+                      <div class="faq-txt">
+                        <h4>온라인 충전 제한</h4>
+                      </div>
+                    </div>
+                    <div class="answer-wrap">
+                      <div class="answer-con">
+                        <i>A</i>
+                        <p>
+                          - 미성년자(만 14세 미만)는 온라인 충전할 수
+                          없습니다.<br />
+                          - 충전 후 카드 1장당 최대 50만원을 넘을 수
+                          없습니다.<br />
+                          - 1회 최대 50만원까지 충전 가능합니다.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: reward -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://www.outback.co.kr/main.do?menuIdx=159"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://www.outback.co.kr/main.do?menuIdx=158"
+                >홈페이지 이용약관</a
+              >
+            </li>
+            <li>
+              <a href="https://www.outback.co.kr/main.do?menuIdx=163"
+                >위치정보 이용약관</a
+              >
+            </li>
+            <li>
+              <a href="https://www.outback.co.kr/main.do?menuIdx=231"
+                >윤리경영</a
+              >
+            </li>
+            <li>
+              <a href="https://www.outback.co.kr/main.do?menuIdx=35"
+                >공지사항</a
+              >
+            </li>
+            <li>
+              <a href="https://www.outback.co.kr/main.do?menuIdx=156"
+                >모바일 아웃백</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">다이닝브랜즈그룹</a></li>
+              <li><a href="#">BHC</a></li>
+              <li><a href="#">창고43</a></li>
+              <li><a href="#">큰맘할매순대국</a></li>
+              <li><a href="#">족발상회</a></li>
+              <li><a href="#">그램그램</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-facebook">
+                <i class="hidden">페이스북</i>
+              </button>
+              <button class="btn-youtube">
+                <i class="hidden">유튜브</i>
+              </button>
+            </div>
+            <p>대표이사 : 송호섭주소 : 서울 송파구 올림픽로 300 19층</p>
+            <p>
+              사업자등록번호 : 211-86-42619통신판매업신고번호 :
+              제2022-서울송파-1754호
+            </p>
+            <p>대표번호1577-0500  /  딜리버리 주문번호1811-3650</p>
+            <p>copyright &copy; OUTBACK STEAKHOUSE all rights reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="Outback" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>
