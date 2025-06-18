@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+.main-visual {
+  position: relative;
+  width: 100%;
+  height: 80rem;
+  overflow: hidden;
+  animation: visual 0.7s ease-out forwards;
+}
+
+.main-visual figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.main-visual figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.visual-con {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: #5f5; */
+  z-index: 1;
+}
+
+.visual-con h2 {
+  font-weight: 700;
+  color: var(--Light-100);
+
+  font-size: clamp(2.5rem, 2.6041vw, 5rem);
+}
+
+.visual-btn {
+  display: block;
+  font-size: clamp(1.4rem, 1.6901vw, 2.4rem);
+  margin-top: 3rem;
+
+  padding: 2rem 3rem;
+  border: 2px solid var(--Light-100);
+  color: var(--Light-100);
+  font-weight: 700;
+  border-radius: 30rem;
+
+  transition: 0.4s;
+}
+
+.visual-btn:hover {
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  color: var(--Light-100);
+}
+
+.main-visual::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* 어두운 딤처리 */
+  opacity: 0.5; /* 투명도 조절 */
+  pointer-events: none; /* 클릭 이벤트를 막기 위해 */
+}
+
+/* s.more */
+.bag-more {
+  position: relative;
+  background: url(https://media.gucci.com/dynamic/b3c8/KXH7xhIp4Tuof1SQys_0VSOcIEN4DWzgDBZODlFx3yi+yHRGgY2d+KKjuQFnt5l0rEUALcl25rbpGkdHfP0U6+F22ZGYEdqz+4p8qyLLuEvswdzYquMrbW3IH0ahcRWVp1dy2WQb4VrAqCfwozeZneOjcx3r88eYYxNuQ9Rx4IvFodRVgIchflWykuMB7_kKyeSKSuCgezqSigBOCXoAt+FijvbucLA0Rakr98nLHu5xgGEupdjfjIhVbDbkKg+Vq3fCCeJyWNmunej53jRrLp6jWWL8RZ4ZDJqW8T19g+gSFPF8pKm1EeARRC84yLOI+1Xw8+Y5eexaFU0mqNF6ivv2uoBi14pzI6pB9E8PJ7BW6+zv7ApqRTkn7ttFJ399/HP_CinamaticLandscape_Gucci-VDAY-Jan25-Valentines-Tbarney-01-034_001_Default.png);
+  height: 46.7rem;
+}
+
+.bag-more::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* 어두운 딤처리 */
+  opacity: 0.5; /* 투명도 조절 */
+  pointer-events: none; /* 클릭 이벤트를 막기 위해 */
+}
+
+.bag-con {
+  position: absolute;
+  bottom: 20%;
+  z-index: 10;
+}
+
+.bag-title h4 {
+  font-weight: 800;
+  font-size: 4rem;
+  color: var(--Light-100);
+
+  font-size: clamp(2.5rem, 2.0833vw, 4rem);
+}
+
+/* e.more */
+
+/* 반응형 */
+@media (max-width: 620px) {
+  .bag-con {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    left: 20%;
+  }
+}

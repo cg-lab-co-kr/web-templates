@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUCCI-Store</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/sub-common.css" />
+    <link rel="stylesheet" href="./css/store.css" />
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- 모바일용 메뉴 000000000000000000000000000000000000000000000000000000000000000000000000000-->
+    <div class="mobile-menu">
+      <ul class="mobile-gnb">
+        <li><a href="./index.html">홈</a></li>
+        <li><a href="./history.html">구찌의역사</a></li>
+        <li><a href="./gift.html">선물제안</a></li>
+        <li><a href="./store.html">매장찾기</a></li>
+      </ul>
+      <button class="mobile-btn-close"><i class="hidden">닫기</i></button>
+    </div>
+    <!-- 모바일용 메뉴 end00000000000000000000000000000000000000000000000000000000000000000000000000 -->
+
+    <header id="header">
+      <div class="inner">
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html"><i class="hidden">구찌</i></a>
+          </h1>
+
+          <div class="nav-con">
+            <div class="nav-all">
+              <ul class="gnb">
+                <li><a href="./index.html">홈</a></li>
+                <li><a href="./history.html">구찌의역사</a></li>
+                <li><a href="./gift.html">선물제안</a></li>
+                <li><a href="./store.html">매장찾기</a></li>
+              </ul>
+              <div class="join-btn">
+                <a href="#"><i class="hidden">로그인</i></a>
+                <a href="#"><i class="hidden">회원가입</i></a>
+              </div>
+            </div>
+
+            <div class="mobile-btn">
+              <a href="#"><i class="hidden">더보기</i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="visual">
+        <div class="visual-text">
+          <h2>매장찾기</h2>
+        </div>
+      </section>
+      <!-- visual end -->
+
+      <section class="map">
+        <div class="inner">
+          <div class="map-all">
+            <div class="iframe-all">
+              <div class="map-iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.8320597870666!2d126.99599487629581!3d37.535455925909055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f6b8e4ac7b%3A0x2d517c6a480b66a8!2z6rWs7LCMIOqwgOyYpQ!5e0!3m2!1sko!2skr!4v1738636312807!5m2!1sko!2skr"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <div class="map-iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.2720331552723!2d127.04398607629533!3d37.525084226503154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca57ec0c96efb%3A0x6849982a68bf5420!2sGucci%20-%20Korea%20Flagship!5e0!3m2!1sko!2skr!4v1738636346542!5m2!1sko!2skr"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <div class="map-iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.227493785433!2d127.04353212630296!3d37.73780686428788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cc7aff62bc175%3A0x2ddc99b51560ed0f!2sGucci%20-%20Shinsegae%20Uijeongbu%20Department%20Store!5e0!3m2!1sko!2skr!4v1738636379581!5m2!1sko!2skr"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="controller">
+              <div class="controller-input">
+                <input type="text" placeholder=" " id="searchInput" />
+                <button class="controller-button" id="submitButton">
+                  <i class="hidden">검색</i>
+                </button>
+              </div>
+
+              <div class="map-contents">
+                <div class="map-btn">
+                  <a href="#" class="now">현재위치</a>
+                  <a href="#" class="near">가까운위치</a>
+                  <a href="#" class="star"><i class="hidden">즐겨찾기</i></a>
+                </div>
+                <div class="map-con">
+                  <figure>
+                    <img
+                      src="https://lh5.googleusercontent.com/p/AF1QipMMV9wbUPraOpJ_uLVg22N-HsT2dxfAR_QE3OdU=w408-h306-k-no"
+                      alt="#"
+                    />
+                  </figure>
+                  <dl class="map-text">
+                    <dt>구찌 가옥</dt>
+                    <dd>서울특별시 용산구 이태원로 223 구찌 가옥</dd>
+                  </dl>
+                  <a
+                    class="cos-btn"
+                    href=" https://www.gucci.com/web/baa/kr/ko/store/25103"
+                    >방문 예약하기</a
+                  >
+                </div>
+
+                <div class="map-con">
+                  <figure>
+                    <img
+                      src="https://lh5.googleusercontent.com/p/AF1QipPnTujPVh9s3n1NykKENdDSKzvOqA2k634VOiG7=w408-h408-k-no"
+                      alt="#"
+                    />
+                  </figure>
+                  <dl class="map-text">
+                    <dt>구찌 청담 플래그샵</dt>
+                    <dd>서울특별시 강남구 압구정로 462 구찌 청담 플래그십</dd>
+                  </dl>
+                  <a
+                    class="cos-btn"
+                    href=" https://www.gucci.com/web/baa/kr/ko/store/25001"
+                    >방문 예약하기</a
+                  >
+                </div>
+
+                <div class="map-con">
+                  <figure>
+                    <img
+                      src="https://lh5.googleusercontent.com/p/AF1QipM3asuVmHW6WFrn8Fduf5kklRQaIoST3hOg9cfB=w426-h240-k-no"
+                      alt="#"
+                    />
+                  </figure>
+                  <dl class="map-text">
+                    <dt>신세계백화점의정부 구찌</dt>
+                    <dd>
+                      경기도 의정부시 평화로 525 신세계백화점 의정부점 3층 구찌
+                    </dd>
+                  </dl>
+                  <a
+                    class="cos-btn"
+                    href=" https://www.gucci.com/web/baa/kr/ko/store/25032"
+                    >방문 예약하기</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- s. footer -->
+    <footer id="footer">
+      <div class="inner">
+        <!-- .footer-con>.footer-logo+abbress -->
+
+        <ul class="foot-nav">
+          <li><a href="#">고객문의</a></li>
+          <li><a href="#">기업정보</a></li>
+          <li><a href="#">매장찾기</a></li>
+          <li><a href="#">국가/지역</a></li>
+          <li><a href="#">특별한 온라인 서비스</a></li>
+        </ul>
+
+        <div class="footer-con">
+          <address>
+            <p>
+              구찌 코리아 유한책임회사
+              <br />서울시 강남구 영동대로 517, 35층(삼성동, 아셈타워)
+            </p>
+            <div class="in">
+              <p>사업자등록번호: 120-81-79834 <br />대표자 : 실뱅 꼴라델</p>
+              <p>
+                호스팅 서비스 : Rackspace Hosting <br />개인정보보호책임자 :
+                한소희
+              </p>
+            </div>
+            <p>
+              통신판매업 신고번호 제 2015-서울강남-00052 호 (사업자 정보
+              확인)<br />
+              클라이언트서비스센터 02-3452-1921 메일
+              문의 clientservice.kr@gucci.com
+            </p>
+          </address>
+
+          <div class="foot-icon">
+            <strong class="foot-logo"><i class="hidden">구찌</i></strong>
+            <ul class="link-icon">
+              <li>
+                <a href="https://equilibrium.gucci.com/ko/"
+                  ><i class="hidden">이퀄리브리엄</i></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.gucci.gucciapp&pli=1"
+                  ><i class="hidden">스토어</i></a
+                >
+              </li>
+              <li>
+                <a href="https://palazzogucci.gucci.com/#/en"
+                  ><i class="hidden">회사페이지</i></a
+                >
+              </li>
+              <li>
+                <a href="https://www.gucciosteria.com/en"
+                  ><i class="hidden">구찌오스테레아</i></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- e. footer -->
+  </body>
+</html>
