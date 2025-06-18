@@ -1,0 +1,255 @@
+@charset 'utf-8';
+
+.vip-service li:nth-child(1) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_csr/01_bg.png);
+}
+.vip-service li:nth-child(2) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_csr/02_bg.png);
+}
+.vip-service li:nth-child(3) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_csr/03_bg.png);
+}
+.vip-service li:nth-child(4) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_csr/04_bg.png);
+}
+
+.faq {
+  margin: 12rem 0 6.25vw 0;
+}
+
+.faq-wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3.125vw;
+}
+
+.info-wrap li {
+  border-top: 2px solid var(--black20);
+  padding: 3rem 3.5rem;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.info-wrap li:first-child {
+  border-top: 4px solid var(--main-color);
+}
+
+.info-wrap li:last-child {
+  border-bottom: 2px solid var(--black20);
+}
+
+.info-wrap li.on {
+  background: var(--main-color10);
+}
+
+.info-wrap li::after {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  right: 3%;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background: url(../img/arrow-m-bottom.png) no-repeat 50%;
+  transition: 0.4s;
+}
+
+.info-wrap li.on::after {
+  rotate: -180deg;
+}
+
+.faq-title {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.faq-title i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--white100);
+  background: var(--main-color);
+}
+
+.faq-txt {
+  width: 80%;
+}
+
+.faq-txt h4 {
+  font-size: clamp(2.2rem, 2vw, 3rem);
+  font-weight: 700;
+  color: var(--title-color);
+  word-break: keep-all;
+}
+
+.answer-wrap {
+  margin-top: 4rem;
+  display: none;
+  font-size: 1.8rem;
+  word-break: keep-all;
+}
+
+.answer-wrap strong {
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.answer-con {
+  display: flex;
+  gap: 3rem;
+}
+
+.tip {
+  margin: 12rem 0;
+}
+
+.tip-list {
+  margin-top: 3.125vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.tip-list li {
+  /* border: 1px solid #000; */
+  width: 40.7rem;
+  aspect-ratio: 1/1.3022;
+  flex: 1 0 18%;
+  padding: 3rem;
+  word-break: keep-all;
+  border-radius: 10px;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  text-align: center;
+}
+
+.tip-list li:nth-child(1) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_ingredients/img_2.png);
+}
+.tip-list li:nth-child(2) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory/220527-192.jpg);
+}
+.tip-list li:nth-child(3) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/data/editor/goods/240202/240201_pure_cleansing_oil_recycle_1200_114755.jpg);
+}
+.tip-list li:nth-child(4) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_csr/1.png);
+}
+
+.tip-list li:hover {
+  justify-content: center;
+}
+
+.tip-list li::after {
+  content: "";
+  transition: 0.7s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(182, 2, 23, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+.tip-list li:hover::after {
+  content: "";
+  height: 100%;
+  background: var(--main-color70);
+}
+
+.tip-list li strong {
+  /* font-size: 2.8rem; */
+  font-size: clamp(2rem, 2vw, 2.6rem);
+  font-weight: 700;
+  color: var(--white100);
+  position: relative;
+  z-index: 1;
+  top: 80%;
+  transition: 0.4s;
+}
+
+.tip-list li p {
+  margin-top: 2rem;
+  color: var(--white70);
+  position: relative;
+  z-index: 1;
+  top: 120%;
+}
+
+.tip-list li:hover strong {
+  /* font-size: 3rem; */
+  font-size: clamp(2.2rem, 2vw, 2.8rem);
+  top: 35%;
+}
+
+.tip-list li:hover p {
+  top: 35%;
+  transition: 0.6s;
+}
+
+.thanks {
+  background: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_csr/1.png)
+    no-repeat 50% / cover;
+  height: 38rem;
+}
+
+.thanks h4 {
+  color: var(--white100);
+  font: 5.2rem/1.5 "Pretendard", sans-serif;
+  font-size: clamp(4rem, 6vw, 5.2rem);
+  padding: 15rem 1rem;
+  text-align: center;
+  word-break: keep-all;
+}
+
+@media (max-width: 1440px) {
+  .vip-service {
+    justify-content: flex-start;
+    padding: 3rem 0;
+  }
+
+  /* .tip-list li:hover strong {
+    top: 15%;
+  }
+
+  .tip-list li:hover p {
+    top: 15%;
+  } */
+}
+
+@media (max-width: 1340px) {
+  .tip-list {
+    flex-direction: column;
+  }
+
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.3;
+  }
+}
+
+@media (max-width: 768px) {
+  .tip-list li {
+    aspect-ratio: 1/0.45;
+  }
+}
+
+@media (max-width: 480px) {
+  .tip-list li {
+    aspect-ratio: 1/1;
+  }
+}

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마녀공장</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="마녀공장 공식 홈페이지 | 자연과 과학의 조화를 담은 클린 뷰티. 건강한 피부를 위한 착한 성분의 스킨케어를 만나보세요."
+    />
+    <meta
+      name="keywords"
+      content="마녀공장, manyo, 클린 뷰티, 자연유래 화장품, 스킨케어, 비건 화장품, 저자극 화장품, 천연 화장품, 피부 관리, K-뷰티"
+    />
+    <link rel="canonical" href="https://dany339.github.io/manyo/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="마녀공장 | 자연이 주는 클린 뷰티" />
+    <meta
+      property="og:description"
+      content="착한 성분, 건강한 피부! 마녀공장은 자연과 과학의 조화를 담은 클린 뷰티 브랜드로, 저자극 & 고기능성 스킨케어를 제공합니다."
+    />
+    <meta property="og:url" content="https://dany339.github.io/manyo/" />
+    <meta
+      property="og:image"
+      content="https://www.manyo.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="마녀공장 | 자연이 주는 클린 뷰티" />
+    <meta
+      name="twitter:description"
+      content="착한 성분, 건강한 피부! 마녀공장은 자연과 과학의 조화를 담은 클린 뷰티 브랜드로, 저자극 & 고기능성 스킨케어를 제공합니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.manyo.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rewards.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">마녀공장</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">PRODUCTS</a>
+            <ul class="submenu">
+              <li><a href="menu.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#vision">VISION</a></li>
+              <li><a href="brand.html#ingredient">INGREDIENT</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="business.html">ESG</a>
+            <ul class="submenu">
+              <li><a href="business.html#donation">DONATION</a></li>
+              <li><a href="business.html#csr">CSR</a></li>
+              <li><a href="business.html#campaign">CAMPAIGN&D</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+              <li><a href="event.html#join">JOIN</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">PRODUCTS</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#vision">VISION</a></li>
+              <li><a href="brand.html#ingredient">INGREDIENT</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="business.html">ESG</a>
+            <ul class="mobile-submenu">
+              <li><a href="business.html#donation">DONATION</a></li>
+              <li><a href="business.html#csr">CSR</a></li>
+              <li><a href="business.html#campaign">CAMPAIGN&D</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+              <li><a href="event.html#join">JOIN</a></li>
+            </ul>
+          </li>
+          <div class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > EVENT</strong>
+          <div class="visual-title">
+            <h2>EVENT</h2>
+            <p>
+              우르·오스는 글로벌 헬스케어 기업인 오츠카제약이 남성들의 피부
+              건강을 위해 개발한 브랜드입니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://manyo08552.cdn-nhncommerce.com/data/skin/front/mu_manyo/img/banner/slider_3676344535/ce90c71da5582ce1eeb07cb5b58861aa_43042.jpg"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: sns -->
+      <section class="sns" id="sns">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-offset="-100">
+            <strong>EVENT</strong>
+            <h3>이벤트 / 혜택</h3>
+          </div>
+          <div class="sns-wrap">
+            <div class="sns-list">
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/5b6c91836e3d7c06263"
+                    alt="창고 정리 BIG SALE ~81%"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>창고 정리 BIG SALE ~81%</p>
+                  <p>2025.03.11 10:00 ~ 2025.03.25 10:00</p>
+                </div>
+              </div>
+
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/d0f5c99de333ce8a129"
+                    alt="미세먼지 지워내 봄"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>미세먼지 지워내 봄</p>
+                  <p>2025.03.04 10:00 ~ 2025.03.31 23:59</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/167133c45d0e104f343"
+                    alt="카카오 플러스친구 쿠폰 이벤트"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>카카오 플러스친구 쿠폰 이벤트</p>
+                  <p>2024.05.02 00:00 ~ 2031.12.31 23:59</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/7a3dff904fb6a318931"
+                    alt="대국민 투표 1위 감사특가전"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>대국민 투표 1위 감사특가전</p>
+                  <p>2025.02.13 18:00 ~ 2025.02.17 10:00</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/7cebce230d2be5f0878"
+                    alt="소개합니다 마녀공장의 클린 뷰티"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>소개합니다 마녀공장의 클린 뷰티</p>
+                  <p>2025.02.03 08:00 ~ 2025.02.28 10:00</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/f784d4a3b99580bf566"
+                    alt="스케일이 다른 포토 리뷰 이벤트"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>스케일이 다른 포토 리뷰 이벤트</p>
+                  <p>2025.01.02 10:00 ~ 2025.01.31 10:00</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/2f23d6ece2c348d2976"
+                    alt="새해 첫 쇼핑 만원으로 끝!"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>새해 첫 쇼핑 만원으로 끝!</p>
+                  <p>2025.01.02 10:00 ~ 2025.01.10 10:00</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/eccef506f8548e54706"
+                    alt="2024 베스트템 명예의 전당"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>2024 베스트템 명예의 전당</p>
+                  <p>2024.12.16 10:00 ~ 2024.12.31 10:00</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/1b76510fedabdfb9536"
+                    alt="소다폼 우수평가 기념 할인전"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>소다폼 우수평가 기념 할인전</p>
+                  <p>2024.12.16 09:50 ~ 2024.12.31 10:00</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/bb7c0646e2c7225f920"
+                    alt="12월 겨울 앰플 대전"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>12월 겨울 앰플 대전</p>
+                  <p>2024.12.02 10:00 ~ 2024.12.16 10:00</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/afa6e90d638d5bab819"
+                    alt="비건뷰티 기획전, ~40% OFF"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>비건뷰티 기획전, ~40% OFF</p>
+                  <p>2024.11.25 10:00 ~ 2024.12.06 10:00</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://godomall.speedycdn.net/246ac6860cab30de5414f7d17e2bb4bc/board/event/goods/0/e370760502bee6e3467"
+                    alt="위키드 리미티드 에디션 출시 이벤트"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>위키드 리미티드 에디션 출시 이벤트</p>
+                  <p>2024.11.15 08:00 ~ 2025.01.10 10:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: sns -->
+
+      <!-- s: reward -->
+      <section class="reward" id="join">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>JOIN</strong>
+            <h3>신규 가입 혜택</h3>
+          </div>
+          <ul class="reward-item">
+            <li data-aos="fade-up" data-aos-delay="100" data-aos-offset="-50">
+              <figure>
+                <img
+                  src="./img/join-ico1.jpg"
+                  alt="가입 추가 마일리지 1,000원"
+                />
+              </figure>
+              <div class="reward-txt">
+                <strong>가입 추가 마일리지 1,000원</strong>
+                <p>
+                  회원가입 즉시 마일리지 지급<br />
+                  마일리지 지급일로부터 1년간 사용 가능
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200" data-aos-offset="-50">
+              <figure>
+                <img src="./img/join-ico2.jpg" alt="배송비 쿠폰 무료배송" />
+              </figure>
+              <div class="reward-txt">
+                <strong>배송비 쿠폰 무료배송</strong>
+                <p>
+                  배송비쿠폰 / 자동발급 / 발급일로부터 30일 / 타 쿠폰과 중복
+                  사용 불가
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="300" data-aos-offset="-50">
+              <figure>
+                <img src="./img/join-ico3.jpg" alt="재구매 할인 쿠폰 5,000원" />
+              </figure>
+              <div class="reward-txt">
+                <strong>재구매 할인 쿠폰 5,000원</strong>
+                <p>
+                  주문서 쿠폰/ 자동발급(첫 주문건 구매확정 시) / 발급일로부터
+                  30일 / 타 쿠폰과 중복 사용 불가
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: reward -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#">제휴문의</a>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-facebook">
+                <i class="hidden">페이스북</i>
+              </button>
+              <button class="btn-youtube">
+                <i class="hidden">유튜브</i>
+              </button>
+            </div>
+            <p>(주)마녀공장</p>
+            <p>
+              대표 :유근직주소 :서울특별시 강서구 공항대로 518
+              마녀공장사업자등록번호 :108-86-00365
+            </p>
+            <p>
+              안전거래를 위해 (주)이니시스의 구매안전(에스크로)에 가입하여
+              서비스를 제공하고있습니다. 
+            </p>
+            <p>COPYRIGHT &copy; MANYOFACTORY ALL RIGHTS RESERVED.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="마녀공장" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

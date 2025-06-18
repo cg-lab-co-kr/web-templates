@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마녀공장</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="마녀공장 공식 홈페이지 | 자연과 과학의 조화를 담은 클린 뷰티. 건강한 피부를 위한 착한 성분의 스킨케어를 만나보세요."
+    />
+    <meta
+      name="keywords"
+      content="마녀공장, manyo, 클린 뷰티, 자연유래 화장품, 스킨케어, 비건 화장품, 저자극 화장품, 천연 화장품, 피부 관리, K-뷰티"
+    />
+    <link rel="canonical" href="https://dany339.github.io/manyo/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="마녀공장 | 자연이 주는 클린 뷰티" />
+    <meta
+      property="og:description"
+      content="착한 성분, 건강한 피부! 마녀공장은 자연과 과학의 조화를 담은 클린 뷰티 브랜드로, 저자극 & 고기능성 스킨케어를 제공합니다."
+    />
+    <meta property="og:url" content="https://dany339.github.io/manyo/" />
+    <meta
+      property="og:image"
+      content="https://www.manyo.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="마녀공장 | 자연이 주는 클린 뷰티" />
+    <meta
+      name="twitter:description"
+      content="착한 성분, 건강한 피부! 마녀공장은 자연과 과학의 조화를 담은 클린 뷰티 브랜드로, 저자극 & 고기능성 스킨케어를 제공합니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.manyo.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/business.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">마녀공장</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">PRODUCTS</a>
+            <ul class="submenu">
+              <li><a href="menu.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#vision">VISION</a></li>
+              <li><a href="brand.html#ingredient">INGREDIENT</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="business.html">ESG</a>
+            <ul class="submenu">
+              <li><a href="business.html#donation">DONATION</a></li>
+              <li><a href="business.html#csr">CSR</a></li>
+              <li><a href="business.html#campaign">CAMPAIGN&D</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+              <li><a href="event.html#join">JOIN</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">PRODUCTS</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#vision">VISION</a></li>
+              <li><a href="brand.html#ingredient">INGREDIENT</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="business.html">ESG</a>
+            <ul class="mobile-submenu">
+              <li><a href="business.html#donation">DONATION</a></li>
+              <li><a href="business.html#csr">CSR</a></li>
+              <li><a href="business.html#campaign">CAMPAIGN&D</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+              <li><a href="event.html#join">JOIN</a></li>
+            </ul>
+          </li>
+          <div class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > ESG</strong>
+          <div class="visual-title">
+            <h2>ESG</h2>
+            <p>
+              자연과 지구의 부담을 줄이고 오래도록 함께 하기 위한 방법을
+              연구합니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_csr/3.png"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: vip -->
+      <section class="vip" id="donation">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>DONATION</strong>
+            <h3>작지만 정직한 걸음</h3>
+            <p>
+              마녀공장은 자립준비청년 교육 지원부터 결식위기 아동 식사 지원,
+              장애인 일자리 창출, 동물권 보호까지 사회에 긍정적인 영향을 주기
+              위해 노력하고 있습니다.
+            </p>
+          </div>
+          <ul class="vip-service" data-aos="fade-up" data-aos-delay="50">
+            <li>
+              <dl>
+                <dt>Save the Children</dt>
+                <dd>
+                  결식 위기 아동<br />
+                  식사 지원 사업 정기 기부
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>아름다운 재단</dt>
+                <dd>
+                  자립준비청년<br />
+                  교육 지원 사업 정기 기부
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>동물권행동 카라</dt>
+                <dd>
+                  동물권 보호를 위한<br />
+                  정기 기부
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Goodwill Store</dt>
+                <dd>
+                  장애인 일자리 창출 사업<br />
+                  현물 정기 기부
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: vip -->
+
+      <!-- s: faq -->
+      <section class="faq" id="csr">
+        <div class="inner">
+          <div
+            class="sec-title"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-offset="-100"
+          >
+            <strong>CSR</strong>
+            <h3>매달의 작은 실천</h3>
+          </div>
+
+          <div
+            class="faq-wrap"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-offset="-100"
+          >
+            <!-- .info-wrap>ul>li*5>(i.hidden{question}+.faq-title>strong+h4)+.answer-wrap>i.hidden{answer}+p -->
+            <div
+              class="info-wrap"
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-offset="-100"
+            >
+              <ul>
+                <li>
+                  <div class="faq-title">
+                    <i>!</i>
+                    <div class="faq-txt">
+                      <h4>MONTHLY. 장애인 일자리 창출을 위한 제품 기부</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        마녀공장은 매달 빠짐없이 ‘착한 가게’에 제품을 전합니다.
+                        밀알복지재단의 굿월스토어는 기부 품목들을 판매하여
+                        장애인 일자리를 창출하는 착한 가게입니다.<br />
+                        지금까지 기부 금액: 1,239,610,626원 ( 2022.04~2023.12 /
+                        제품 원가 기준 )
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>!</i>
+                    <div class="faq-txt">
+                      <h4>2024.11-2025.01 취약계층 난방비 지원금 지급</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        좋은 일은 언제나 마법처럼 올겨울, 마법처럼 전해지는
+                        마녀공장 x 위키드 에디션 수익금의 일부는 취약계층 어린이
+                        난방비 지원사업에 기부되었습니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>!</i>
+                    <div class="faq-txt">
+                      <h4>2024.08-10 산림 정화 활동 지원 및 플로깅 활동</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        마녀공장의 3번째 함께줍깅, 함께해요 클린 하이킹<br />
+                        다양한 동식물이 살아가는 산을 지키고자 플로깅 행사를
+                        열고, 환경재단을 통해 산림 정화 활동 지원금을
+                        기부했어요.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>!</i>
+                    <div class="faq-txt">
+                      <h4>
+                        2024.04~06. 돌봄 공백 아동을 위한 지역아동센터 지원
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        어린이날 에디션 수익금의 일부는 돌봄 공백 아동을 위해
+                        쓰였습니다.<br />
+                        <br />
+                        ‘틴틴팅클’의 NAN 작가님과 콜라보한 어린이날 에디션
+                        수익금의 일부는 아름다운재단을 통해 총 7개의
+                        지역아동센터에 전달되어 돌봄 공백 아동을 위한 기부금으로
+                        쓰였습니다.<br />
+                        <br />
+                        *기부처: 아름다운재단<br />
+                        *기부금액: 20,000,000원<br />
+                        *기부금 사용 내역: 서울 밑 수도권 지역아동센터 7개소에
+                        돌봄 공백 아동을 위한 프로그램 활동비 및 필요 물품
+                        구매비
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>!</i>
+                    <div class="faq-txt">
+                      <h4>
+                        2023.11 - 2024.01. 초록우산 어린이재단 아동 지원 사업
+                        후원
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        마녀상점 에디션 판매 수익금의 일부는 초록우산
+                        어린이재단에 전했습니다.<br />
+                        <br />
+                        마녀공장이 전달한 지원금은 ‘초록우산 어린이재단’을 통해
+                        주거비, 교육지원, 방한복 구입, 난방비 등으로 아동을 위한
+                        각종 분야에서 사용됩니다.<br />
+                        <br />
+                        *기부처: 초록우산 어린이재단<br />
+                        *기부금액: 20,000,000원<br />
+                        *기부 세부 내용: 주거비, 교육지원, 방한복 구입, 난방비
+                        등, 아동을 위한 각종 분야 지원금
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>!</i>
+                    <div class="faq-txt">
+                      <h4>2023.10. 월경용품 후원 사업 지원</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        10월 20일 하루 매출 전액을 홀트아동복지회에
+                        기부했습니다.<br />
+                        <br />
+                        초경의 날을 맞아 도움이 필요한 아동에게 생리대 키트와
+                        함께 월경 기간에 사용하기 좋은 마녀공장 제품을
+                        전했습니다.<br />
+                        <br />
+                        *기부처: 홀트아동복지회<br />
+                        *기부금액: 12,264,239원<br />
+                        *현물 기부: 히더 카밍 에센스 패드 510개, 페미닌 폼
+                        510개<br />
+                        *기부 세부 내용: 홀트아동복지회 초경지원사업을 통한
+                        생리대 키트 지원
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: faq -->
+
+      <!-- s: tip -->
+      <section class="tip" id="campaign">
+        <!-- .inner>(.sec-title>strong+h3)+ul.tip-list>li*4>strong+p -->
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-offset="-50">
+            <strong>CAMPAIGN</strong>
+            <h3>GREEN RE:MAGIC</h3>
+          </div>
+          <ul class="tip-list">
+            <li data-aos="fade-up" data-aos-delay="50">
+              <strong>엄격한 성분 원칙</strong>
+              <p>
+                유해성분 무첨가 원칙을 고집하며 100%비건 레시피를 적용합니다.
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <strong>종이 완충채, 친환경 박스</strong>
+              <p>
+                종이 완충재와 테이프가 필요 없는 테이프리스 박스로 배송합니다.
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="150">
+              <strong>올바른 분리배출</strong>
+              <p>
+                마녀공장 전제품 상세페이지 하단에 올바른 분리배출 방법을
+                안내합니다.
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="150">
+              <strong>지구를 위한 활동</strong>
+              <p>
+                해안 정화활동, 나무 심기, 플로깅 등 지구를 위한 작은 실천을
+                합니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: tip -->
+
+      <!-- s: thanks -->
+      <section class="thanks">
+        <h4>MIRACLES FOR THE WORLD</h4>
+      </section>
+      <!-- //e: thanks -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#">제휴문의</a>
+            </li>
+            <li>
+              <a href="#">고객센터</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-facebook">
+                <i class="hidden">페이스북</i>
+              </button>
+              <button class="btn-youtube">
+                <i class="hidden">유튜브</i>
+              </button>
+            </div>
+            <p>(주)마녀공장</p>
+            <p>
+              대표 :유근직주소 :서울특별시 강서구 공항대로 518
+              마녀공장사업자등록번호 :108-86-00365
+            </p>
+            <p>
+              안전거래를 위해 (주)이니시스의 구매안전(에스크로)에 가입하여
+              서비스를 제공하고있습니다. 
+            </p>
+            <p>COPYRIGHT &copy; MANYOFACTORY ALL RIGHTS RESERVED.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="마녀공장" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

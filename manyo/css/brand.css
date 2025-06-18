@@ -1,0 +1,120 @@
+@charset 'utf-8';
+
+.vision {
+  box-shadow: 0px 0px 30px var(--main-color20);
+  padding: 5.8rem 0 14.2rem 0;
+}
+
+.vison-title {
+  margin-top: 9rem;
+  text-align: center;
+  position: relative;
+}
+
+.vison-title p:nth-child(1) {
+  color: var(--main-color);
+}
+
+.vison-title h4 {
+  font: 8.2rem/1.1 "Poppins", sans-serif;
+  font-size: clamp(4.5rem, 6vw, 8.2rem);
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.vison-title p {
+  margin: 3rem auto 0 auto;
+  width: 50%;
+  word-break: keep-all;
+}
+
+.vip-service {
+  padding: 3rem 14.5rem;
+}
+
+.vip-service li:nth-child(1) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_ingredients/cont01_01.png);
+}
+.vip-service li:nth-child(2) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_ingredients/img_7_1.png);
+}
+.vip-service li:nth-child(3) {
+  background-image: url(https://manyo08552.cdn-nhncommerce.com/img/brand/PC_brandstory_ingredients/img_2.png);
+}
+
+.vip-service li:hover dd {
+  transform: translateY(0);
+}
+
+.story .inner {
+  overflow: hidden;
+}
+
+.story {
+  background: url(https://cdn-saas-web-217-134.cdn-nhncommerce.com/manyo085580_godomall_com/data/skin/front/mu_manyo_en/img/banner/slider_827784010/c003f11d13d28650c3b45b11280271f0_15253.jpg)
+    no-repeat 50% / cover;
+  padding: 21.2rem 0 20rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.story .sec-title {
+  color: var(--white100);
+  position: relative;
+  z-index: 1;
+}
+
+.story .sec-title strong {
+  color: var(--white100);
+}
+
+.story .sec-title h3 {
+  width: 50%;
+  word-break: keep-all;
+}
+
+.story p {
+  width: 40%;
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  color: var(--white70);
+  word-break: keep-all;
+  margin-top: 2.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.story p b {
+  font-weight: 600;
+  color: var(--white100);
+}
+
+@media (max-width: 1440px) {
+  .vip-service {
+    justify-content: flex-start;
+    padding: 3rem;
+  }
+
+  .story .sec-title h3 {
+    width: 100%;
+  }
+
+  .story p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .vison-title p {
+    width: 80%;
+  }
+
+  .story p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .story .sec-title h3 {
+    font-size: 2.7rem;
+  }
+}
