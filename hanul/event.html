@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한울</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="한울 공식 홈페이지 | 믿을 수 있는 재료로 만든 김치, 반찬, 가정간편식(HMR) 전문 브랜드. 정성 가득한 한국의 맛을 경험하세요."
+    />
+    <meta
+      name="keywords"
+      content="한울, Hanul, 김치, 반찬, 가정간편식, HMR, 전통식품, 한식, 한국 음식, 맛김치, 프리미엄 김치"
+    />
+    <link rel="canonical" href="https://dany339.github.io/hanul/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="한울 | 정성으로 만든 김치 & 가정간편식"
+    />
+    <meta
+      property="og:description"
+      content="한국의 맛을 담은 한울! 믿을 수 있는 재료와 정성으로 만든 김치, 반찬, 가정간편식을 만나보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/hanul/" />
+    <meta
+      property="og:image"
+      content="https://www.hanul.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="한울 | 정성으로 만든 김치 & 가정간편식"
+    />
+    <meta
+      name="twitter:description"
+      content="한국의 맛을 담은 한울! 믿을 수 있는 재료와 정성으로 만든 김치, 반찬, 가정간편식을 만나보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.hanul.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rewards.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">BONIF</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#value">VALUE</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+              <li><a href="brand.html#delivery">물류센터</a></li>
+              <li><a href="brand.html#client">CLIENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+              <li><a href="event.html#award">AWARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="util-menu">
+            <button class="btn-menu">
+              <i class="hidden">메뉴</i
+              ><span class="menu-bar"
+                ><span class="bar1"></span><span class="bar2"></span
+                ><span class="bar3"></span
+              ></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#value">VALUE</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+              <li><a href="brand.html#delivery">물류센터</a></li>
+              <li><a href="brand.html#client">CLIENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+              <li><a href="event.html#award">AWARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > NEWS</strong>
+          <div class="visual-title">
+            <h2>NEWS</h2>
+            <p>
+              한울은 소비자들에게 품질 높은 김치를 선보이며 신뢰받는 기업으로
+              자리잡았습니다. 앞으로도 고객 여러분께 좋은 소식을 전해드릴 수
+              있도록 노력하겠습니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic3.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: sns -->
+      <section class="sns" id="sns">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-offset="-100">
+            <strong>NEWS</strong>
+            <h3>홍보 및 보도자료</h3>
+          </div>
+          <div class="sns-wrap">
+            <div class="sns-list">
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/45f880a55cb4def5ea075290f3e20c20.jpg"
+                    alt="안전한 김장 되도록…식약처·농식품부 수장, 합동점검"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>"안전한 김장 되도록"…식약처·농식품부 수장, 합동점검</p>
+                  <p>[24.11.16]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/e752de473da3f5941375b06469742d3f.jpg"
+                    alt="군 보급품에 유명 브랜드 운동화·대기업 밀키트"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>군 보급품에 유명 브랜드 운동화·대기업 밀키트</p>
+                  <p>[24.09.30]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/436a47f370d6c3974054421cf5c011d5.jpg"
+                    alt="[명문장수기업] 포장김치로 걸어온 32년, 한울 백창기 대표의 기업가정신"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>
+                    [명문장수기업] 포장김치로 걸어온 32년, 한울 백창기 대표의
+                    기업가정신
+                  </p>
+                  <p>[23.11.28]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/8dd66d3b82b5f431b179645ce16aff7b.jpg"
+                    alt="청양군 비봉농공단지 입주업체, 호우피해지역에 구호 물품 전달"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>
+                    청양군 비봉농공단지 입주업체, 호우피해지역에 구호 물품 전달
+                  </p>
+                  <p>[2307.24]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/0b459d497db63e097dcca405c0bfc8a9.jpg"
+                    alt="한울 백창기 대표, 김치 수출 활성화 공로'산업포장'"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>한울 백창기 대표, 김치 수출 활성화 공로'산업포장'</p>
+                  <p>[21.11.22]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/dff1b74469a769d36819f3fb99882609.jpg"
+                    alt="꼬마김치 개발한 한울 백창기 대표 등 4명 김치산업 발전 정부포상"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>
+                    꼬마김치 개발한 한울 백창기 대표 등 4명 김치산업 발전
+                    정부포상
+                  </p>
+                  <p>[21.11.21]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/62c6b647b93e0b72be2a0fc196969896.jpg"
+                    alt="한울, ‘청양 농특산물 홍콩 수출 100만달러 달성’ 전체 수출액 중 25% 차지"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>
+                    한울, ‘청양 농특산물 홍콩 수출 100만달러 달성’ 전체 수출액
+                    중 25% 차지
+                  </p>
+                  <p>[20.12.22]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/173db7630a6c7b92bc631732b42ba5f9.jpg"
+                    alt="한울F&S 장애인복지관에 김장 나눔"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>한울F&S 장애인복지관에 김장 나눔</p>
+                  <p>[17.12.03]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/4f8706e634973c204491e3a145645412.jpg"
+                    alt="[한울F&S] 20년간 위생사고 제로 믿고 먹는 깨끗한 밥상"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>[한울F&S] 20년간 위생사고 제로 믿고 먹는 깨끗한 밥상</p>
+                  <p>[16.06.30]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/609f302a382acac56c8e515496399c3e.jpg"
+                    alt="한울F&S, 시니어사원 100명 모집"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>한울F&S, 시니어사원 100명 모집</p>
+                  <p>[16.03.04]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/e012a40c40a045928e25d1b44c6b0d8e.jpg"
+                    alt="한울, 무농약 김치 히트…170개 학교에 납품"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>한울, 무농약 김치 히트…170개 학교에 납품</p>
+                  <p>[14.02.25]</p>
+                </div>
+              </div>
+              <div class="sns-item">
+                <figure>
+                  <img
+                    src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/8226ac85829d8256e7aa301c748b6b11.jpg"
+                    alt="가을에 먹기 좋은 김치는?"
+                  />
+                </figure>
+                <div class="sns-txt">
+                  <p>가을에 먹기 좋은 김치는?</p>
+                  <p>[14.02.4]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: sns -->
+
+      <!-- s: event -->
+      <section class="event" id="award">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>AWARD</strong>
+            <h3>한울 AWARD</h3>
+          </div>
+
+          <!-- .event-tab>(ul.tab-list>li*2>a)+a.more -->
+          <div class="tab-con">
+            <ul class="tab-item event-tab">
+              <li data-aos="fade-up" data-aos-delay="150">
+                <a class="on" href="#">인증서</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <a href="#">수상내역</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- .event-list>ul.event-i>li*10>a>figure>img -->
+        <div class="event-lists" data-aos="fade-up" data-aos-delay="600">
+          <div class="event-list">
+            <div class="swiper event-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper40.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper01.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper02.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper03.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper04.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper05.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper06.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper07.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper08.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper09.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper11.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper12.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper13.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper30.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper31.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper33.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper34.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper36.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="event-list">
+            <div class="swiper event-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper14.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper15.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper16.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper17.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper18.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper19.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper20.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper21.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper22.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper23.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper24.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper26.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper27.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper28.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper32.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper35.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper37.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper38.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/award_paper39.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: event -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://hanul.com/board/consult/write.html?board_no=9"
+                >온라인문의</a
+              >
+            </li>
+            <li>
+              <a href="https://hanul.com/member/privacy.html"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://hanul.com/shopinfo/guide.html"
+                >이메일 무단수집거부</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">한울이샵</a></li>
+              <li><a href="#">한울F&S</a></li>
+              <li><a href="#">한울팜스</a></li>
+              <li><a href="#">김치도가</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              본사: 충남 청양군 비봉면 작은한술길 42 (비봉면 방한리 104번지)
+            </p>
+            <p>
+              영업&마케팅본부: 경기도 광명시 광화로 22 (광명동, 로얄프라자)
+              9층/p>
+            </p>
+            <p>cCopyright &copy; 한울. All Rights Reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="hanul" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

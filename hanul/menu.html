@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한울</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="한울 공식 홈페이지 | 믿을 수 있는 재료로 만든 김치, 반찬, 가정간편식(HMR) 전문 브랜드. 정성 가득한 한국의 맛을 경험하세요."
+    />
+    <meta
+      name="keywords"
+      content="한울, Hanul, 김치, 반찬, 가정간편식, HMR, 전통식품, 한식, 한국 음식, 맛김치, 프리미엄 김치"
+    />
+    <link rel="canonical" href="https://dany339.github.io/hanul/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="한울 | 정성으로 만든 김치 & 가정간편식"
+    />
+    <meta
+      property="og:description"
+      content="한국의 맛을 담은 한울! 믿을 수 있는 재료와 정성으로 만든 김치, 반찬, 가정간편식을 만나보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/hanul/" />
+    <meta
+      property="og:image"
+      content="https://www.hanul.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="한울 | 정성으로 만든 김치 & 가정간편식"
+    />
+    <meta
+      name="twitter:description"
+      content="한국의 맛을 담은 한울! 믿을 수 있는 재료와 정성으로 만든 김치, 반찬, 가정간편식을 만나보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.hanul.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">BONIF</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#value">VALUE</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+              <li><a href="brand.html#delivery">물류센터</a></li>
+              <li><a href="brand.html#client">CLIENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+              <li><a href="event.html#award">AWARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="util-menu">
+            <button class="btn-menu">
+              <i class="hidden">메뉴</i
+              ><span class="menu-bar"
+                ><span class="bar1"></span><span class="bar2"></span
+                ><span class="bar3"></span
+              ></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#value">VALUE</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+              <li><a href="brand.html#delivery">물류센터</a></li>
+              <li><a href="brand.html#client">CLIENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+              <li><a href="event.html#award">AWARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > MENU</strong>
+          <div class="visual-title">
+            <h2>MENU</h2>
+            <p>
+              한울은 전통식품문화의 세계화를 지향합니다. Sine 1988 전통
+              식품기업의 노하우로 K-푸드 세계화에 앞장서겠습니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic2.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu" id="menu">
+        <div class="inner">
+          <div class="menu-title">
+            <h3 data-aos="fade-down" data-aos-offset="-100">MENU</h3>
+          </div>
+
+          <ul
+            class="menu-tab"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-offset="-100"
+          >
+            <li>
+              <a href="#"><p>한울김치</p></a>
+            </li>
+            <li>
+              <a href="#"><p>꼬마김치</p></a>
+            </li>
+            <li>
+              <a href="#"><p>김치도가</p></a>
+            </li>
+          </ul>
+
+          <!-- .menu-con>ul.menu-list>div*7>(figure>img)+p+p -->
+          <div class="menu-cons">
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_001.jpg"
+                      alt="포기김치"
+                    />
+                  </figure>
+                  <p>포기김치</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_002.jpg"
+                      alt="포기보쌈김치"
+                    />
+                  </figure>
+                  <p>포기보쌈김치</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_003.jpg"
+                      alt="백김치"
+                    />
+                  </figure>
+                  <p>백김치</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_004.jpg"
+                      alt="고추씨백김치"
+                    />
+                  </figure>
+                  <p>고추씨백김치</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_005.jpg"
+                      alt="맛김치"
+                    />
+                  </figure>
+                  <p>맛김치</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_006.jpg"
+                      alt="겉절이"
+                    />
+                  </figure>
+                  <p>겉절이</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_007.jpg"
+                      alt="묵은지"
+                    />
+                  </figure>
+                  <p>묵은지</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_008.jpg"
+                      alt="쪽파김치"
+                    />
+                  </figure>
+                  <p>쪽파김치</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_009.jpg"
+                      alt="깍두기"
+                    />
+                  </figure>
+                  <p>깍두기</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_010.jpg"
+                      alt="석박지"
+                    />
+                  </figure>
+                  <p>석박지</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_023.jpg"
+                      alt="원조 볶음김치 100g"
+                    />
+                  </figure>
+                  <p>원조 볶음김치 100g</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_025.jpg"
+                      alt="맛김치 130g"
+                    />
+                  </figure>
+                  <p>맛김치 130g</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_022.jpg"
+                      alt="맛김치 80g"
+                    />
+                  </figure>
+                  <p>맛김치 80g</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_024.jpg"
+                      alt="매운 실비김치 80g"
+                    />
+                  </figure>
+                  <p>매운 실비김치 80g</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_28.jpg"
+                      alt="김치도가 평내호평점"
+                    />
+                  </figure>
+                  <p>김치도가 평내호평점</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_28.jpg"
+                      alt="김치도가 제주 연동점"
+                    />
+                  </figure>
+                  <p>김치도가 제주 연동점</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_28.jpg"
+                      alt="김치도가 독산역점"
+                    />
+                  </figure>
+                  <p>김치도가 독산역점</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_28.jpg"
+                      alt="김치도가 가산디지털잔지점"
+                    />
+                  </figure>
+                  <p>김치도가 가산디지털잔지점</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_28.jpg"
+                      alt="김치도가 역삼점"
+                    />
+                  </figure>
+                  <p>김치도가 역삼점</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_28.jpg"
+                      alt="김치도가 옥천점"
+                    />
+                  </figure>
+                  <p>김치도가 옥천점</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_28.jpg"
+                      alt="김치도가 홈플러스송도점"
+                    />
+                  </figure>
+                  <p>김치도가 홈플러스송도점</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_28.jpg"
+                      alt="김치도가 판교테크노밸리점"
+                    />
+                  </figure>
+                  <p>김치도가 판교테크노밸리점</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_28.jpg"
+                      alt="김치도가 상암점"
+                    />
+                  </figure>
+                  <p>김치도가 상암점</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/brand_product_28.jpg"
+                      alt="김치도가 서초점"
+                    />
+                  </figure>
+                  <p>김치도가 서초점</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://hanul.com/board/consult/write.html?board_no=9"
+                >온라인문의</a
+              >
+            </li>
+            <li>
+              <a href="https://hanul.com/member/privacy.html"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://hanul.com/shopinfo/guide.html"
+                >이메일 무단수집거부</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">한울이샵</a></li>
+              <li><a href="#">한울F&S</a></li>
+              <li><a href="#">한울팜스</a></li>
+              <li><a href="#">김치도가</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              본사: 충남 청양군 비봉면 작은한술길 42 (비봉면 방한리 104번지)
+            </p>
+            <p>
+              영업&마케팅본부: 경기도 광명시 광화로 22 (광명동, 로얄프라자)
+              9층/p>
+            </p>
+            <p>cCopyright &copy; 한울. All Rights Reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="hanul" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

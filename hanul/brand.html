@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한울</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="한울 공식 홈페이지 | 믿을 수 있는 재료로 만든 김치, 반찬, 가정간편식(HMR) 전문 브랜드. 정성 가득한 한국의 맛을 경험하세요."
+    />
+    <meta
+      name="keywords"
+      content="한울, Hanul, 김치, 반찬, 가정간편식, HMR, 전통식품, 한식, 한국 음식, 맛김치, 프리미엄 김치"
+    />
+    <link rel="canonical" href="https://dany339.github.io/hanul/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="한울 | 정성으로 만든 김치 & 가정간편식"
+    />
+    <meta
+      property="og:description"
+      content="한국의 맛을 담은 한울! 믿을 수 있는 재료와 정성으로 만든 김치, 반찬, 가정간편식을 만나보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/hanul/" />
+    <meta
+      property="og:image"
+      content="https://www.hanul.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="한울 | 정성으로 만든 김치 & 가정간편식"
+    />
+    <meta
+      name="twitter:description"
+      content="한국의 맛을 담은 한울! 믿을 수 있는 재료와 정성으로 만든 김치, 반찬, 가정간편식을 만나보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.hanul.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/brand.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/brand.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">BONIF</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#value">VALUE</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+              <li><a href="brand.html#delivery">물류센터</a></li>
+              <li><a href="brand.html#client">CLIENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+              <li><a href="event.html#award">AWARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="util-menu">
+            <button class="btn-menu">
+              <i class="hidden">메뉴</i
+              ><span class="menu-bar"
+                ><span class="bar1"></span><span class="bar2"></span
+                ><span class="bar3"></span
+              ></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#value">VALUE</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+              <li><a href="brand.html#delivery">물류센터</a></li>
+              <li><a href="brand.html#client">CLIENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+              <li><a href="event.html#award">AWARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > BRAND</strong>
+          <div class="visual-title">
+            <h2>BRAND</h2>
+            <p>
+              한울은 고객만족을 최우선으로 생각합니다. 고객의 의견을 존중하며
+              항상 고객의 소리에 귀 기울이겠습니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024/main_insta02.jpg"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: vip -->
+      <section class="vip" id="value">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>VALUE</strong>
+            <h3>한울이 걸어온 길</h3>
+            <p>
+              내 가족이 먹는 음식을 만든다는 마음으로 식품산업에 종사하였습니다.
+            </p>
+          </div>
+          <ul class="vip-service" data-aos="fade-up">
+            <li>
+              <dl>
+                <dt>인간존중</dt>
+                <dd>
+                  고객의 만족을 최우선으로 생각하며 항상 고객의 소리에 귀
+                  기울이겠습니다.
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>장인정신</dt>
+                <dd>
+                  SINCE 1988 식품기업의 노하우로, K-푸드의 세계화에
+                  앞장서겠습니다.
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>정성과 신의</dt>
+                <dd>
+                  가족이 먹을 것을 만든다는 마음으로 소중한 신뢰에 정성을 다해
+                  보답하겠습니다.
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: vip -->
+
+      <!-- s: story -->
+      <section class="story" id="story">
+        <div class="inner">
+          <div class="sec-title">
+            <strong>STORY</strong>
+            <h3>우리 전통식품문화의 세계화를 지향하는 기업 한울</h3>
+          </div>
+          <p class="p1">
+            한울은 한국 전통식품의 세계화를 위해서 '국적과 양심이 있는 기업,
+            깨끗하고 젊은 기업, 우리 전통식품문화의 세계화를 지향하는 기업'으로
+            성장해 나갈 것을 고객 여러분들께 약속 드립니다.
+          </p>
+          <p class="p2">
+            식품산업에 종사한 지 삼십 여년, 지금까지 항상 내 가족이 먹는 음식을
+            만든다는 마음으로 깨끗하고 맛있는 먹거리를 만들기 위해 노력해
+            왔습니다.
+          </p>
+          <p class="p3">
+            처음 그 마음 그대로 누구나 저희 제품을 안심하고 드실 수 있도록
+            완벽한 품질 관리에 힘쓸 것이며, 앞으로도 고객 여러분의 입맛에 맞는
+            다양한 제품을 개발하는 등 고객 만족을 위해 최선을 다하겠습니다.
+          </p>
+          <p class="p4">
+            언제나 믿고 먹을 수 있는 음식으로 더 많은 가정의 식탁을 책임지며,
+            나아가 국내뿐 아니라 세계에서도 자랑스러운 K-푸드의 대표 기업으로
+            성장해 나갈 것을 약속 드립니다.
+          </p>
+          <p class="p5">농업회사법인주식회사 <b>한울대표이사 백창기</b></p>
+        </div>
+      </section>
+
+      <div class="fake"></div>
+      <!-- //e: story -->
+
+      <!-- s: reward -->
+      <section class="reward" id="delivery">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>앱 사용 혜택</strong>
+            <h3>등급별 다양한 혜택을 만나보세요!</h3>
+          </div>
+          <ul class="reward-item">
+            <li data-aos="fade-up" data-aos-delay="100">
+              <figure>
+                <img
+                  src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/bio_icon01.png"
+                  alt="전국에 걸친 식재 유통 지점 및 대리점 확보"
+                />
+              </figure>
+              <div class="reward-txt">
+                <strong>전국에 걸친 식재 유통 지점 및 대리점 확보</strong>
+                <p>
+                  01. 강원도에서 제주도까지 아우르는 전국 물류 가능<br />
+                  02. 냉장/냉동/야채/식자재 전문<br />
+                  03. 야채/청과/수산 등 농산물을 저렴하고 싱싱하게 공급
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <figure>
+                <img
+                  src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/bio_icon02.png"
+                  alt="전국 배송망 보유"
+                />
+              </figure>
+              <div class="reward-txt">
+                <strong>전국 배송망 보유</strong>
+                <p>
+                  01 콜드체인 시스템으로 영호남은 물론 물류 취약지역인
+                  강원/제주까지 일일 배송<br />
+                  02 현재 전국 600개 점포에 냉동 냉장 제품을 배송<br />
+                  03 도시락(전국), 케이터링(단체급식) 등 공급<br />
+                  04 프랜차이즈 전문 배송 서비스 운영
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="300">
+              <figure>
+                <img
+                  src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/bio_icon03.png"
+                  alt="지역 거점 (DEPOT) 운영"
+                />
+              </figure>
+              <div class="reward-txt">
+                <strong>지역 거점 (DEPOT) 운영</strong>
+                <p>
+                  01 수도권과 지방을 잇는 교통 요지에 위치하여 수도권은 물론
+                  전국 원할 배송<br />
+                  02 통합 배송을 통한 지역 분할로 물류비 절감
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="400">
+              <figure>
+                <img
+                  src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/bio_icon04.png"
+                  alt="선진 시스템 적용 및 운영"
+                />
+              </figure>
+              <div class="reward-txt">
+                <strong>선진 시스템 적용 및 운영</strong>
+                <p>
+                  01 ERP (Enterprise Resource Planning) 전사 및 고객사 관련 자원
+                  운용 프로그램 활용<br />
+                  02 EDI (Electronic Data Interchanging) 수발주 업무 전산화<br />
+                  03 DAS (Digital Assorting System) 피킹업무의 전산화 > 다품종
+                  소량 피킹 및 오미출을 최소화<br />
+                  04 WMS (Web Monitoring System) 원격 온도 체크 시스템 (채용
+                  준비 중)<br />
+                  05 LSC (Logistics Service Center) 운용으로 Client 클레임에
+                  최단시간 대응 및 반영
+                </p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="500">
+              <figure>
+                <img
+                  src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/bio_icon05.png"
+                  alt="다양한 고객 편의 시스템"
+                />
+              </figure>
+              <div class="reward-txt">
+                <strong>다양한 고객 편의 시스템</strong>
+                <p>
+                  01 물류 품질, 정밀도 향상, 리드타임 단축, 제품 선도 관리<br />
+                  02 VM (Vendor Managed Inverntor) 기능<br />
+                  03 D소매와 외식기업과 납품업자를 중계하는 수발주, 재고관리,
+                  기타 정보 연계 기능
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: reward -->
+
+      <!-- s: allergie -->
+      <section class="allergie" id="client">
+        <!-- .inner>(.allergie-txt>(.sec-title>strong+h3)+p+a.view-more)+.sllergie-slider-wrap>.allergie-list>.allergie-item*14>(figure>img)+strong -->
+        <div class="inner">
+          <div class="allergie-txt">
+            <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+              <strong>CLIENT</strong>
+              <h3>한울 CLIENT</h3>
+            </div>
+          </div>
+          <div class="allergie-slider-wrap">
+            <div
+              class="allergie-slider swiper"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/client_01.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/client_02.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/client_03.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/client_04.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/client_05.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/client_06.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/online_client_002.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/client_07.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/online_client_003.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/online_client_004.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/online_client_005.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/online_client_006.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/online_client_007.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/online_client_008.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/online_client_009.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: allergie -->
+
+      <!-- s: thanks -->
+      <section class="thanks">
+        <h4>
+          고객의 믿음을 바탕으로 <strong>창조적 신문화 가치</strong>를
+          실현하겠습니다.
+        </h4>
+      </section>
+      <!-- //e: thanks -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://hanul.com/board/consult/write.html?board_no=9"
+                >온라인문의</a
+              >
+            </li>
+            <li>
+              <a href="https://hanul.com/member/privacy.html"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://hanul.com/shopinfo/guide.html"
+                >이메일 무단수집거부</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">한울이샵</a></li>
+              <li><a href="#">한울F&S</a></li>
+              <li><a href="#">한울팜스</a></li>
+              <li><a href="#">김치도가</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              본사: 충남 청양군 비봉면 작은한술길 42 (비봉면 방한리 104번지)
+            </p>
+            <p>
+              영업&마케팅본부: 경기도 광명시 광화로 22 (광명동, 로얄프라자)
+              9층/p>
+            </p>
+            <p>cCopyright &copy; 한울. All Rights Reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="hanul" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

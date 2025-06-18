@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한울</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="한울 공식 홈페이지 | 믿을 수 있는 재료로 만든 김치, 반찬, 가정간편식(HMR) 전문 브랜드. 정성 가득한 한국의 맛을 경험하세요."
+    />
+    <meta
+      name="keywords"
+      content="한울, Hanul, 김치, 반찬, 가정간편식, HMR, 전통식품, 한식, 한국 음식, 맛김치, 프리미엄 김치"
+    />
+    <link rel="canonical" href="https://dany339.github.io/hanul/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="한울 | 정성으로 만든 김치 & 가정간편식"
+    />
+    <meta
+      property="og:description"
+      content="한국의 맛을 담은 한울! 믿을 수 있는 재료와 정성으로 만든 김치, 반찬, 가정간편식을 만나보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/hanul/" />
+    <meta
+      property="og:image"
+      content="https://www.hanul.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="한울 | 정성으로 만든 김치 & 가정간편식"
+    />
+    <meta
+      name="twitter:description"
+      content="한국의 맛을 담은 한울! 믿을 수 있는 재료와 정성으로 만든 김치, 반찬, 가정간편식을 만나보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.hanul.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">BONIF</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#value">VALUE</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+              <li><a href="brand.html#delivery">물류센터</a></li>
+              <li><a href="brand.html#client">CLIENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+              <li><a href="event.html#award">AWARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="util-menu">
+            <button class="btn-menu">
+              <i class="hidden">메뉴</i
+              ><span class="menu-bar"
+                ><span class="bar1"></span><span class="bar2"></span
+                ><span class="bar3"></span
+              ></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#value">VALUE</a></li>
+              <li><a href="brand.html#story">STORY</a></li>
+              <li><a href="brand.html#delivery">물류센터</a></li>
+              <li><a href="brand.html#client">CLIENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+              <li><a href="event.html#award">AWARD</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <aside class="breadcrumb">
+      <button class="prev"><i class="hidden">이전</i></button>
+      <p>인기메뉴</p>
+      <button class="next"><i class="hidden">다음</i></button>
+    </aside>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <div class="visual-title">
+            <h2>HANUL</h2>
+            <p>
+              한울은 내 가족이 먹는다는 마음으로 제품을 만듭니다. 고객의 소중한
+              신뢰에 정성을 다해 보답하겠습니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic1.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu">
+        <!-- (.menu-txt>strong+(ul.menu-txt-list>li*6>h3+p)+a.btn-more)+(.menu-con>ul>li*6>(figure>img)+p) -->
+        <div class="inner">
+          <div class="slider-menu-wrap" data-aos="fade-right">
+            <div class="swiper menu-txt-slider">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide menu-text-card">
+                  <strong>식품인증현황</strong>
+                  <h3>FSSC22000</h3>
+                  <p>
+                    국제소비자포럼 산하 식품 제조 및 도소매 업계에 영향력 있는
+                    국제식품안전협회에서 승인한 식품제조 및 식품용기 제조 분야에
+                    특화하여 개발된 식품 안전 규격입니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>식품인증현황</strong>
+                  <h3>HACCP 인증</h3>
+                  <p>
+                    식품의 원재료 생산에서부터 최종소비자가 섭취하기 전까지 각
+                    단계에서 생물학적, 화학적, 물리적 위해요소가 해당 식품에
+                    혼입되거나 오염되는 것을 방지하기 위한 위생관리시스템입니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>식품인증현황</strong>
+                  <h3>한국전통식품 인증</h3>
+                  <p>
+                    한국전통식품품질인증마크는 우리 농산물을 사용하여 전통적인
+                    제조장법으로 우리네 고유한 옛 말을 재현한 식품에 대해 정부가
+                    그 품질을 인증하고 부여하는 마크입니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>식품인증현황</strong>
+                  <h3>ISO 9001</h3>
+                  <p>
+                    ISO 9001은 모든 산업 분야 및 활동에 적용할 수 있는
+                    품질경영시스템의 요구사항을 규정한 국제표준으로써 제품을
+                    생산, 공급하는 품질경영시스템에 대한 인증입니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 메뉴보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-con-slider-wrap"
+              data-aos="fade-left"
+              data-aod-delay="800"
+            >
+              <div class="swiper menu-con-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/food_certi_02.jpg"
+                        alt="FSSC22000"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>FSSC22000</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/food_certi_03.jpg"
+                        alt="HACCP 인증"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>HACCP 인증</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/food_certi_04.jpg"
+                        alt="한국전통식품 인증"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>한국전통식품 인증</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/food_certi_05.jpg"
+                        alt="ISO 9001"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>ISO 9001</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+
+      <!-- s: event -->
+      <section class="news">
+        <div class="inner">
+          <div
+            class="sec-title"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-offset="-50"
+          >
+            <strong>NEWS</strong>
+            <h3>홍보 및 보도자료</h3>
+          </div>
+          <a
+            href="event.html#sns"
+            class="view-more"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            >VIEW MORE</a
+          >
+        </div>
+
+        <!-- .event-list>ul.event-i>li*10>a>figure>img -->
+        <div class="news-lists" data-aos="fade-up" data-aos-delay="50">
+          <div class="news-list">
+            <div class="swiper news-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/new241121.jpg"
+                        alt="안전한 김장 되도록…식약처·농식품부 수장, 합동점검"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/news241004.jpg"
+                        alt="군 보급품에 유명 브랜드 운동화·대기업 밀키트"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/news04.jpg"
+                        alt="[명문장수기업] 포장김치로 걸어온 32년, 한울 백창기 대표의 기업가정신"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/news.jpg"
+                        alt="청양군 비봉농공단지 입주업체, 호우피해지역에 구호 물품 전달"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/news05.jpg"
+                        alt="한울 백창기 대표, 김치 수출 활성화 공로'산업포장'"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/web/upload/2024_brand/news006.jpg"
+                        alt="꼬마김치 개발한 한울 백창기 대표 등 4명 김치산업 발전 정부포상"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://ecimg.cafe24img.com/pg1066b74068173066/hanul05/file_data/gallery/62c6b647b93e0b72be2a0fc196969896.jpg"
+                        alt="한울, ‘청양 농특산물 홍콩 수출 100만달러 달성’ 전체 수출액 중 25% 차지"
+                      />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: event -->
+
+      <!-- s: tip -->
+      <section class="tip" id="history">
+        <!-- .inner>(.sec-title>strong+h3)+ul.tip-list>li*4>strong+p -->
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>VISION</strong>
+            <h3>글로벌 식품기업 한울</h3>
+            <p>
+              한울은 우리 전통식품문화의 세계화를 지향하는 기업으로 성장해 나갈
+              것을 여러분들께 약속 드립니다.
+            </p>
+          </div>
+          <ul class="tip-list">
+            <li data-aos="fade-up" data-aos-delay="100">
+              <strong>신뢰받는 기업</strong>
+              <p>
+                내 가족이 먹는 제품을 만든다고 생각하며 믿을 수 있는 안심
+                먹거리를 만들겠습니다.
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <strong>혁신을 선도하는 기업</strong>
+              <p>
+                Sine 1988 전통 식품기업의 노하우로 한식의 세계화에 앞장
+                서겠습니다.
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="300">
+              <strong>고객과 함께하는 기업</strong>
+              <p>
+                고객의 의견을 존중하며 항상 고객의 목소리에 귀 기울이는 한울이
+                되겠습니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: tip -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://hanul.com/board/consult/write.html?board_no=9"
+                >온라인문의</a
+              >
+            </li>
+            <li>
+              <a href="https://hanul.com/member/privacy.html"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://hanul.com/shopinfo/guide.html"
+                >이메일 무단수집거부</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">한울이샵</a></li>
+              <li><a href="#">한울F&S</a></li>
+              <li><a href="#">한울팜스</a></li>
+              <li><a href="#">김치도가</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              본사: 충남 청양군 비봉면 작은한술길 42 (비봉면 방한리 104번지)
+            </p>
+            <p>
+              영업&마케팅본부: 경기도 광명시 광화로 22 (광명동, 로얄프라자)
+              9층/p>
+            </p>
+            <p>cCopyright &copy; 한울. All Rights Reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="hanul" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>
