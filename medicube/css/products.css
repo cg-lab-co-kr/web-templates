@@ -1,0 +1,302 @@
+@charset 'utf-8';
+
+/* ------------ 제품 목록 - tab ------------ */
+.products-tab {
+  display: flex;
+  gap: var(--gap-m);
+  justify-content: center;
+  margin-top: var(--margin-l);
+  flex-shrink: 0;
+  overflow: auto;
+}
+
+.products-tab li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  min-width: 9.6rem;
+  aspect-ratio: 1/1;
+  font-size: var(--font-s);
+  font-weight: var(--font-weight-bold);
+  color: var(--main-color);
+  border-radius: var(--circle-radius);
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+}
+
+.products-tab li.on {
+  background: var(--main-color);
+  color: var(--white100);
+}
+
+.products-tab li:hover {
+  background: #f4c6d1;
+  transition: var(--trans-speed-nomal);
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+
+/* ------------ 제품 목록 ------------ */
+.products-title {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: var(--margin-xl);
+  word-break: keep-all;
+}
+
+.products-title h3 {
+  font: var(--font-sec-title) / 0.8 "Poppins", sans-serif;
+  font-weight: var(--font-weight-bold);
+  color: var(--title-color);
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25.5rem, 1fr));
+  gap: var(--gap-l) var(--gap-xs);
+  margin-top: var(--margin-l);
+  justify-items: center;
+  padding: 0 6.5rem;
+}
+
+.products-list li figure {
+  width: 100%;
+  height: 29rem;
+  margin-bottom: var(--margin-xs);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+}
+
+.products-list li:hover figure img {
+  transform: var(--scale-img);
+}
+
+.products-list li p {
+  padding: 0 2rem;
+  /* font: 2rem/1.3 "Pretendard", sans-serif; */
+  font-weight: var(--font-weight-bold);
+  color: var(--title-color);
+  word-break: keep-all;
+  text-align: center;
+}
+
+.products-list .products-tag {
+  display: flex;
+  justify-content: center;
+}
+
+.products-list .products-tag p {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-s);
+  color: var(--main-color);
+}
+
+@media (max-width: 1440px) {
+  .products-list {
+    padding: 0;
+  }
+}
+
+/* ------------ 질문 목록 - tab ------------ */
+.faq-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: var(--font-l);
+  font-weight: var(--font-weight-bold);
+  gap: var(--gap-m);
+  margin-top: var(--margin-l);
+  overflow-x: auto;
+  user-select: none;
+}
+
+.faq-tab li {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.faq-tab li:hover {
+  color: var(--main-color70);
+  transition: var(--trans-speed-nomal);
+}
+
+.faq-tab li.on {
+  color: var(--main-color);
+  transition: var(--trans-speed-nomal);
+}
+
+/* ------------ 질문 목록 ------------ */
+.faq {
+  margin-top: var(--margin-xl);
+}
+
+.faq-wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: var(--gap-m);
+}
+
+.info-wrap li {
+  border-top: 2px solid var(--black10);
+  padding: 3rem;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.info-wrap li:first-child {
+  border-top: 4px solid var(--main-color);
+}
+
+.info-wrap li:last-child {
+  border-bottom: 2px solid var(--black10);
+}
+
+.info-wrap li.on {
+  background: var(--main-color10);
+}
+
+.info-wrap li::after {
+  content: "";
+  position: absolute;
+  top: 2.8rem;
+  right: 2%;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background: url(../../img/arrow-m-right.png) no-repeat 50%;
+  transform: rotate(90deg);
+  transition: var(--trans-speed-nomal);
+}
+
+.info-wrap li.on::after {
+  rotate: -180deg;
+}
+
+.faq-title {
+  display: flex;
+  gap: var(--gap-s);
+  align-items: center;
+}
+
+.faq-title i,
+.answer-wrap i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: var(--circle-radius);
+  font-size: var(--font-l);
+  font-weight: var(--font-weight-bold);
+  color: var(--white100);
+  background: var(--main-color);
+  aspect-ratio: 1/1;
+}
+
+.answer-wrap i {
+  background: var(--black10);
+}
+
+.faq-txt {
+  width: 80%;
+}
+
+.faq-txt h4 {
+  font-size: var(--font-l);
+  font-weight: var(--font-weight-bold);
+  color: var(--title-color);
+  padding-right: 1rem;
+  word-break: keep-all;
+}
+
+.answer-wrap {
+  margin-top: var(--margin-s);
+  display: none;
+  word-break: keep-all;
+}
+
+.answer-con {
+  display: flex;
+  gap: var(--gap-m);
+}
+
+.answer-con p {
+  font-size: var(--font-m);
+}
+
+@media (max-width: 768px) {
+  .info-wrap li {
+    padding: 3rem 2rem;
+  }
+
+  .faq-title i {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* 'A' 아이콘 넣을지 말지 고민. 공간을 많이 차지해서 답변이 보기 불편하게 떨어짐 */
+  .answer-wrap i {
+    display: none;
+  }
+}
+
+/* ------------ 목록01 ------------ */
+.list {
+  margin-top: var(--margin-xl);
+}
+
+.list-item {
+  margin-top: var(--margin-s);
+  display: flex;
+  gap: var(--gap-m);
+}
+
+.list-item li {
+  width: 100%;
+  gap: var(--gap-m);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f8f8f8;
+  border-radius: var(--card-radius);
+  word-break: keep-all;
+  padding: 3rem;
+}
+
+.list-item li figure {
+  max-width: 9.3rem;
+  min-width: 9.3rem;
+  width: 9.3rem;
+  aspect-ratio: 1/1;
+  border-radius: var(--circle-radius);
+  overflow: hidden;
+}
+
+.list-txt {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+
+.list-txt strong {
+  font-weight: var(--font-weight-semibold);
+  color: var(--main-color);
+}
+
+.list-txt p {
+  font-size: var(--font-m);
+}
+
+@media (max-width: 1440px) {
+  .list-item {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .list-txt {
+    text-align: center;
+  }
+}

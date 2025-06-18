@@ -1,0 +1,57 @@
+@charset 'utf-8';
+
+/* ------------ 소식 목록 ------------ */
+.sns {
+  margin-top: var(--margin-xl);
+}
+
+.sns-list {
+  margin-top: var(--margin-xs);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-m);
+}
+
+.sns-item {
+  width: 46%;
+  margin-top: 3.125vw; /* var(--margin-l) */
+}
+
+.sns-item figure {
+  width: 100%;
+  aspect-ratio: 1/0.3094;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+}
+
+.sns-item:hover figure img {
+  transform: var(--scale-img);
+}
+
+.sns-txt p {
+  margin-top: var(--margin-xs);
+  padding-left: 1rem;
+  /* font-size: var(--font-m); */
+  font-size: clamp(1.6rem, 3.5vw, 2rem);
+  font-weight: var(--font-weight-bold);
+  color: var(--title-color);
+}
+
+@media (max-width: 1228px) {
+  .sns-item {
+    width: 70%;
+    text-align: center;
+  }
+
+  .sns-txt p {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sns-item {
+    width: 100%;
+  }
+}
