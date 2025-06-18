@@ -1,0 +1,380 @@
+@charset 'utf-8';
+
+.vision {
+  box-shadow: 0px 0px 30px var(--main-color20);
+  padding: 5.8rem 0 14.2rem 0;
+}
+
+.vison-title {
+  margin-top: 9rem;
+  text-align: center;
+  position: relative;
+}
+
+.vison-title::before,
+.vison-title::after {
+  content: "";
+  width: 24.6rem;
+  height: 15rem;
+  position: absolute;
+  background: url(../img/decoration-pic1.png) no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vison-title::before {
+  left: 0;
+}
+
+.vison-title::after {
+  right: 0;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.vison-title p:nth-child(1) {
+  color: var(--main-color);
+}
+
+.vison-title h4 {
+  font: 8.2rem/1.1 "Poppins", sans-serif;
+  font-size: clamp(4.5rem, 6vw, 8.2rem);
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.vison-title p {
+  margin: 3rem auto 0 auto;
+  width: 50%;
+  word-break: keep-all;
+}
+
+.vip .sec-title {
+  margin-top: 12rem;
+}
+
+.vip-service {
+  margin: 6rem 0 12rem 0;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.vip-service li {
+  width: 36.9rem;
+  min-width: 33.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 0 5.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  cursor: pointer;
+  word-break: keep-all;
+  box-shadow: 0px 0px 30px rgba(9, 63, 45, 0.25);
+}
+
+.vip-service li:nth-child(1) {
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/brand/img_brand-bg1.jpg);
+}
+.vip-service li:nth-child(2) {
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/brand/img_brand-bg2.jpg);
+}
+.vip-service li:nth-child(3) {
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/brand/img_brand-bg3.jpg);
+}
+
+.vip-service li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  background: var(--black10);
+}
+
+.vip-service li:hover::after {
+  content: "";
+  background: var(--main-color70);
+}
+
+.vip-service dl {
+  position: relative;
+  z-index: 1;
+}
+
+.vip-service dt {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white100);
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dt {
+  color: var(--white100);
+  transform: translateY(0);
+}
+
+.vip-service dd {
+  margin-top: 2.3rem;
+  transform: translateY(350%);
+  color: var(--white70);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dd {
+  transform: translateY(0);
+}
+
+.tip {
+  margin: 12rem 0;
+}
+
+.tip-list {
+  margin-top: 3.125vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.tip-list li {
+  /* border: 1px solid #000; */
+  width: 40.7rem;
+  aspect-ratio: 1/1.3022;
+  flex: 1 0 18%;
+  padding: 3rem;
+  word-break: keep-all;
+  border-radius: 10px;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  text-align: center;
+}
+
+.tip-list li:nth-child(1) {
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/b_bg2.jpg);
+}
+.tip-list li:nth-child(2) {
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/b_bg3.jpg);
+}
+.tip-list li:nth-child(3) {
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/b_bg4.jpg);
+}
+.tip-list li:nth-child(4) {
+  background-image: url(https://www.ulos.co.kr/data/skin/front/moment/custom/images/brand/b_bg5_02.jpg);
+}
+
+.tip-list li:hover {
+  justify-content: center;
+}
+
+.tip-list li::after {
+  content: "";
+  transition: 0.7s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(9, 63, 45, 0),
+    rgba(9, 63, 45, 0),
+    rgba(9, 63, 45, 0.7)
+  );
+}
+
+.tip-list li:hover::after {
+  content: "";
+  height: 100%;
+  background: var(--main-color70);
+}
+
+.tip-list li strong {
+  /* font-size: 2.8rem; */
+  font-size: clamp(2rem, 2vw, 2.6rem);
+  font-weight: 700;
+  color: var(--white100);
+  position: relative;
+  z-index: 1;
+  top: 80%;
+  transition: 0.4s;
+}
+
+.tip-list li p {
+  margin-top: 2rem;
+  color: var(--white70);
+  position: relative;
+  z-index: 1;
+  top: 120%;
+}
+
+.tip-list li:hover strong {
+  /* font-size: 3rem; */
+  font-size: clamp(2.2rem, 2vw, 2.8rem);
+  top: 35%;
+}
+
+.tip-list li:hover p {
+  top: 35%;
+  transition: 0.6s;
+}
+
+.allergie {
+  margin: 12rem 0;
+}
+
+.allergie-slider-wrap {
+  width: 100%;
+}
+
+.allergie-slider {
+  width: 100%;
+}
+
+.allergie .swiper-wrapper {
+  width: 100%;
+}
+
+.allergie-slider {
+  margin-top: 4rem;
+}
+
+.allergie-item {
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.allergie-item::after {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color70);
+  opacity: 0;
+}
+
+.allergie-item:hover::after {
+  opacity: 1;
+}
+
+.allergie-item figure img {
+  scale: 0.8;
+}
+
+.allergie-item strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: var(--white100);
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s;
+  /* font-size: 3rem; */
+  font-size: clamp(2.4rem, 14.7783%, 3rem);
+  font-weight: 700;
+  z-index: 1;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.allergie-item i {
+  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 8.867%, 1.8rem);
+  font-weight: 400;
+}
+
+.allergie-item:hover strong {
+  opacity: 1;
+}
+
+.allergie-slider-wrap .swiper-pagination {
+  position: relative; /* 변경: absolute에서 relative로 */
+  bottom: -5rem; /* 필요에 따라 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+}
+
+.thanks {
+  background: url(https://www.ulos.co.kr/data/skin/front/moment_240408_C/custom/images/img_slogan.jpg)
+    no-repeat 50% / cover;
+  height: 38rem;
+}
+
+.thanks h4 {
+  color: var(--white100);
+  font: 5.2rem/1.5 "Pretendard", sans-serif;
+  font-size: clamp(4rem, 6vw, 5.2rem);
+  padding: 16rem 0;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.thanks b {
+  font-weight: 700;
+}
+
+@media (max-width: 1520px) {
+  .vip-service {
+    justify-content: flex-start;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .tip-list li:hover strong {
+    top: 15%;
+  }
+
+  .tip-list li:hover p {
+    top: 15%;
+  }
+}
+
+@media (max-width: 1340px) {
+  .tip-list {
+    flex-direction: column;
+  }
+
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.3;
+  }
+}
+
+@media (max-width: 768px) {
+  .vison-title::before,
+  .vison-title::after {
+    display: none;
+  }
+
+  .vison-title p {
+    width: 80%;
+  }
+
+  .tip-list li {
+    aspect-ratio: 1/0.45;
+  }
+}
+
+@media (max-width: 480px) {
+  .tip-list li {
+    aspect-ratio: 1/1;
+  }
+}

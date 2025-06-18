@@ -1,0 +1,39 @@
+@charset 'utf-8';
+
+.sns {
+  margin: 12rem 0;
+}
+
+.sns .sns-list {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30.9rem, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
+
+.sns-item {
+  width: 30.9rem;
+  margin-top: 3.125vw;
+}
+
+.sns-item figure {
+  width: 100%;
+  aspect-ratio: 1/1.343;
+  /* height: 30.7rem; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sns-item:hover figure img {
+  transform: scale(110%);
+}
+
+.sns-txt p {
+  margin-top: 1.0417vw;
+  font-weight: 700;
+  color: var(--title-color);
+}
