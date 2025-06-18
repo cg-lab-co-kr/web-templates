@@ -1,0 +1,265 @@
+@charset 'utf-8';
+
+.sns .sec-title {
+  margin-top: 9.375vw;
+}
+
+.sns .sns-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.sns-item {
+  width: 42rem;
+  margin-top: 3.125vw;
+}
+
+.sns-item figure {
+  height: 30.7rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sns-item:hover figure img {
+  transform: scale(110%);
+}
+
+.sns-txt p {
+  margin-top: 1.0417vw;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.sns-txt p + p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+}
+
+.pagination {
+  margin: 5.7292vw 0 6.25vw 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pagination a {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--black20);
+  color: var(--black20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination a.on {
+  background: var(--main-color);
+  color: var(--white100);
+}
+
+.pagination .prev,
+.pagination .next {
+  display: block;
+  width: 2.4rem;
+  aspect-ratio: 1/1;
+  background: no-repeat 50%;
+  border: none;
+}
+
+.pagination .prev {
+  background-image: url(../img/arrow-b-left.png);
+}
+.pagination .next {
+  background-image: url(../img/arrow-b-right.png);
+}
+
+.vip .sec-title {
+  margin-top: 13.4375vw;
+}
+
+.vip-service {
+  margin: 7.8125vw 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.vip-service li {
+  width: 41rem;
+  min-width: 33.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 0 5.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  cursor: pointer;
+  word-break: keep-all;
+  box-shadow: 0px 0px 30px rgba(184, 163, 127, 0.55);
+}
+
+.vip-service li:nth-child(1) {
+  background-image: url(../img/brand-pic1.jpg);
+}
+.vip-service li:nth-child(2) {
+  background-image: url(../img/brand-pic2.jpg);
+}
+.vip-service li:nth-child(3) {
+  background-image: url(../img/brand-pic3.jpg);
+}
+
+.vip-service li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color20);
+  transition: 0.4s;
+}
+
+.vip-service li:hover::after {
+  content: "";
+  background: var(--main-color80);
+}
+
+.vip-service dl {
+  position: relative;
+  z-index: 1;
+}
+
+.vip-service dt {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white100);
+  transform: translateY(95%);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dt {
+  transform: translateY(0);
+}
+
+.vip-service dd {
+  margin-top: 2.3rem;
+  transform: translateY(350%);
+  color: var(--white70);
+  transition: 0.5s;
+}
+.vip-service li:hover dd {
+  transform: translateY(0);
+}
+
+.story .inner {
+  overflow: hidden;
+}
+
+.story {
+  background: url(https://www.ihkcos.com/img/company/management_back_1.jpg)
+    no-repeat 50% / cover;
+  padding: 21.2rem 0 20rem 0;
+  position: relative;
+  /* transform: translateY(-50%); */
+  z-index: 1;
+}
+
+.story::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(184, 163, 127, 1),
+    rgba(184, 163, 127, 0.2)
+  );
+}
+
+.story .sec-title {
+  position: relative;
+  z-index: 1;
+}
+.story .sec-title strong {
+  color: var(--white100);
+}
+
+.story .sec-title h3 {
+  color: var(--white100);
+  width: 50%;
+  word-break: keep-all;
+}
+
+.story p {
+  width: 50%;
+  font-size: clamp(2rem, 2.2vw, 2.2rem);
+  color: var(--white70);
+  word-break: keep-all;
+  margin-top: 2.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.story b {
+  font-size: clamp(2rem, 2.2vw, 2.2rem);
+  font-weight: 600;
+  color: var(--white100);
+}
+
+@media (max-width: 1350px) {
+  .vip-service {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sns-tab li {
+    width: 10rem;
+  }
+
+  .app-txt {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .store-txt {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .vison-title p {
+    width: 80%;
+  }
+
+  .slider {
+    height: 55vh;
+  }
+
+  .story .sec-title h3 {
+    width: 100%;
+  }
+
+  .store-txt {
+    width: 100%;
+  }
+
+  .story p {
+    width: 90%;
+  }
+}
