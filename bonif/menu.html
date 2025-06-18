@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>본아이에프</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="본아이에프 공식 홈페이지 | 건강하고 맛있는 한식을 만나다. 본죽, 본도시락, 본설렁탕 등 정성 가득한 영양식과 프리미엄 한식을 경험하세요."
+    />
+    <meta
+      name="keywords"
+      content="본아이에프, 본죽, 본도시락, 본설렁탕, 한식, 영양식, 건강식, 죽 전문점, 도시락, 프리미엄 한식"
+    />
+    <link rel="canonical" href="https://dany339.github.io/bonif/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="본아이에프 | 정성을 담은 건강한 한식 브랜드"
+    />
+    <meta
+      property="og:description"
+      content="건강한 맛과 정성이 담긴 한식 브랜드, 본아이에프. 본죽, 본도시락, 본설렁탕 등 균형 잡힌 영양식을 만나보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/bonif/" />
+    <meta
+      property="og:image"
+      content="https://www.bonif.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="본아이에프 | 정성을 담은 건강한 한식 브랜드"
+    />
+    <meta
+      name="twitter:description"
+      content="건강한 맛과 정성이 담긴 한식 브랜드, 본아이에프. 본죽, 본도시락, 본설렁탕 등 균형 잡힌 영양식을 만나보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.bonif.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">BONIF</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#story">STORY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">BENEFIT</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+              <li><a href="event.html#gift-card">GIFT CARD</a></li>
+              <li><a href="event.html#use">HOW USE</a></li>
+              <li><a href="event.html#app-download">BON ORDER</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="inguiry.html">BUSINESS</a>
+            <ul class="submenu">
+              <li><a href="inguiry.html#interview">INTERVIEW</a></li>
+              <li><a href="inguiry.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#story">STORY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">BENEFIT</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+              <li><a href="event.html#gift-card">GIFT CARD</a></li>
+              <li><a href="event.html#use">HOW USE</a></li>
+              <li><a href="event.html#app-download">BON ORDER</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="inguiry.html">BUSINESS</a>
+            <ul class="mobile-submenu">
+              <li><a href="inguiry.html#interview">INTERVIEW</a></li>
+              <li><a href="inguiry.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <div class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > MENU</strong>
+          <div class="visual-title">
+            <h2>MENU</h2>
+            <p>
+              정성을 그릇에 담아 만들었습니다. 행복한 삶을 위한 든든한 한끼를
+              경험해보세요.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://www.bonif.co.kr/assets/web/front/assets/images/brand/big-imgcont1.png"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu" id="menu">
+        <div class="inner">
+          <div class="menu-title">
+            <h3 data-aos="fade-down" data-aos-offset="-100">MENU</h3>
+          </div>
+
+          <ul
+            class="menu-tab"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-offset="-100"
+          >
+            <li>
+              <a href="#"><p>본죽 & 비빔밥</p></a>
+            </li>
+            <li>
+              <a href="#"><p>본죽</p></a>
+            </li>
+            <li>
+              <a href="#"><p>본도시락</p></a>
+            </li>
+            <li>
+              <a href="#"><p>본설렁탕</p></a>
+            </li>
+            <li>
+              <a href="#"><p>본우리반상</p></a>
+            </li>
+            <li>
+              <a href="#"><p>멘지</p></a>
+            </li>
+          </ul>
+
+          <!-- .menu-con>ul.menu-list>div*7>(figure>img)+p+p -->
+          <div class="menu-cons">
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241228_Pwd_1735364531881_660Kb.jpg"
+                      alt="차돌해물짬뽕뚝배기"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>13,000원</p>
+                  </div>
+                  <p>차돌해물짬뽕뚝배기</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240902_EU0_1725260671583_741Kb.jpg"
+                      alt="그릴드닭구이 비빔 포케"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>13,000원</p>
+                  </div>
+                  <p>그릴드닭구이 비빔 포케</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240902_Pzt_1725260796323_738Kb.jpg"
+                      alt="차돌 비빔 포케"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>13,000원</p>
+                  </div>
+                  <p>차돌 비빔 포케</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240902_LyX_1725260910808_757Kb.jpg"
+                      alt="참치 비빔 포케"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,000원</p>
+                  </div>
+                  <p>참치 비빔 포케</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241228_sCR_1735365743095_823Kb.jpg"
+                      alt="고추장육회비빔밥"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>13,000원</p>
+                  </div>
+                  <p>고추장육회비빔밥</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241210_vli_1733836501763_732Kb.jpg"
+                      alt="자연송이쇠고기죽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>16,000원</p>
+                  </div>
+                  <p>자연송이쇠고기죽</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240408_cFl_1712541695347_651Kb.jpg"
+                      alt="특자연송이쇠고기죽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>23,000원</p>
+                  </div>
+                  <p>특자연송이쇠고기죽</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240408_fST_1712541459559_676Kb.jpg"
+                      alt="진품쇠고기육개장죽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,000원</p>
+                  </div>
+                  <p>진품쇠고기육개장죽</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240604_5AF_1717478786570_599Kb.jpg"
+                      alt="진품쇠고기육개장뚝배기"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>11,500원</p>
+                  </div>
+                  <p>진품쇠고기육개장뚝배기</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240604_GZO_1717479555706_580Kb.jpg"
+                      alt="소불고기버섯뚝배기"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>11,500원</p>
+                  </div>
+                  <p>소불고기버섯뚝배기</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240902_tRE_1725260153356_732Kb.jpg"
+                      alt="푸팟퐁커리게살쮺"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>16,500원</p>
+                  </div>
+                  <p>푸팟퐁커리게살쮺</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240408_sXP_1712540987974_651Kb.jpg"
+                      alt="참깨계란새우쮺"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,000원</p>
+                  </div>
+                  <p>참깨계란새우쮺</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240408_TAB_1712540800971_676Kb.jpg"
+                      alt="로제해물쮺"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>13,000원</p>
+                  </div>
+                  <p>로제해물쮺</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240604_Faa_1717479022323_580Kb.jpg"
+                      alt="특능이삼계죽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>20,000원</p>
+                  </div>
+                  <p>특능이삼계죽</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20240604_YXw_1717478513230_599Kb.jpg"
+                      alt="능이삼계죽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>16,000원</p>
+                  </div>
+                  <p>능이삼계죽</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20210225_h7c_1614237698812_73Kb.jpg"
+                      alt="자연송이쇠고기죽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>16,000원</p>
+                  </div>
+                  <p>자연송이쇠고기죽</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20210225_BRD_1614238180085_73Kb.jpg"
+                      alt="특자연송이쇠고기죽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>23,000원</p>
+                  </div>
+                  <p>특자연송이쇠고기죽</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241231_CmF_1735630392446_818Kb.jpg"
+                      alt="진품쇠고기육개장죽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,000원</p>
+                  </div>
+                  <p>진품쇠고기육개장죽</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241216_e4r_1734353446868_654Kb.jpg"
+                      alt="삼계죽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,000원</p>
+                  </div>
+                  <p>삼계죽</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20220830_tQn_1661836644018_43Kb.jpg"
+                      alt="삼계전복죽"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>16,000원</p>
+                  </div>
+                  <p>삼계전복죽</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_ms2_1734398491053_413Kb.jpg"
+                      alt="본격 도시락(오리엔탈 깻잎 치킨)"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>8,000원</p>
+                  </div>
+                  <p>본격 도시락(오리엔탈 깻잎 치킨)</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_nQD_1734410604408_385Kb.jpg"
+                      alt="본격 도시락 (카츠&전)"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>8,000원</p>
+                  </div>
+                  <p>본격 도시락 (카츠&전)</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_PYP_1734410558581_404Kb.jpg"
+                      alt="본격 도시락 (치킨텐더 샐러드)"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>8,000원</p>
+                  </div>
+                  <p>본격 도시락 (치킨텐더 샐러드)</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_Btx_1734410316305_202Kb.jpg"
+                      alt="바싹불고기 깻잎제육 한상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,400원</p>
+                  </div>
+                  <p>바싹불고기 깻잎제육 한상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_hRr_1734410198396_202Kb.jpg"
+                      alt="버섯소불고기 깻잎제육 한상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,900원</p>
+                  </div>
+                  <p>버섯소불고기 깻잎제육 한상</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20250217_Po9_1739764676051_603Kb.jpg"
+                      alt="한우사골 나주식곰탕"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,000원</p>
+                  </div>
+                  <p>한우사골 나주식곰탕</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20250217_lHk_1739764282516_573Kb.jpg"
+                      alt="한우사골 돼지수육국밥"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>11,000원</p>
+                  </div>
+                  <p>한우사골 돼지수육국밥</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20250217_Hvt_1739764432483_651Kb.jpg"
+                      alt="얼큰 짬뽕국밥"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>11,000원</p>
+                  </div>
+                  <p>얼큰 짬뽕국밥</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20250217_N1i_1739767722325_876Kb.jpg"
+                      alt="한우사골 토종순대국밥"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>10,000원</p>
+                  </div>
+                  <p>한우사골 토종순대국밥</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20250217_Sgo_1739764450004_628Kb.jpg"
+                      alt="한우사골 얼큰순대국밥"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>10,000원</p>
+                  </div>
+                  <p>한우사골 얼큰순대국밥</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_Q64_1734420503640_807Kb.jpg"
+                      alt="항정살 솥밥 반상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>14,900원</p>
+                  </div>
+                  <p>항정살 솥밥 반상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_oOo_1734420597969_700Kb.jpg"
+                      alt="부채살 스테이크 솥밥 반상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>15,900원</p>
+                  </div>
+                  <p>부채살 스테이크 솥밥 반상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_YOE_1734420769792_700Kb.jpg"
+                      alt="가지 소고기 솥밥 반상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,900원</p>
+                  </div>
+                  <p>가지 소고기 솥밥 반상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_fYK_1734420807627_709Kb.jpg"
+                      alt="남도 꼬막 솥밥 반상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,900원</p>
+                  </div>
+                  <p>남도 꼬막 솥밥 반상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_QOx_1734420868846_732Kb.jpg"
+                      alt="버섯영양 솥밥과 되비지찌개 반상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>13,900원</p>
+                  </div>
+                  <p>버섯영양 솥밥과 되비지찌개 반상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_lpA_1734420903157_705Kb.jpg"
+                      alt="완도 전복 솥밥 반상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>16,900원</p>
+                  </div>
+                  <p>완도 전복 솥밥 반상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20250207_Sck_1738892303735_716Kb.jpg"
+                      alt="바싹불고기 화로반상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>14,900원</p>
+                  </div>
+                  <p>바싹불고기 화로반상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20250207_LmO_1738892048268_720Kb.jpg"
+                      alt="더덕제육불고기 화로반상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>13,900원</p>
+                  </div>
+                  <p>더덕제육불고기 화로반상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20250207_q9g_1738892526309_709Kb.jpg"
+                      alt="석갈비 화로반상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>13,900원</p>
+                  </div>
+                  <p>석갈비 화로반상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241217_Oye_1734420476636_806Kb.jpg"
+                      alt="오리주물럭 화로 반상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>13,900원</p>
+                  </div>
+                  <p>오리주물럭 화로 반상</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241228_5nr_1735392262605_464Kb.jpg"
+                      alt="시오굴라멘"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>12,000원</p>
+                  </div>
+                  <p>시오굴라멘</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241228_TiI_1735392047152_509Kb.jpg"
+                      alt="땡초 토리파이탄"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>11,000원</p>
+                  </div>
+                  <p>땡초 토리파이탄</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241211_XUb_1733921575356_523Kb.jpg"
+                      alt="차슈가득 토리파이탄"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>15,000원</p>
+                  </div>
+                  <p>차슈가득 토리파이탄</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241231_Tzv_1735628313153_448Kb.jpg"
+                      alt="토리파이탄"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>10,000원</p>
+                  </div>
+                  <p>토리파이탄</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/cmdt/20241211_oFq_1733921923652_438Kb.jpg"
+                      alt="바질아지헨 파이탄"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>10,500원</p>
+                  </div>
+                  <p>바질아지헨 파이탄</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://www.bonif.co.kr/company/intro">회사소개</a>
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/company/terms?div=001"
+                >이용약관</a
+              >
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/company/terms?div=002"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/company/terms?div=003"
+                >위치기반 서비스 이용약관
+              </a>
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/company/terms?div=009"
+                >이메일 무단수집거부</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">본죽&비빔밥</a></li>
+              <li><a href="#">본죽</a></li>
+              <li><a href="#">본도시락</a></li>
+              <li><a href="#">본설렁탕</a></li>
+              <li><a href="#">본우리반상</a></li>
+              <li><a href="#">멘지</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-youtube">
+                <i class="hidden">유튜브</i>
+              </button>
+            </div>
+            <p>
+              본아이에프(주) 서울특별시 영등포구 선유로 165 (양평동3가,
+              와이피센터) 6층
+            </p>
+            <p>대표자명 : 이진희 ㅣ 사업자등록번호 101-86-07256</p>
+            <p>통신판매신고번호:2019-서울영등포-1230호</p>
+            <p>copyright 2025 bonif co.ltd.all rights reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="bonif" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

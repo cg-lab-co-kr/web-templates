@@ -1,0 +1,379 @@
+@charset 'utf-8';
+
+.sns {
+  margin-top: 12rem;
+}
+
+.sns-tab {
+  display: flex;
+  gap: 1.8939%;
+  justify-content: center;
+  /* margin-top: 11rem; */
+  margin-top: 5.7292vw;
+  flex-shrink: 0;
+  overflow: auto;
+}
+
+.sns-tab li {
+  display: block;
+  width: 12rem;
+  min-width: 9.6rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+}
+
+.sns-tab a {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.sns-tab li.on {
+  background: var(--main-color);
+}
+
+.sns-tab li.on a {
+  color: var(--white100);
+}
+
+.sns-tab li:hover {
+  background: #e9cdcd;
+  transition: 0.3s;
+}
+
+.sns-tab li:hover a {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.sns .sns-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sns-item {
+  width: 47.5rem;
+  margin-top: 3.125vw;
+}
+
+.sns-item figure {
+  width: 100%;
+  aspect-ratio: 1/0.5537;
+  /* height: 30.7rem; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sns-item:hover figure img {
+  transform: scale(110%);
+}
+
+.sns-txt p {
+  margin-top: 1.0417vw;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.sns-txt p + p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  margin-top: 0.5rem;
+}
+
+.tip {
+  margin-top: 12rem;
+}
+
+.tip-list {
+  margin-top: 3.125vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.tip-list li {
+  /* border: 1px solid #000; */
+  width: 32rem;
+  aspect-ratio: 1/1.65625;
+  flex: 1 0 18%;
+  padding: 3rem;
+  word-break: keep-all;
+  border-radius: 10px;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  text-align: center;
+}
+
+.tip-list li:hover {
+  justify-content: center;
+}
+
+.tip-list li:nth-child(1) {
+  background-image: url(https://www.bonif.co.kr/assets/web/front/assets/images/serviceInfo/img-order-01.png);
+}
+.tip-list li:nth-child(2) {
+  background-image: url(https://www.bonif.co.kr/assets/web/front/assets/images/serviceinfo/img-order-02.png);
+}
+.tip-list li:nth-child(3) {
+  background-image: url(../img/tip-pic1.png);
+}
+.tip-list li:nth-child(4) {
+  background-image: url(https://www.bonif.co.kr/assets/web/front/assets/images/serviceInfo/img-order-04.png);
+}
+.tip-list li:nth-child(5) {
+  background-image: url(https://www.bonif.co.kr/assets/web/front/assets/images/serviceInfo/img-order-05.png);
+}
+
+.tip-list li::after {
+  content: "";
+  transition: 0.7s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(140, 21, 13, 0),
+    rgba(140, 21, 13, 0),
+    rgba(140, 21, 13, 0.7)
+  );
+}
+
+.tip-list li:hover::after {
+  content: "";
+  height: 100%;
+  background: var(--main-color70);
+}
+
+.tip-list li strong {
+  /* font-size: 2.8rem; */
+  font-size: clamp(2rem, 2vw, 2.6rem);
+  font-weight: 700;
+  color: var(--white100);
+  position: relative;
+  z-index: 1;
+  top: 80%;
+  transition: 0.4s;
+}
+
+.tip-list li p {
+  margin-top: 2rem;
+  color: var(--white70);
+  position: relative;
+  z-index: 1;
+  top: 120%;
+}
+
+.tip-list li:hover strong {
+  /* font-size: 3rem; */
+  font-size: clamp(2.2rem, 2vw, 2.8rem);
+  top: 35%;
+}
+
+.tip-list li:hover p {
+  top: 35%;
+  transition: 0.6s;
+}
+
+.allergie {
+  margin: 12rem 0;
+}
+
+.allergie-slider-wrap {
+  width: 100%;
+}
+
+.allergie-slider {
+  width: 100%;
+}
+
+.allergie .swiper-wrapper {
+  width: 100%;
+}
+
+.allergie-txt p {
+  margin-top: 2.2727vw;
+  width: 40%;
+  word-break: keep-all;
+}
+
+.allergie-slider {
+  margin-top: 4rem;
+}
+
+.allergie-item {
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.allergie-item::after {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color70);
+  opacity: 0;
+}
+
+.allergie-item:hover::after {
+  opacity: 1;
+}
+
+.allergie-slider-wrap .swiper-pagination {
+  position: relative; /* 변경: absolute에서 relative로 */
+  bottom: -5rem; /* 필요에 따라 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+}
+
+.app-download {
+  margin-top: 8rem;
+  position: relative;
+  /* background: #ff5; */
+  /* padding: 26rem 0 38rem 0; */
+  padding: 6.25vw 0;
+}
+
+.add-download-con {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.app-txt {
+  width: 50%;
+}
+
+.app-txt p {
+  width: 80%;
+  margin-top: 2.2727vw;
+  word-break: keep-all;
+}
+
+.app-pic img {
+  object-fit: contain;
+}
+
+.app-store {
+  display: flex;
+  margin-top: 6rem;
+  gap: 2rem;
+}
+
+.app-store .btn-more-item {
+  background: var(--white100);
+}
+
+.app-store a {
+  background: var(--main-color);
+  color: var(--white100);
+}
+
+.app-store a:hover {
+  color: var(--main-color);
+}
+
+.app-store a:nth-child(1)::after {
+  background-image: url(../img/store-ico1.png);
+}
+
+.app-store a:nth-child(2)::after {
+  background-image: url(../img/store-ico2.png);
+}
+
+.app-store a:hover:nth-child(1)::after {
+  background-image: url(../img/store-ico1-m.png);
+}
+
+.app-store a:hover:nth-child(2)::after {
+  background-image: url(../img/store-ico2-m.png);
+}
+
+@media (max-width: 1440px) {
+  .tip-list li:hover strong,
+  .tip-list li:hover p {
+    top: 20%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .app-txt {
+    width: 100%;
+  }
+
+  .add-pic {
+    display: none;
+  }
+
+  .tip-list {
+    flex-direction: column;
+  }
+
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.3333;
+  }
+
+  .tip-list li p {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .allergie-txt p {
+    width: 80%;
+  }
+
+  .allergie .view-more {
+    margin-top: 2rem;
+  }
+
+  .app-txt p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .sns-tab {
+    justify-content: flex-start;
+  }
+
+  .allergie-txt p {
+    width: 100%;
+  }
+
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.6;
+  }
+
+  .online-txt p {
+    width: 100%;
+  }
+
+  .tip-list li:hover strong {
+    top: 20%;
+  }
+
+  .tip-list li:hover p {
+    top: 20%;
+  }
+}

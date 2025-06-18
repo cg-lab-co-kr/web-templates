@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>본아이에프</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="본아이에프 공식 홈페이지 | 건강하고 맛있는 한식을 만나다. 본죽, 본도시락, 본설렁탕 등 정성 가득한 영양식과 프리미엄 한식을 경험하세요."
+    />
+    <meta
+      name="keywords"
+      content="본아이에프, 본죽, 본도시락, 본설렁탕, 한식, 영양식, 건강식, 죽 전문점, 도시락, 프리미엄 한식"
+    />
+    <link rel="canonical" href="https://dany339.github.io/bonif/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="본아이에프 | 정성을 담은 건강한 한식 브랜드"
+    />
+    <meta
+      property="og:description"
+      content="건강한 맛과 정성이 담긴 한식 브랜드, 본아이에프. 본죽, 본도시락, 본설렁탕 등 균형 잡힌 영양식을 만나보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/bonif/" />
+    <meta
+      property="og:image"
+      content="https://www.bonif.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="본아이에프 | 정성을 담은 건강한 한식 브랜드"
+    />
+    <meta
+      name="twitter:description"
+      content="건강한 맛과 정성이 담긴 한식 브랜드, 본아이에프. 본죽, 본도시락, 본설렁탕 등 균형 잡힌 영양식을 만나보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.bonif.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rewards.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">BONIF</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#story">STORY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">BENEFIT</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+              <li><a href="event.html#gift-card">GIFT CARD</a></li>
+              <li><a href="event.html#use">HOW USE</a></li>
+              <li><a href="event.html#app-download">BON ORDER</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="inguiry.html">BUSINESS</a>
+            <ul class="submenu">
+              <li><a href="inguiry.html#interview">INTERVIEW</a></li>
+              <li><a href="inguiry.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#story">STORY</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">BENEFIT</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+              <li><a href="event.html#gift-card">GIFT CARD</a></li>
+              <li><a href="event.html#use">HOW USE</a></li>
+              <li><a href="event.html#app-download">BON ORDER</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="inguiry.html">BUSINESS</a>
+            <ul class="mobile-submenu">
+              <li><a href="inguiry.html#interview">INTERVIEW</a></li>
+              <li><a href="inguiry.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <div class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > BENEFIT</strong>
+          <div class="visual-title">
+            <h2>BENEFIT</h2>
+            <p>
+              본아이에프의 최신 소식과 홈페이지/본오더앱/매장에서 함께 다양한
+              이벤트를 확인해 보세요!
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://www.bonif.co.kr/assets/web/front/assets/images/brand/menji/thumbnail-swiper/img-1.png"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: sns -->
+      <section class="sns" id="sns">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-offset="-100">
+            <strong>STORE</strong>
+            <h3>전국에 있는 브랜치빈을 방문해보세요!</h3>
+          </div>
+          <div class="sns-wrap">
+            <div class="sns-tab-con">
+              <ul
+                class="sns-tab"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-offset="-100"
+              >
+                <li><a href="#">본죽&비빔밥</a></li>
+                <li><a href="#">본도시락</a></li>
+                <li><a href="#">본설렁탕</a></li>
+                <li><a href="#">본우리반상</a></li>
+                <li><a href="#">멘지</a></li>
+              </ul>
+            </div>
+            <div class="sns-list-wrap">
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250214_Urt_1739462188678_70Kb.jpg"
+                      alt="본오더 새단장 이벤트"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>본오더 새단장 이벤트</p>
+                    <p>2025.02.14 ~ 2025.03.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250103_EFh_1735878038711_42Kb.jpg"
+                      alt="공식 주문 앱 본오더 리뉴얼 오픈!"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>공식 주문 앱 본오더 리뉴얼 오픈!</p>
+                    <p>2025.01.03 ~ 2025.12.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_DBB_1735781898983_42Kb.jpg"
+                      alt="2025년 상반기 본오더 배지 멤버십"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>2025년 상반기 본오더 배지 멤버십</p>
+                    <p>2025.01.01 ~ 2025.06.30</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_f5I_1735761178255_153Kb.jpg"
+                      alt="외국인을 위한 본죽&비빔밥 메뉴 안내 서비스"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>외국인을 위한 본죽&비빔밥 메뉴 안내 서비스</p>
+                    <p>2024.01.01 ~ 2025.12.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_k5K_1735761024867_123Kb.jpg"
+                      alt="외국인을 위한 본죽 메뉴 안내 서비스"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>외국인을 위한 본죽 메뉴 안내 서비스</p>
+                    <p>2024.01.01 ~ 2025.12.31</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250214_Urt_1739462188678_70Kb.jpg"
+                      alt="본오더 새단장 이벤트"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>본오더 새단장 이벤트</p>
+                    <p>2025.02.14 ~ 2025.03.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250103_EFh_1735878038711_42Kb.jpg"
+                      alt="공식 주문 앱 본오더 리뉴얼 오픈!"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>공식 주문 앱 본오더 리뉴얼 오픈!</p>
+                    <p>2025.01.03 ~ 2025.12.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_DBB_1735781898983_42Kb.jpg"
+                      alt="2025년 상반기 본오더 배지 멤버십"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>2025년 상반기 본오더 배지 멤버십</p>
+                    <p>2025.01.01 ~ 2025.06.30</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_41d_1735761360458_143Kb.jpg"
+                      alt="외국인을 위한 본도시락 메뉴 안내 서비스"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>외국인을 위한 본도시락 메뉴 안내 서비스</p>
+                    <p>2023.01.01 ~ 2029.12.31</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250214_Urt_1739462188678_70Kb.jpg"
+                      alt="본오더 새단장 이벤트"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>본오더 새단장 이벤트</p>
+                    <p>2025.02.14 ~ 2025.03.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250213_vM7_1739410763203_78Kb.jpg"
+                      alt="고기에 진심, 푸짐한 한 끼★본설렁탕 국밥 3대장 신메뉴 출시★"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>
+                      고기에 진심, 푸짐한 한 끼★본설렁탕 국밥 3대장 신메뉴 출시★
+                    </p>
+                    <p>2025.02.03 ~ 2025.08.28</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250103_EFh_1735878038711_42Kb.jpg"
+                      alt="공식 주문 앱 본오더 리뉴얼 오픈!"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>공식 주문 앱 본오더 리뉴얼 오픈!</p>
+                    <p>2025.01.03 ~ 2025.12.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_DBB_1735781898983_42Kb.jpg"
+                      alt="2025년 상반기 본오더 배지 멤버십"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>2025년 상반기 본오더 배지 멤버십</p>
+                    <p>2025.01.01 ~ 2025.06.30</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_X87_1735761952563_229Kb.jpg"
+                      alt="매콤~달콤! ★육회비빔밥★ 신메뉴 출시!"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>매콤~달콤! ★육회비빔밥★ 신메뉴 출시!</p>
+                    <p>2024.11.07 ~ 2025.08.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250103_XE6_1735892295664_308Kb.png"
+                      alt="[본설렁탕·국밥] 외국인을 위한 본설렁탕 메뉴 안내 서비스"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>
+                      [본설렁탕·국밥] 외국인을 위한 본설렁탕 메뉴 안내 서비스
+                    </p>
+                    <p>2024.06.11 ~ 2025.12.31</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250214_Urt_1739462188678_70Kb.jpg"
+                      alt="본오더 새단장 이벤트"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>본오더 새단장 이벤트</p>
+                    <p>2025.02.14 ~ 2025.03.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250103_EFh_1735878038711_42Kb.jpg"
+                      alt="공식 주문 앱 본오더 리뉴얼 오픈!"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>공식 주문 앱 본오더 리뉴얼 오픈!</p>
+                    <p>2025.01.03 ~ 2025.12.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_DBB_1735781898983_42Kb.jpg"
+                      alt="2025년 상반기 본오더 배지 멤버십"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>2025년 상반기 본오더 배지 멤버십</p>
+                    <p>2025.01.01 ~ 2025.06.30</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_E1l_1735761797632_284Kb.jpg"
+                      alt="별미 식재로 영양과 맛 모두 챙기는, 가을 신메뉴 출시!"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>별미 식재로 영양과 맛 모두 챙기는, 가을 신메뉴 출시!</p>
+                    <p>2024.09.26 ~ 2025.02.28</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_tHh_1735787769499_105Kb.jpg"
+                      alt="외국인을 위한 본우리반상 메뉴 안내 서비스"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>외국인을 위한 본우리반상 메뉴 안내 서비스</p>
+                    <p>2023.01.05 ~ 2025.12.31</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250214_Urt_1739462188678_70Kb.jpg"
+                      alt="본오더 새단장 이벤트"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>본오더 새단장 이벤트</p>
+                    <p>2025.02.14 ~ 2025.03.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250103_EFh_1735878038711_42Kb.jpg"
+                      alt="공식 주문 앱 본오더 리뉴얼 오픈!"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>공식 주문 앱 본오더 리뉴얼 오픈!</p>
+                    <p>2025.01.03 ~ 2025.12.31</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.bonif.co.kr/event/20250102_DBB_1735781898983_42Kb.jpg"
+                      alt="2025년 상반기 본오더 배지 멤버십"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>2025년 상반기 본오더 배지 멤버십</p>
+                    <p>2025.01.01 ~ 2025.06.30</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: sns -->
+
+      <!-- s: allergie -->
+      <section class="allergie" id="gift-card">
+        <!-- .inner>(.allergie-txt>(.sec-title>strong+h3)+p+a.view-more)+.sllergie-slider-wrap>.allergie-list>.allergie-item*14>(figure>img)+strong -->
+        <div class="inner">
+          <div class="allergie-txt">
+            <div
+              class="sec-title"
+              data-aos="fade-down"
+              data-aos-delay="100"
+              data-aos-offset="-100"
+            >
+              <strong>GIFT CARD</strong>
+              <h3>센스있는 기프트카드 선물 어때요?</h3>
+            </div>
+            <p data-aos="fade-up" data-aos-delay="50" data-aos-offset="-100">
+              본아이에프의 기프트카드는 충전식 선불카드로, 온라인 매장과
+              오프라인 매장 어디서든 사용하실 수 있습니다.
+            </p>
+          </div>
+          <div class="allergie-slider-wrap">
+            <div
+              class="allergie-slider swiper"
+              data-aos="fade-up"
+              data-aos-offset="-50"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://www.bonif.co.kr/assets/web/front/assets/images/gift/img-giftcard1.png"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://www.bonif.co.kr/assets/web/front/assets/images/gift/img-giftcard9.png"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://www.bonif.co.kr/assets/web/front/assets/images/gift/img-giftcard3.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://www.bonif.co.kr/assets/web/front/assets/images/gift/img-giftcard7.png"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://www.bonif.co.kr/assets/web/front/assets/images/gift/img-giftcard5.jpg"
+                      alt=""
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: allergie -->
+
+      <!-- s: tip -->
+      <section class="tip" id="use">
+        <!-- .inner>(.sec-title>strong+h3)+ul.tip-list>li*4>strong+p -->
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down">
+            <strong>HOW USE</strong>
+            <h3>본오더 이용방법</h3>
+          </div>
+          <ul class="tip-list">
+            <li data-aos="fade-up" data-aos-delay="150" data-aos-offset="-100">
+              <strong>주문 서비스</strong>
+              <p>
+                매장식사까지 미리 주문하고, 자주 찾는 메뉴는 퀵오더로 빠르게!
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="150">
+              <strong>멤버십 QR 코드</strong>
+              <p>결제와 적립을 한번에! 주문 시 QR 코드만 보여 주세요.</p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <strong>다양한 혜택</strong>
+              <p>
+                본오더 주문/적립만 해도 나만의 배지를 통해 할인 혜택을 받을 수
+                있어요!
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="250">
+              <strong>따뜻한 선물</strong>
+              <p>기프트카드와 상품권으로 소중한 사람에게 마음을 전해 보세요!</p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="300">
+              <strong>창업 안내</strong>
+              <p>든든한 본사와 선배 사장님들의 창업 이야기를 들어 보세요!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: tip -->
+
+      <!-- s: app-download -->
+      <section class="app-download" id="app-download">
+        <div class="inner">
+          <div>
+            <div class="add-download-con">
+              <div class="app-txt">
+                <div
+                  class="sec-title"
+                  data-aos="fade-down"
+                  data-aos-offset="-50"
+                >
+                  <strong>BON ORDER</strong>
+                  <h3>본오더를 이용하고 배지와 혜택을 경험하세요!</h3>
+                </div>
+                <p data-aos="fade-down" data-aos-delay="100">
+                  알고 보면 더 편리하고 좋은 “본오더”를 이용해보세요! 매장에서
+                  하는 식사도 미리 주문하고, 한 번에 결제와 적립을 할 수 있어서
+                  더 편리해요. 나만의 배지를 모으면 다양한 할인 혜택도 받을 수
+                  있어요!
+                </p>
+                <div class="app-store">
+                  <a
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    class="btn-more"
+                    href="https://play.google.com/store/apps/details?id=kr.co.eland.eat&pcampaignid=web_share"
+                    >PLAY STORE<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                  <a
+                    data-aos="fade-up"
+                    data-aos-delay="350"
+                    class="btn-more"
+                    href="https://apps.apple.com/kr/app/%EC%95%A0%EC%8A%90%EB%A6%AC-ashley/id1098518587"
+                    >APP STORE<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+              </div>
+              <figure class="add-pic" data-aos="fade-up">
+                <img
+                  src="https://www.bonif.co.kr/assets/web/front/assets/images/serviceinfo/img-badge-01.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: app-download -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://www.bonif.co.kr/company/intro">회사소개</a>
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/company/terms?div=001"
+                >이용약관</a
+              >
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/company/terms?div=002"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/company/terms?div=003"
+                >위치기반 서비스 이용약관
+              </a>
+            </li>
+            <li>
+              <a href="https://www.bonif.co.kr/company/terms?div=009"
+                >이메일 무단수집거부</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">본죽&비빔밥</a></li>
+              <li><a href="#">본죽</a></li>
+              <li><a href="#">본도시락</a></li>
+              <li><a href="#">본설렁탕</a></li>
+              <li><a href="#">본우리반상</a></li>
+              <li><a href="#">멘지</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-youtube">
+                <i class="hidden">유튜브</i>
+              </button>
+            </div>
+            <p>
+              본아이에프(주) 서울특별시 영등포구 선유로 165 (양평동3가,
+              와이피센터) 6층
+            </p>
+            <p>대표자명 : 이진희 ㅣ 사업자등록번호 101-86-07256</p>
+            <p>통신판매신고번호:2019-서울영등포-1230호</p>
+            <p>copyright 2025 bonif co.ltd.all rights reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="bonif" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>
