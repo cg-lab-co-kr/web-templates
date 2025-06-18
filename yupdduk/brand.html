@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>동대문 엽기떡볶이</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="엽기떡볶이 공식 홈페이지 | 중독성 강한 매운맛! 전국에서 사랑받는 엽기떡볶이, 엽기오뎅, 엽기닭발까지 다양한 메뉴를 만나보세요."
+    />
+    <meta
+      name="keywords"
+      content="엽기떡볶이, 엽떡, 매운떡볶이, 즉석떡볶이, 배달떡볶이, 엽기오뎅, 엽기닭발, 매운맛, 분식, 떡볶이 맛집"
+    />
+    <link rel="canonical" href="https://dany339.github.io/yupdduk/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="엽기떡볶이 | 중독성 강한 매운맛!" />
+    <meta
+      property="og:description"
+      content="한 번 먹으면 멈출 수 없는 매운맛! 엽기떡볶이에서 매콤하고 쫄깃한 떡볶이와 다양한 사이드 메뉴를 즐겨보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/yupdduk/" />
+    <meta
+      property="og:image"
+      content="https://www.yupdduk.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="엽기떡볶이 | 중독성 강한 매운맛!" />
+    <meta
+      name="twitter:description"
+      content="한 번 먹으면 멈출 수 없는 매운맛! 엽기떡볶이에서 매콤하고 쫄깃한 떡볶이와 다양한 사이드 메뉴를 즐겨보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.yupdduk.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/brand.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">동대문 엽기떡볶이</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BUSINESS</a>
+            <ul class="submenu">
+              <li><a href="brand.html#faq">창업 FAQ</a></li>
+              <li><a href="brand.html#business">창업절차</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BUSINESS</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#faq">창업 FAQ</a></li>
+              <li><a href="brand.html#business">창업절차</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <div class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"
+            ><a href="index.html">Home</a> > BUSINESS</strong
+          >
+          <div class="visual-title">
+            <h2>BUSINESS</h2>
+            <p>
+              엽기떡볶이는 여러분의 창업을 응원합니다. 엽기떡볶이와 짜릿한
+              도전을 함께 해나갑시다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic2.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: faq -->
+      <section class="faq" id="faq">
+        <div class="inner">
+          <div
+            class="sec-title"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-offset="-100"
+          >
+            <strong>창업 FAQ</strong>
+            <h3>가맹문의</h3>
+          </div>
+
+          <div
+            class="faq-wrap"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-offset="-100"
+          >
+            <div class="faq-tab-con">
+              <ul class="faq-tab">
+                <li>가맹문의 접수 및 선정</li>
+                <li>개설절차</li>
+                <li>투자비용</li>
+              </ul>
+            </div>
+            <!-- .info-wrap>ul>li*5>(i.hidden{question}+.faq-title>strong+h4)+.answer-wrap>i.hidden{answer}+p -->
+            <div
+              class="info-wrap"
+              data-aos="fade-up"
+              data-aos-delay="150"
+              data-aos-offset="-100"
+            >
+              <ul>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>무경험자도 가맹점 운영이 가능한가요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        네 가능합니다. 동대문엽기떡볶이는 특별한 손재주나 풍부한
+                        경험이 없어도 가맹점 운영을 하실 수 있습니다. 본사의
+                        성공 노하우 및 기술 전수, 체계적인 매뉴얼 교육을
+                        이수하시면 경험이 없는 초보자도 얼마든지 운영하실 수
+                        있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>
+                        신규가맹점 개설 시, 개발되고 있는 지역을 선점 하는
+                        방법이 있을까요?
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        가맹점 개설은 전국 단위의 후보지를 검토하여 내부적으로
+                        선정된 우선순위에 의해 진행되고 있습니다. 개발이
+                        진행되고 있는 지역의 경우, 주변 가맹점의 위치·도시형성
+                        규모·주거인구 등을 복합적으로 분석한 결과로 개설
+                        우선순위를 선정합니다. 개설 우선순위에 미치지 못한
+                        지역에 대한 선점은 불가능합니다. 
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>
+                        가맹점주 선정은 어떻게 되는건가요? 선착순으로
+                        이뤄지나요?
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        가맹점주 모집은 선착순 모집이 아닙니다. 접수기간 내
+                        접수하신 가맹희망자에 대한 '엽떡' 가맹점 운영 계획서 및
+                        후보자 면담의 2차 검토 과정을 통해 가맹점주를
+                        선정합니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>가맹본부에서 점포 입지 선정을 도와주시나요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        특정 지역 및 상권에 대한 추천은 하지 않는 것이
+                        원칙입니다. 가맹희망자께서 직접 확인 및 조사 후,
+                        지역담당자와 상의하셔야 합니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>가맹점 오픈 시까지는 얼마의 기간이 소요 되나요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        가맹계약 이후 매장 오픈까지는 1~3개월 정도 소요됩니다.
+                        상권 분석 및 점포 선정, 도면 협의에 소요되는 시간의
+                        차이가 소요시간에 가장 큰 영향을 주고 있습니다. 가맹계약
+                        이후 오픈까지 소요되는 기간 동안 인/허가 추진, 인테리어
+                        공사, 본사 교육 등이 진행됩니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>식자재 공급 및 배송은 어떻게 이루어 지나요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        ㈜핫시즈너에서 운영하고 있는 물류센터 및 가맹본부에서
+                        지정한 업체를 통해서 공급하고 있습니다. 사업의 통일성
+                        유지를 위해 가맹본부에서 지정한 업체와 거래하도록
+                        가맹계약서에 명시하고 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>
+                        매장 운영시 구인은 어떻게 진행되며, 필요한 직원 수는
+                        어떻게 되나요?
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        가맹점주가 구인사이트 등을 통해 직접 구인해야 하며, 필요
+                        직원 수는 가맹점의 매출액, 영업시간 등에 따라
+                        달라집니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>
+                        가맹점 개설 시, 최소 면적은 어떻게 되나요? 작은 면적에서
+                        배달형태로만 개설이 가능할까요?
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <p>
+                        동대문엽기떡볶이 가맹점은 홀/포장/배달을 모두 운영하여야
+                        합니다. 해당 조건에 부합하는 면적은 최소
+                        18평(전용)이상이 되어야 합니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: faq -->
+
+      <!-- s: app-benefit -->
+      <section class="card-reward" id="business">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="200">
+            <strong>창업절차</strong>
+            <h3>창업을 고민하고 있다면?</h3>
+          </div>
+          <!-- ul.app-con>li*6>(figure>img)+dl>dt+dd -->
+          <div class="app-con">
+            <div>
+              <div class="app-icon">
+                <dl class="app-ico1">
+                  <dt>STEP 01</dt>
+                  <dd>온라인 가맹문의 접수</dd>
+                </dl>
+              </div>
+            </div>
+            <div>
+              <div class="app-icon">
+                <dl class="app-ico2">
+                  <dt>STEP 02</dt>
+                  <dd>운영 계획서 검토 및 후보자 면담</dd>
+                </dl>
+              </div>
+            </div>
+            <div>
+              <div class="app-icon">
+                <dl class="app-ico3">
+                  <dt>STEP 03</dt>
+                  <dd>정보공개서 제공 및 가맹 계약</dd>
+                </dl>
+              </div>
+            </div>
+            <div>
+              <div class="app-icon">
+                <dl class="app-ico4">
+                  <dt>STEP 04</dt>
+                  <dd>인테리어 도면 작성</dd>
+                </dl>
+              </div>
+            </div>
+            <div>
+              <div class="app-icon">
+                <dl class="app-ico5">
+                  <dt>STEP 05</dt>
+                  <dd>인테리어 시공 및 설비</dd>
+                </dl>
+              </div>
+            </div>
+            <div>
+              <div class="app-icon">
+                <dl class="app-ico6">
+                  <dt>STEP 06</dt>
+                  <dd>조리 교육 및 운영교육</dd>
+                </dl>
+              </div>
+            </div>
+            <div>
+              <div class="app-icon">
+                <dl class="app-ico7">
+                  <dt>STEP 07</dt>
+                  <dd>각종 시설 및 집기류 입고</dd>
+                </dl>
+              </div>
+            </div>
+            <div>
+              <div class="app-icon">
+                <dl class="app-ico8">
+                  <dt>STEP 08</dt>
+                  <dd>경영지도 및 관리</dd>
+                </dl>
+              </div>
+            </div>
+            <div>
+              <div class="app-icon">
+                <dl class="app-ico9">
+                  <dt>STEP 09</dt>
+                  <dd>원·부자재 입고</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: app-benefit -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#">법적고지</a>
+            </li>
+            <li>
+              <a href="#">영상정보처리기기운영/관리</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-facebook">
+                <i class="hidden">페이스북</i>
+              </button>
+              <button class="btn-youtube">
+                <i class="hidden">유튜브</i>
+              </button>
+            </div>
+            <p>사업자등록번호 : 201-86-13311   대표번호 : 070-7710-8592</p>
+            <p>본사 : 서울특별시 성동구 성수이로 18길 7 HS빌딩 7층</p>
+            <p>COPYRIGHT &copy; BY HOTSEASONER HOT FOOD ALL RIGHTS RESERVED</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo2.svg" alt="핫 시즈너" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

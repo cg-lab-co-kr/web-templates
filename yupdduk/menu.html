@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <!-- 기본 SEO 메타 태그 -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>동대문 엽기떡볶이</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="엽기떡볶이 공식 홈페이지 | 중독성 강한 매운맛! 전국에서 사랑받는 엽기떡볶이, 엽기오뎅, 엽기닭발까지 다양한 메뉴를 만나보세요."
+    />
+    <meta
+      name="keywords"
+      content="엽기떡볶이, 엽떡, 매운떡볶이, 즉석떡볶이, 배달떡볶이, 엽기오뎅, 엽기닭발, 매운맛, 분식, 떡볶이 맛집"
+    />
+    <link rel="canonical" href="https://dany339.github.io/yupdduk/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="엽기떡볶이 | 중독성 강한 매운맛!" />
+    <meta
+      property="og:description"
+      content="한 번 먹으면 멈출 수 없는 매운맛! 엽기떡볶이에서 매콤하고 쫄깃한 떡볶이와 다양한 사이드 메뉴를 즐겨보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/yupdduk/" />
+    <meta
+      property="og:image"
+      content="https://www.yupdduk.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="엽기떡볶이 | 중독성 강한 매운맛!" />
+    <meta
+      name="twitter:description"
+      content="한 번 먹으면 멈출 수 없는 매운맛! 엽기떡볶이에서 매콤하고 쫄깃한 떡볶이와 다양한 사이드 메뉴를 즐겨보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.yupdduk.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">동대문 엽기떡볶이</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BUSINESS</a>
+            <ul class="submenu">
+              <li><a href="brand.html#faq">창업 FAQ</a></li>
+              <li><a href="brand.html#business">창업절차</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BUSINESS</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#faq">창업 FAQ</a></li>
+              <li><a href="brand.html#business">창업절차</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">EVENT</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">EVENT</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <div class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+            <button class="btn-youtube">
+              <i class="hidden">유튜브</i>
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread"><a href="index.html">Home</a> > MENU</strong>
+          <div class="visual-title">
+            <h2>MENU</h2>
+            <p>
+              매콤하고 짜릿하게! 쫄깃한 떡과 깊은 양념이 만나 단생한 엽떡의
+              시그니처 레시피를 경험해보세요.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic1.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu" id="menu">
+        <div class="inner">
+          <div class="menu-title">
+            <h3 data-aos="fade-down" data-aos-offset="-100">MENU</h3>
+          </div>
+
+          <ul class="menu-tab" data-aos="fade-up" data-aos-offset="-50">
+            <li>
+              <a href="#"><p>메인메뉴</p></a>
+            </li>
+            <li>
+              <a href="#"><p>닭발메뉴</p></a>
+            </li>
+            <li>
+              <a href="#"><p>세트메뉴</p></a>
+            </li>
+            <li>
+              <a href="#"><p>밀키트</p></a>
+            </li>
+          </ul>
+
+          <!-- .menu-con>ul.menu-list>div*7>(figure>img)+p+p -->
+          <div class="menu-cons">
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EC%97%BD%EA%B8%B0%EB%A9%94%EB%89%B4_6_1_1_1_1_1_1.png"
+                      alt="엽기떡볶이"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>14.000원</p>
+                  </div>
+                  <p>엽기떡볶이</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EB%A1%9C%EC%A0%9C%EB%A9%94%EB%89%B4_5_1_1_1_1_1_1.png"
+                      alt="로제떡볶이"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>16,000원</p>
+                  </div>
+                  <p>로제떡볶이</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EB%A7%88%EB%9D%BC%EB%96%A1%EB%B3%B6%EC%9D%B4_5_1_1_1_1_1_1.png"
+                      alt="마라떡볶이"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>16,000원</p>
+                  </div>
+                  <p>마라떡볶이</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/24.02.22%20%EB%A7%88%EB%9D%BC%EB%A1%9C%EC%A0%9C%EB%96%A1%EB%B3%B6%EC%9D%B4_500x500_2_1_1_1_1_1.png"
+                      alt="마라로제떡볶이"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>18,000원</p>
+                  </div>
+                  <p>마라로제떡볶이</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EC%97%BD%EA%B8%B0%EB%8B%AD%EB%B3%B6%EC%9D%8C%ED%83%95_5_1_1_1_1_1_1.png"
+                      alt="엽기닭볶음탕"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>24,000원</p>
+                  </div>
+                  <p>엽기닭볶음탕</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EC%9D%BC%EB%B0%98%20%EB%A9%94%EC%9D%B8_%EC%97%BD%EA%B8%B0%EB%AC%B4%EB%BC%88%EB%8B%AD%EB%B0%9C.jpg"
+                      alt="엽기 무뼈닭발"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>15,000원</p>
+                  </div>
+                  <p>엽기 무뼈닭발</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EC%9D%BC%EB%B0%98%20%EB%A9%94%EC%9D%B8_%EC%97%BD%EA%B8%B0%EA%B5%AD%EB%AC%BC%EB%8B%AD%EB%B0%9C.jpg"
+                      alt="엽기 국물닭발"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>15,000원</p>
+                  </div>
+                  <p>엽기 국물닭발</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EC%9D%BC%EB%B0%98%20%EB%A9%94%EC%9D%B8_%EC%97%BD%EA%B8%B0%EC%98%A4%EB%8F%8C%EB%BC%88.jpg"
+                      alt="엽기 오돌뼈"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>14,000원</p>
+                  </div>
+                  <p>엽기 오돌뼈</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EC%8B%A4%EC%86%8D%EC%84%B8%ED%8A%B8.jpg"
+                      alt="실속세트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>17,500원</p>
+                  </div>
+                  <p>실속세트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%84%B8%ED%8A%B8.jpg"
+                      alt="베스트세트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>20,000원</p>
+                  </div>
+                  <p>베스트세트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EC%8A%A4%ED%8E%98%EC%85%9C%EC%84%B8%ED%8A%B8.jpg"
+                      alt="스페셜세트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>25,000원</p>
+                  </div>
+                  <p>스페셜세트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EB%8B%AD%EB%B0%9C%EC%84%B8%ED%8A%B8.jpg"
+                      alt="닭발세트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>17,500원</p>
+                  </div>
+                  <p>닭발세트</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EC%97%BD%EA%B8%B0%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EC%B0%A9%ED%95%9C%EB%A7%9B(%ED%81%AC%EA%B8%B0%EC%A1%B0%EC%A0%95)_2.jpg"
+                      alt="엽기밀키트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>9,000원</p>
+                  </div>
+                  <p>엽기밀키트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.yupdduk.com/bod/config/menu/%EB%A1%9C%EC%A0%9C%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EC%B0%A9%ED%95%9C%EB%A7%9B%20(%ED%81%AC%EA%B8%B0%EC%A1%B0%EC%A0%95)_2.jpg"
+                      alt="로제밀키트"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>11,000원</p>
+                  </div>
+                  <p>로제밀키트</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#">법적고지</a>
+            </li>
+            <li>
+              <a href="#">영상정보처리기기운영/관리</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-facebook">
+                <i class="hidden">페이스북</i>
+              </button>
+              <button class="btn-youtube">
+                <i class="hidden">유튜브</i>
+              </button>
+            </div>
+            <p>사업자등록번호 : 201-86-13311   대표번호 : 070-7710-8592</p>
+            <p>본사 : 서울특별시 성동구 성수이로 18길 7 HS빌딩 7층</p>
+            <p>COPYRIGHT &copy; BY HOTSEASONER HOT FOOD ALL RIGHTS RESERVED</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo2.svg" alt="핫 시즈너" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>
