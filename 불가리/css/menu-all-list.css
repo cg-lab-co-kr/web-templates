@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* menu-all-list */
+
+.menu-all-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 2.6316%;
+
+  gap: var(--normal-gap);
+}
+
+.menu-all-list li {
+  padding: 3.5rem;
+  background: var(--third-color);
+  transition: 0.4s;
+}
+
+.menu-all-list li a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu-all-list li a figure {
+  width: 20rem;
+  height: 18rem;
+}
+
+.menu-all-list li a figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-all-list li a dl {
+  margin: 1.5rem 0;
+}
+
+.menu-all-list li a dt {
+  font-weight: 500;
+  font-size: var(--font-m);
+  color: var(--darck-100);
+}
+
+.menu-all-list li a dd {
+  font-weight: 500;
+  font-size: var(--font-xs);
+  color: var(--darck-60);
+}
+
+.menu-all-list li a strong {
+  font-weight: 700;
+  font-size: var(--font-m);
+}
+
+.menu-all-list li:hover {
+  background: var(--first-color);
+}
+
+.menu-all-list li:hover dt,
+.menu-all-list li:hover dd,
+.menu-all-list li:hover strong {
+  color: var(--light-100);
+}
+
+/* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+@media screen and (max-width: 1440px) {
+  .menu-all-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--normal-gap);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-all-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--normal-gap);
+  }
+
+  .menu-all-list li {
+    width: 18.5rem;
+    width: 100%;
+  }
+
+  .menu-all-list li a dl {
+    padding-top: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-all-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--normal-gap);
+  }
+
+  .event-list li {
+    flex: 1 1 100% !important;
+  }
+}

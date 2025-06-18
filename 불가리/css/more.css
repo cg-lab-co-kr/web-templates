@@ -1,0 +1,29 @@
+/* s.more */
+.more {
+  background: var(--second-color);
+  padding: 10rem 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.more-con {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.more-title h4 {
+  font-weight: 700;
+  color: var(--darck-100);
+
+  font-size: var(--font-xl);
+}
+
+/* e.more */
+
+@media screen and (max-width: 1024px) {
+  .more-title h4 {
+    font-size: var(--font-m);
+  }
+}

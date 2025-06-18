@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* 숍 페이지 */
+
+/* 버튼들 */
+.lend-tabmenu {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 5%;
+}
+
+.lend-tabmenu button {
+  width: 28rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 2rem;
+  background: var(--btn);
+  color: var(--Light-100);
+  font-size: 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  width: 18.4211%;
+  font-size: clamp(1.8rem, 1.302vw, 2.5rem);
+}
+
+.lend-tabmenu button:hover,
+.lend-tabmenu button.on {
+  background: var(--main-color);
+}
+
+/* s.event */
+.event-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem 0;
+}
+
+/* 2개 아이템일 때 적용되는 스타일 */
+.lend-tabcon-item:nth-child(2) .event-list {
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.event-list li a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.event-list li figure {
+  width: 36rem;
+  height: 36rem;
+  border-radius: 2.4rem;
+  overflow: hidden;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.event-list li img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-list li {
+  text-align: center;
+}
+
+.event-list strong {
+  font-size: clamp(1.6rem, 1.042vw, 2rem);
+  font-weight: 800;
+}
+
+.event-text {
+  padding-top: 2%;
+}
+
+.event-text dt {
+  font-size: clamp(1.4rem, 1.6901vw, 2.4rem);
+  font-weight: 700;
+}
+
+.event-text dd {
+  color: var(--Darck-60);
+  font-size: clamp(1.6rem, 1.042vw, 2rem);
+  font-weight: 400;
+}
+/* e.event */
+
+/* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+@media (max-width: 1900px) {
+  .event-list > li {
+    flex: 1 1 30%;
+    margin-bottom: 2rem;
+  }
+
+  .event-list li figure {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 1060px) {
+  .event-list > li {
+    flex: 1 1 50%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .event-list {
+    padding-top: 4rem;
+  }
+
+  .event-list > li {
+    flex: 1 1 100%;
+  }
+}

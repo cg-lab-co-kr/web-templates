@@ -1,0 +1,179 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --darck-100: #000;
+  --darck-60: #666666;
+  --light-100: #fff;
+  --btn-color: #b4b4b4;
+
+  --first-color: #00714f;
+  --second-color: #f3f2f3;
+  --third-color: #f3f0eb;
+
+  --font-3xl: 5rem;
+  --font-xxl: 4rem;
+  --font-xl: 3rem;
+  --font-l: 2.4rem;
+  --font-m: 2rem;
+  --font-s: 1.8rem;
+  --font-xs: 1.3rem;
+  --font-xxs: 1.2rem;
+
+  --margin-m: 3rem;
+
+  --normal-gap: 2rem;
+
+  --size-ico-sns: 2.5rem;
+}
+
+::selection {
+  background: var(--first-color);
+  color: var(--light-100);
+}
+
+h3 {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  color: var(--darck-100);
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 10rem;
+  /* margin-bottom: 5%; */
+}
+
+html {
+  font-size: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 2rem/1.5 Pretendard, sans-serif;
+  color: var(--darck-100);
+  word-break: keep-all;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  background: var(--light-100);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--first-color);
+  font-weight: 700;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.hidden {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.inner {
+  width: 152rem;
+  margin: 0 auto;
+
+  width: 79.1667%;
+}
+
+.top-btn {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+
+  bottom: 5rem;
+  right: 7.5rem;
+  z-index: 100;
+
+  bottom: 11.5%;
+  right: 3.9063%;
+}
+
+.top {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background: var(--darck-100)
+    url(https://www.handsome.co.kr/resources/pc/ext/images/ico-button-tooltop.png)
+    no-repeat center/40%;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.more-btn {
+  width: 14rem;
+  height: 6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: var(--margin-m);
+
+  font-weight: 400;
+  font-size: var(--font-s);
+  color: var(--light-100);
+  background: var(--first-color);
+
+  transition: 0.4s;
+}
+
+.event-list li figure {
+  overflow: hidden;
+}
+
+.event-list li :hover img {
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+
+/* 반응형00000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+@media screen and (max-width: 1024px) {
+  h3 {
+    font-size: var(--font-l);
+    margin-bottom: 2rem;
+  }
+
+  section {
+    margin-bottom: 6rem;
+  }
+
+  .inner {
+    width: 90%;
+  }
+
+  .top {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .more-btn {
+    width: 17.5rem;
+    height: 5.1rem;
+
+    font-size: var(--font-xs);
+  }
+}

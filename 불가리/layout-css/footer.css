@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/* s. footer */
+#footer {
+  background: var(--second-color);
+
+  padding: 5% 0;
+}
+
+.foot-nav {
+  display: flex;
+  margin-left: -2rem;
+
+  flex-wrap: wrap;
+}
+
+.foot-nav li a {
+  display: block;
+  padding: 1rem 2rem;
+  color: var(--darck-100);
+
+  font-weight: 600;
+  font-size: var(--font-s);
+  flex-shrink: 0;
+}
+
+.footer-con {
+  display: flex;
+
+  padding-top: 1%;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: var(--darck-60);
+}
+
+address {
+  font-weight: 400;
+  font-size: var(--font-xs);
+}
+
+.in {
+  display: flex;
+  gap: 4.9rem;
+  padding: 5% 0;
+}
+
+.foot-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.foot-logo {
+  display: block;
+  width: 25rem;
+  height: 3.5rem;
+  background: url(../img/logo-darck.svg) no-repeat 50% / contain;
+}
+
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-icon .instagram {
+  display: block;
+  width: var(--size-ico-sns);
+  height: var(--size-ico-sns);
+
+  background: url(../img/instagram-icon.svg) no-repeat 50% / contain;
+}
+.link-icon .youtube {
+  display: block;
+  width: 3rem;
+  height: var(--size-ico-sns);
+
+  background: url(../img/youtube-icon.svg) no-repeat 50% / contain;
+}
+.link-icon .Facebook {
+  display: block;
+  width: var(--size-ico-sns);
+  height: var(--size-ico-sns);
+
+  background: url(../img/Facebook-icon.svg) no-repeat 50% / contain;
+}
+.link-icon .inline {
+  display: block;
+  width: var(--size-ico-sns);
+  height: var(--size-ico-sns);
+
+  background: url(../img/inline-icon.svg) no-repeat 50% / contain;
+}
+.link-icon .kakaotalk {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+
+  background: url(../img/kakaotalk-icon.svg) no-repeat 50% / contain;
+}
+
+/* 반응형00000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+@media screen and (max-width: 1400px) {
+  .foot-logo {
+    width: 20rem;
+  }
+
+  .link-icon .instagram,
+  .link-icon .youtube,
+  .link-icon .Facebook,
+  .link-icon .inline,
+  .link-icon .kakaotalk {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .foot-icon {
+    gap: var(--normal-gap);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .foot-logo {
+    width: 15rem;
+    height: 5rem;
+  }
+
+  .foot-nav {
+    margin-left: 0;
+    gap: var(--normal-gap);
+  }
+
+  .foot-nav li a {
+    padding: 0;
+    font-size: var(--font-xs);
+  }
+
+  .footer-con {
+    display: flex;
+    flex-direction: column;
+    gap: var(--normal-gap);
+  }
+
+  .in {
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+
+  .foot-logo {
+    width: 20rem;
+    height: 4rem;
+  }
+
+  .foot-icon {
+    gap: var(--normal-gap);
+  }
+
+  address {
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+}

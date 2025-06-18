@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+.event-list {
+  display: flex;
+  overflow-x: auto;
+  cursor: grab;
+  user-select: none;
+  gap: 2rem 2rem;
+}
+
+.event-list:active {
+  cursor: grabbing;
+}
+
+.event-list::-webkit-scrollbar {
+  /* display: none; */
+}
+
+/* .event-list {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 2rem 2rem;
+} */
+
+.event-list li {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  flex-direction: column;
+
+  /* flex: 1 1 30%; */
+}
+
+/* .event-list li a {
+  width: 100%;
+  height: 100%;
+} */
+
+.event-list li figure {
+  /* width: 100%; */
+  width: 48rem;
+  height: 50rem;
+}
+
+.event-list li img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-list li .event-text {
+  padding-top: 2%;
+}
+
+.event-list li .event-text dt {
+  font-size: var(--font-l);
+  font-weight: 600;
+  color: var(--darck-100);
+}
+
+.event-list li .event-text dd {
+  font-size: var(--font-s);
+  font-weight: 400;
+  color: var(--darck-60);
+}
+
+/* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+@media (max-width: 1024px) {
+  .event-list li figure {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .event-list li .event-text dt {
+    font-size: var(--font-m);
+  }
+}
+
+@media (max-width: 768px) {
+  .event-list li {
+    flex: 1 1 50%;
+  }
+
+  .event-list li figure {
+    height: 30rem;
+  }
+}

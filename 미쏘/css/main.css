@@ -1,0 +1,406 @@
+@charset "utf-8";
+
+.main-visual {
+  position: relative;
+  width: 100%;
+  height: 85rem;
+  overflow: hidden;
+  margin-top: 8rem;
+}
+
+.main-visual figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.main-visual figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.visual-con {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: #5f5; */
+  z-index: 1;
+}
+
+.visual-con h2 {
+  font-weight: 700;
+  color: var(--Light-100);
+
+  font-size: clamp(2.5rem, 2.6041vw, 5rem);
+}
+
+.visual-con p {
+  color: var(--Light-100);
+  font-weight: 400;
+
+  font-size: clamp(1.3rem, 1.0416vw, 2rem);
+}
+
+.visual-btn {
+  display: block;
+  font-size: clamp(1.4rem, 1.6901vw, 2.4rem);
+  margin-top: 3rem;
+
+  padding: 2rem 3rem;
+  border: 2px solid var(--Light-100);
+  color: var(--Light-100);
+  font-weight: 700;
+  border-radius: 30rem;
+
+  transition: 0.4s;
+}
+
+.visual-btn:hover {
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  color: var(--Light-100);
+}
+
+/* all 메뉴 */
+
+/* menu-all-list */
+.menu-all-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 2.6316%;
+  gap: 3rem;
+}
+
+.menu-all-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem;
+
+  background: var(--main-color2);
+
+  transition: 0.4s;
+}
+
+.menu-all-list figure {
+  width: 100%;
+}
+
+.menu-all-list img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-all-list dl {
+  margin: 1.5rem 0;
+}
+
+.menu-all-list dt {
+  font-weight: 700;
+  font-size: 2rem;
+
+  font-size: clamp(1rem, 1.0416vw, 2rem);
+  color: var(--Darck-100);
+}
+
+.menu-all-list dd {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-size: clamp(1rem, 0.78125vw, 1.5rem);
+  color: var(--Darck-60);
+}
+
+.menu-all-list li:hover {
+  background: var(--main-color);
+}
+
+.menu-all-list li:hover dt,
+.menu-all-list li:hover dd,
+.menu-all-list li:hover strong {
+  color: var(--Light-100);
+}
+
+.menu-all-list div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-all-list strong {
+  font-weight: 600;
+
+  font-size: clamp(1.4rem, 1.0416vw, 2rem);
+}
+
+/* s.youtube */
+.youtube-title {
+  color: var(--Light-100);
+}
+
+.youtube {
+  padding: 6% 0 6%;
+  background: var(--Darck-100);
+}
+
+.youtube-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.youtube h4 {
+  font-weight: 800;
+  font-size: 4rem;
+  font-size: clamp(1.5rem, 2.817vw, 4rem);
+
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  color: #fff;
+}
+
+.youtube-con div {
+  width: 98rem;
+  width: 69.0141%;
+
+  aspect-ratio: 16/9;
+  margin-top: 2rem;
+}
+
+.youtube-con iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* e. youtube */
+
+/* s.event */
+
+.event-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-top: 5rem;
+  padding-top: 3.2895%;
+
+  gap: 2rem;
+}
+
+.event-list li a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.event-list li figure {
+  width: 36.5rem;
+  height: 36.5rem;
+}
+
+.event-list li img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-list li {
+  text-align: center;
+}
+
+.event-list strong {
+  font-size: clamp(1.6rem, 1.042vw, 2rem);
+  font-weight: 800;
+}
+
+.event-text {
+  padding-top: 2%;
+}
+
+.event-text dt {
+  font-size: clamp(1.6rem, 1.6901vw, 2.4rem);
+  font-weight: 700;
+}
+
+.event-text dd {
+  color: var(--Darck-60);
+  font-size: clamp(1.3rem, 1.042vw, 2rem);
+  font-weight: 400;
+}
+/* e.event */
+
+/* s.more */
+.bag-more {
+  position: relative;
+  width: 100%;
+  height: 53rem;
+  overflow: hidden;
+
+  margin-bottom: 0;
+}
+
+.bag-more figure img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.bag-more .inner {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+
+.bag-more .bag-con {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bag-title h4 {
+  font-weight: 800;
+  color: var(--Light-100);
+  font-size: clamp(2.5rem, 2.0833vw, 4rem);
+  margin-bottom: 2rem;
+}
+
+/* e.more */
+
+/* 반응형  000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000*/
+
+@media screen and (max-width: 1900px) {
+  .event-list li figure {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 1620px) {
+  .event-list li figure {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  /* all */
+
+  .menu-all-list li {
+    width: 29.4rem;
+    width: 100%;
+
+    padding: 2.2rem 3.4rem;
+  }
+}
+
+@media (max-width: 1210px) {
+  .event-list li {
+    width: 20rem;
+  }
+
+  .event-list li figure {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* all */
+
+  .menu-all-list {
+    gap: 2rem;
+  }
+
+  .menu-all-list li {
+    width: 18.5rem;
+    width: 100%;
+
+    padding: 1.5rem 2.2rem;
+  }
+
+  .menu-all-list dl {
+    padding-top: 0.2rem;
+  }
+
+  /* all */
+
+  .event-list li {
+    flex: 1 1 40%;
+  }
+
+  .event-list li figure {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .youtube-con div {
+    margin-top: 0.5rem;
+    width: 35rem;
+    height: 22.1rem;
+  }
+  /* youtube */
+}
+
+@media screen and (max-width: 768px) {
+  /* all */
+
+  .menu-all-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* event */
+
+  .event-list li figure {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .event-list li {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* all */
+
+  .menu-all-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .event-list li {
+    flex: 1 1 100%;
+  }
+
+  .youtube-con div {
+    margin-top: 0.5rem;
+    width: 30rem;
+    height: 22.1rem;
+  }
+}

@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* about */
+
+.about-con {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.about-con li {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+
+  gap: 5%;
+}
+
+.about-con li .about-text {
+  flex: 1 1 max(40%, 300px);
+}
+
+.about-con li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.about-con li dl dt {
+  font-weight: 700;
+  font-size: var(--font-xl);
+}
+
+.about-con li dl dd {
+  font-weight: 400;
+  color: var(--darck-60);
+  padding-top: 0.5rem;
+
+  font-size: var(--font-m);
+}
+
+.about-con li figure {
+  height: 47rem;
+
+  flex: 1 1 max(40%, 300px);
+}
+
+.about-con li figure img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+/* about end */
+
+/* 반응형0000000000000000000000000000000000000000000000000000000000 */
+
+@media (max-width: 1024px) {
+  .about-con {
+    gap: 5rem;
+  }
+
+  .about-con li figure {
+    height: 28rem;
+  }
+
+  .about-con li dl dt {
+    font-size: var(--font-l);
+  }
+
+  .about-con li dl dd {
+    font-size: var(--font-s);
+  }
+}
