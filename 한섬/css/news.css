@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+.event-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 11.1rem 0;
+}
+
+.event-list li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 43.2rem;
+  height: 45rem;
+
+  width: 28.4211%;
+}
+
+.event-list li figure {
+  width: 100%;
+  height: 31.8rem;
+  border-radius: 2.4rem;
+  overflow: hidden;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.event-list li img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-list li {
+  text-align: center;
+}
+
+.event-text {
+  padding-top: 2.8rem;
+}
+
+.event-text dt {
+  font-size: clamp(1.5rem, 1.25vw, 2.4rem);
+  font-weight: 800;
+  color: var(--main-color3);
+
+  /* font-size: clamp(1.2rem, 1.25vw, 2.4rem); */
+}
+
+.event-text dd {
+  padding-top: 2rem;
+  font-size: clamp(1.3rem, 1.042vw, 2rem);
+  font-weight: 600;
+  color: var(--Darck-60);
+
+  /* font-size: clamp(0.9rem, 1.0416vw, 2rem); */
+}
+
+/* 반응형0000000000000000000000000000000000000000000000000000000000 */
+@media (max-width: 1500px) {
+  .event-list > li {
+    flex: 1 1 30%;
+  }
+
+  .event-list {
+    gap: 13rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .event-list {
+    padding-top: 4rem;
+  }
+  .event-list > li figure {
+    height: 28.2rem;
+  }
+
+  .event-list > li {
+    flex: 1 1 50%;
+  }
+
+  .event-list {
+    gap: 2rem;
+  }
+}

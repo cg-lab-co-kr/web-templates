@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.event-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--main-color3);
+  text-align: center;
+  padding-bottom: 5rem;
+
+  font-size: clamp(2.5rem, 2.0833vw, 4rem);
+}
+
+.visual-1 figure {
+  height: 90rem;
+}
+
+.visual-1 figure img {
+  width: 100%;
+  height: 100%;
+}
