@@ -1,0 +1,434 @@
+@charset 'utf-8';
+
+.vision {
+  box-shadow: 0px 0px 30px var(--main-color15);
+  padding: 5.8rem 0 14.2rem 0;
+}
+
+.vison-title {
+  margin-top: 9rem;
+  text-align: center;
+  position: relative;
+}
+
+.vison-title::before,
+.vison-title::after {
+  content: "";
+  width: 24.6rem;
+  height: 15rem;
+  position: absolute;
+  background: url(../img/decoration-pic1.svg) no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vison-title::before {
+  left: 0;
+}
+
+.vison-title::after {
+  right: 0;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.vison-title p:nth-child(1) {
+  color: var(--main-color);
+}
+
+.vison-title h4 {
+  font: 8.2rem/1.1 "Poppins", sans-serif;
+  font-size: clamp(6.5rem, 9.1146vw, 8.2rem);
+  font-weight: 600;
+  color: var(--main-color);
+  word-break: keep-all;
+}
+
+.vison-title p {
+  margin: 3rem auto 0 auto;
+  width: 50%;
+  word-break: keep-all;
+}
+
+.story .inner {
+  overflow: hidden;
+}
+
+.story {
+  background: url(https://www.laneige.com/kr/ko/assets/image/brand/brand-story/story-2024_img_0001_pc_kr_241210.jpg)
+    no-repeat 50% / cover;
+  padding: 21.2rem 0 20rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.story::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(64, 118, 255, 1),
+    rgba(64, 118, 255, 0.2)
+  );
+}
+
+.story .sec-title {
+  position: relative;
+  z-index: 1;
+}
+.story .sec-title strong {
+  color: var(--white100);
+}
+
+.story .sec-title h3 {
+  color: var(--white100);
+  width: 50%;
+  word-break: keep-all;
+}
+
+.story p {
+  width: 50%;
+  font-size: clamp(2rem, 2.2vw, 2.2rem);
+  color: var(--white70);
+  word-break: keep-all;
+  margin-top: 2.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.story b {
+  font-size: clamp(2rem, 2.2vw, 2.2rem);
+  font-weight: 600;
+  color: var(--white100);
+}
+
+.store {
+  margin-top: 4.6875vw;
+  background: linear-gradient(
+    to right,
+    rgba(64, 118, 255, 1),
+    rgba(64, 118, 255, 0.2)
+  );
+  height: 38rem;
+  padding: 7.6rem 0 0 0;
+}
+
+.store-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.store-txt {
+  width: 50rem;
+}
+
+.store-txt .sec-title {
+  color: var(--white100);
+}
+.store-txt .sec-title strong {
+  color: var(--white100);
+}
+
+.store-txt p {
+  color: var(--white70);
+  word-break: keep-all;
+  margin-top: 1.5rem;
+}
+
+.walter-friends {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  transform: translateX(20rem);
+}
+
+.walter-friends figure {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  /* width: 74.2rem; */
+  width: 38.6458vw;
+  /* height: 31.5rem; */
+  aspect-ratio: 1/0.4245;
+  transform: translateY(13rem);
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.store:hover .walter-friends figure,
+.walter-friends figure.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.vip .sec-title {
+  margin-top: 13.4375vw;
+}
+
+.vip-service {
+  margin-top: 7.8125vw;
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+  flex-wrap: wrap;
+}
+
+.vip-service li {
+  width: 21.3542vw;
+  min-width: 20rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 0 5.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  cursor: pointer;
+  word-break: keep-all;
+  box-shadow: 0px 0px 30px rgba(64, 118, 255, 0.55);
+}
+
+.vip-service li:nth-child(1) {
+  background-image: url(https://www.laneige.com/kr/ko/assets/image/brand/walter-friends/friends-walter-02.png);
+}
+.vip-service li:nth-child(2) {
+  background-image: url(https://www.laneige.com/kr/ko/assets/image/brand/walter-friends/friends-dambi-02.png);
+}
+.vip-service li:nth-child(3) {
+  background-image: url(https://www.laneige.com/kr/ko/assets/image/brand/walter-friends/friends-seal-02.png);
+}
+.vip-service li:nth-child(4) {
+  background-image: url(https://www.laneige.com/kr/ko/assets/image/brand/walter-friends/friends-noon-02.png);
+}
+
+.vip-service li:hover:nth-child(1) {
+  background-image: url(https://www.laneige.com/kr/ko/assets/image/brand/walter-friends/friends-walter-01.png);
+}
+.vip-service li:hover:nth-child(2) {
+  background-image: url(https://www.laneige.com/kr/ko/assets/image/brand/walter-friends/friends-dambi-01.png);
+}
+.vip-service li:hover:nth-child(3) {
+  background-image: url(https://www.laneige.com/kr/ko/assets/image/brand/walter-friends/friends-seal-01.png);
+}
+.vip-service li:hover:nth-child(4) {
+  background-image: url(https://www.laneige.com/kr/ko/assets/image/brand/walter-friends/friends-noon-01.png);
+}
+
+.vip-service li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.vip-service li:hover::after {
+  content: "";
+  height: 100%;
+  background: var(--main-color60);
+}
+
+.vip-service dl {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+}
+.vip-service li:hover dl {
+  opacity: 1;
+}
+
+.vip-service dt {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white100);
+  transform: translateY(130%);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dt {
+  transform: translateY(0);
+}
+
+.vip-service dd {
+  transform: translateY(350%);
+  color: var(--white70);
+  transition: 0.5s;
+}
+.vip-service li:hover dd {
+  transform: translateY(0);
+}
+
+.allergie {
+  margin-bottom: 17.5rem;
+}
+
+.allergie-slider-wrap {
+  width: 100%;
+}
+
+.allergie-slider {
+  width: 100%;
+}
+
+.allergie .swiper-wrapper {
+  width: 100%;
+}
+
+.allergie-txt {
+  margin-top: 10.4167vw;
+}
+
+.allergie-txt p {
+  margin-top: 2.2727vw;
+  /* margin-top: 3rem; */
+  width: 50%;
+}
+
+.allergie-slider {
+  margin-top: 4rem;
+}
+
+.allergie-item {
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.allergie-item::after {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color70);
+  opacity: 0;
+}
+
+.allergie-item:hover::after {
+  opacity: 1;
+}
+
+.allergie-item strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: var(--white100);
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s;
+  /* font-size: 3rem; */
+  font-size: clamp(2.4rem, 14.7783%, 3rem);
+  font-weight: 700;
+  z-index: 1;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.allergie-item i {
+  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 8.867%, 1.8rem);
+  font-weight: 400;
+}
+
+.allergie-item:hover strong {
+  opacity: 1;
+}
+
+.allergie-slider-wrap .swiper-pagination {
+  position: relative; /* 변경: absolute에서 relative로 */
+  bottom: -5rem; /* 필요에 따라 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+}
+
+@media (max-width: 1800px) {
+  .vison-title::before,
+  .vison-title::after {
+    width: 18rem;
+    height: 13rem;
+    background-size: contain;
+  }
+
+  .walter-friends {
+    transform: translateX(0rem);
+  }
+}
+
+@media (max-width: 1400px) {
+  .vison-title::before,
+  .vison-title::after {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .app-txt {
+    width: 68vw;
+  }
+
+  .allergie-txt {
+    margin-top: 10rem;
+  }
+
+  .allergie-txt p {
+    width: 80%;
+  }
+
+  .allergie .view-more {
+    margin-top: 2rem;
+  }
+
+  .walter-friends figure {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .store-txt {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .vison-title p {
+    width: 80%;
+  }
+
+  .slider {
+    height: 55vh;
+  }
+
+  .story .sec-title h3 {
+    width: 100%;
+  }
+
+  .store-txt {
+    width: 100%;
+  }
+
+  .story p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .store {
+    height: 40rem;
+  }
+
+  .allergie-txt p {
+    width: 100%;
+  }
+}
