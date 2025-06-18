@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lanbelle</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="랑벨 공식 홈페이지 | 자연 유래 성분으로 피부에 순한 스킨케어. 건강한 아름다움을 위한 고기능성 화장품을 만나보세요."
+    />
+    <meta
+      name="keywords"
+      content="랑벨, LANBELLE, 자연유래 화장품, 스킨케어, 천연 화장품, 저자극 화장품, 클린 뷰티, 보습, 피부 관리, K-뷰티"
+    />
+    <link rel="canonical" href="https://dany339.github.io/lanbelle/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="랑벨 | 피부를 위한 자연유래 스킨케어" />
+    <meta
+      property="og:description"
+      content="피부를 위한 순한 선택! 랑벨은 자연에서 찾은 성분으로 건강하고 아름다운 피부를 위한 저자극 스킨케어 솔루션을 제공합니다."
+    />
+    <meta property="og:url" content="https://dany339.github.io/lanbelle/" />
+    <meta
+      property="og:image"
+      content="https://www.lanbelle.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="랑벨 | 피부를 위한 자연유래 스킨케어" />
+    <meta
+      name="twitter:description"
+      content="피부를 위한 순한 선택! 랑벨은 자연에서 찾은 성분으로 건강하고 아름다운 피부를 위한 저자극 스킨케어 솔루션을 제공합니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.lanbelle.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/brand.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/brand.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">Lanbelle</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="products.html">PRODUCTS</a>
+            <ul class="submenu">
+              <li><a href="products.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#pride">랑벨의 효능</a></li>
+              <li><a href="brand.html#story">BRAND STORY</a></li>
+              <li><a href="brand.html#history">랑벨의 원료</a></li>
+              <li><a href="brand.html#illustration">ONLINE SHOP</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="products.html">PRODUCTS</a>
+            <ul class="mobile-submenu">
+              <li><a href="products.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#pride">랑벨의 효능</a></li>
+              <li><a href="brand.html#story">BRAND STORY</a></li>
+              <li><a href="brand.html#history">랑벨의 원료</a></li>
+              <li><a href="brand.html#illustration">ONLINE SHOP</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <li class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread">Home > 브랜드 소개</strong>
+          <div class="visual-title">
+            <h2>INTRODUCE</h2>
+            <p>
+              라네즈가 추구하는 가치와 라네즈만의 브랜드 캐릭터를 소개합니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/origin/origin-full-image-01.jpg"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: vision -->
+      <section class="vision" id="vision" data-aos="fade-down">
+        <div class="inner">
+          <div class="sec-title"><strong>BRAND VISION</strong></div>
+          <div class="vison-title" data-aos="fade-down" data-aos-delay="100">
+            <h4>SIMPLE PERFECTION</h4>
+            <p data-aos="fade-up" data-aos-delay="300">
+              피부에 아주 효과적이면서도 피부가 편안하게 느끼도록 최대한
+              심플하게. 군더더기 없이 꼭 필요한 성분들로만 만들었기에 완벽한
+              스킨케어 제품.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- //e: vision -->
+
+      <!-- s: vip -->
+      <section class="vip" id="pride">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down">
+            <strong>랑벨의 효능</strong>
+            <h3>랑벨이 보장합니다</h3>
+          </div>
+          <ul
+            class="vip-service"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-offset="-100"
+          >
+            <li>
+              <dl>
+                <dt>탄력</dt>
+                <dd>
+                  고농축 원액(EGF, FGF) 그대로 블렌딩하여 탄력을 높여줍니다.
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>영양공급</dt>
+                <dd>
+                  성분의 함량을 높여 영양을 공급해 유효하고 집중적인 효과를 볼
+                  수 있습니다.
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>톤업</dt>
+                <dd>
+                  전체적인 피부의 톤을 업 시켜서 본연이 가진 톤을 조금 더
+                  화사하게 가꾸어줍니다.
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>피부진정</dt>
+                <dd>
+                  베이스가 되는 병풀추출물이 자극받은 피부를 진정시키는 작용을
+                  합니다.
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: vip -->
+
+      <!-- s: story -->
+      <section class="story" id="story">
+        <div class="inner">
+          <div class="sec-title">
+            <strong>BRAND STORY</strong>
+            <h3>TAMLA TAMANU</h3>
+          </div>
+          <p class="p1">
+            <b>저는 타마누의 매력에 푹 빠진 사람입니다.</b>
+          </p>
+          <p class="p2">
+            회사명(주식회사 탐라타마누)에 타마누가 들어가는 것도 제가 타마누
+            열매에 남다른 애정을 갖고 있기에 그렇습니다. 어느 광고의 카피처럼
+            피부에 참 좋은데 어디에 어떻게 좋은지, 얼마나 좋은지 뭐라 말을 할
+            수가 없습니다. 여기는 화장품을 선보이는 곳이지 약품을 판매하는 곳은
+            아니기 때문입니다.
+          </p>
+          <p class="p3">
+            그러나 아는 사람만 아는 언젠가 모두에게 전하고 알리고 싶은 그런 것이
+            타마누입니다. 타마누를 발견하고, 사용하고, 저에겐 용기가 생겼습니다.
+            아무나 넘볼 수 없는 품질의 스킨케어 제품으로 비즈니스를 시작할
+            용기가 생겼습니다.
+          </p>
+          <p class="p4">
+            다른 회사에서 화장품을 하나의 사업아이템으로 잡고 개발하고
+            마케팅해서 판매하는 기존의 방식을 몰랐던 덕분에 틀에 얽매이지 않고
+            완전히 차별화 된 제품을 내놓을 수 있었습니다.
+          </p>
+          <p class="p5">
+            나쁜 것은 남김없이 빼고 좋은 것은 아낌없이 담았습니다. 내 얼굴에
+            바르는 거니까요. 남녀노소 누구의 피부에나 바를 수 있어야 하니까요.
+            내 손으로 직접 원료를 공수하고 내 손으로 레시피를 써서 만든
+          </p>
+          <p class="p6">
+            <b>Pure, simple, and effective</b>
+          </p>
+          <p class="p7">
+            참 깨끗한 동시에 충분히 기능적인 건강한 스킨케어
+            <b>우리는 랑벨입니다.</b>
+          </p>
+        </div>
+      </section>
+
+      <div class="fake"></div>
+      <!-- //e: story -->
+
+      <!-- s: tip -->
+      <section class="tip" id="history">
+        <!-- .inner>(.sec-title>strong+h3)+ul.tip-list>li*4>strong+p -->
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="900">
+            <strong>랑벨의 원료</strong>
+            <h3>건강한 스킨케어를 위해</h3>
+          </div>
+          <ul class="tip-list">
+            <li data-aos="fade-up" data-aos-delay="950">
+              <strong
+                >같은 기능이면<br />
+                더 - 깨끗한 것을</strong
+              >
+              <p>
+                EWG(안전도 평가 데이터베이스)에서 취급하는 성분 중에 랑벨이
+                사용하는 원료는 모두 그린등급입니다.
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="1000">
+              <strong
+                >같은 원료라도<br />
+                더 - 고급인 것을</strong
+              >
+              <p>
+                랑벨은 남태평양의 가장 청정한 지역에서 나는 프리미엄 타마누
+                추출물만을 원료로 사용합니다.
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="1050">
+              <strong
+                >같은 성분이라도<br />
+                더 - 고농도의 것을</strong
+              >
+              <p>
+                랑벨은 효과 발휘에 목적을 두고 있으므로 적정 수준의 고농축 원료
+                사용을 원칙으로 합니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: tip -->
+
+      <!-- s: allergie -->
+      <section class="online" id="illustration">
+        <!-- .inner>(.allergie-txt>(.sec-title>strong+h3)+p+a.view-more)+.sllergie-slider-wrap>.allergie-list>.allergie-item*14>(figure>img)+strong -->
+        <div class="inner">
+          <div class="online-txt">
+            <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+              <strong>ONLINE SHOP</strong>
+              <h3>온라인 숍에서 만나보실 수 있습니다</h3>
+            </div>
+            <a
+              href="#"
+              class="view-more"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              >VIEW MORE</a
+            >
+          </div>
+          <div class="online-slider-wrap">
+            <div
+              class="online-slider swiper"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/10/online-shop-lanbelle.jpg"
+                      alt="LANGELLE"
+                    />
+                  </figure>
+                  <strong>LANGELLE</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2019/01/NAVER_SMARTSTORE.jpg"
+                      alt="Smart Store"
+                    />
+                  </figure>
+                  <strong>Smart Store</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2018/01/online-shop-ssgcom-1.jpg"
+                      alt="SSG.COM"
+                    />
+                  </figure>
+                  <strong>SSG.COM</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/10/online-shop-amazon.jpg"
+                      alt="amazon"
+                    />
+                  </figure>
+                  <strong>amazon</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/10/online-shop-galleria.jpg"
+                      alt="the qalleria"
+                    />
+                  </figure>
+                  <strong>the qalleria</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/10/online-shop-lotte.jpg"
+                      alt="LOTTE.COM"
+                    />
+                  </figure>
+                  <strong>LOTTE.COM</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2018/09/online-shop-4seasonsbeauty.jpg"
+                      alt="SEASONS BEAUTY"
+                    />
+                  </figure>
+                  <strong>SEASONS BEAUTY</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2019/01/Melon-Starfish-Logo-1-1.png"
+                      alt="MELON & STARFISH"
+                    />
+                  </figure>
+                  <strong>MELON & STARFISH</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2018/01/online-shop-hmall-1.jpg"
+                      alt="Hmall.com"
+                    />
+                  </figure>
+                  <strong>Hmall.com</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/10/online-shop-lottemall.jpg"
+                      alt="롯데i몰"
+                    />
+                  </figure>
+                  <strong>롯데i몰</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/10/online-shop-cj.jpg"
+                      alt="CJmall"
+                    />
+                  </figure>
+                  <strong>CJmall</strong>
+                </div>
+                <div class="swiper-slide online-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/10/online-shop-auction.jpg"
+                      alt="AUCTION"
+                    />
+                  </figure>
+                  <strong>AUCTION</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: allergie -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a
+                href="https://lanbelle.studio-jt.co.kr/%ea%b0%9c%ec%9d%b8%ec%a0%95%eb%b3%b4%ec%b2%98%eb%a6%ac%eb%b0%a9%ec%b9%a8/"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://lanbelle.studio-jt.co.kr/shop/mou-b2b-oem/"
+                >기업용 대량 구매 및 B2B 안내</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-facebook">
+                <i class="hidden">페이스북</i>
+              </button>
+            </div>
+            <p>
+              제조판매업자 (주)탐라타마누 사업자번호 828-81-00407 통신판매신고
+              제 2016-경기성남-0739호
+            </p>
+            <p>
+              〒 13493 경기도 성남시 분당구 판교역로 240, 517-4호 (삼평동,
+              삼환하이펙스 A동)
+            </p>
+            <p>
+              개인정보관리책임자 박애란 전화 +82.31.705.6715 이메일
+              realskincare@lanbelle.com
+            </p>
+            <p>&copy; 2017 LANBELLE.ALL RIGHTS RESERVED.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="Lanbelle" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

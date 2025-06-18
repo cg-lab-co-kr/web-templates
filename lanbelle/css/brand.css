@@ -1,0 +1,477 @@
+@charset 'utf-8';
+
+.vision {
+  box-shadow: 0px 0px 30px var(--main-color15);
+  padding: 5.8rem 0 14.2rem 0;
+}
+
+.vison-title {
+  margin-top: 9rem;
+  text-align: center;
+  position: relative;
+}
+
+.vison-title::before,
+.vison-title::after {
+  content: "";
+  width: 24.6rem;
+  height: 15rem;
+  position: absolute;
+  background: url(../img/decoration-pic1.svg) no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vison-title::before {
+  left: 0;
+}
+
+.vison-title::after {
+  right: 0;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.vison-title p:nth-child(1) {
+  color: var(--main-color);
+}
+
+.vison-title h4 {
+  font: 8.2rem/1.1 "Poppins", sans-serif;
+  font-size: clamp(5.5rem, 9vw, 8.2rem);
+
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.vison-title p {
+  margin: 3rem auto 0 auto;
+  width: 50%;
+  word-break: keep-all;
+}
+
+.vip .sec-title {
+  margin-top: 6.25vw;
+}
+
+.vip-service {
+  margin: 6rem 0 12rem 0;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.vip-service li {
+  width: 36.9rem;
+  min-width: 33.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 0 5.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  cursor: pointer;
+  word-break: keep-all;
+  box-shadow: 0px 0px 30px rgba(192, 199, 156, 0.55);
+}
+
+.vip-service li:nth-child(1) {
+  background-image: url(https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/product/egfampule-intro-04.jpg);
+}
+.vip-service li:nth-child(2) {
+  background-image: url(https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/product/cleansingoil-intro-03.jpg);
+}
+.vip-service li:nth-child(3) {
+  background-image: url(https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/product/lanstamanucream-intro-03.jpg);
+}
+.vip-service li:nth-child(4) {
+  background-image: url(https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/product/hydratingduoserum-intro-04.jpg);
+}
+
+.vip-service li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color10);
+  transition: 0.4s;
+}
+
+.vip-service li:hover::after {
+  content: "";
+  background: var(--main-color);
+}
+
+.vip-service dl {
+  position: relative;
+  z-index: 1;
+}
+
+.vip-service dt {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--title-color);
+  transform: translateY(140%);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dt {
+  transform: translateY(0);
+}
+
+.vip-service dd {
+  margin-top: 2.3rem;
+  transform: translateY(350%);
+  color: var(--text-color);
+  transition: 0.5s;
+}
+.vip-service li:hover dd {
+  transform: translateY(0);
+}
+
+.story .inner {
+  overflow: hidden;
+}
+
+.story {
+  background: url(../img/brand-story.jpg) no-repeat 50% / cover;
+  padding: 21.2rem 0 20rem 0;
+  position: relative;
+  /* transform: translateY(-50%); */
+  z-index: 1;
+}
+
+.story::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(192, 199, 156, 1),
+    rgba(192, 199, 156, 0.2)
+  );
+}
+
+.story .sec-title {
+  position: relative;
+  z-index: 1;
+}
+.story .sec-title strong {
+  color: var(--white100);
+}
+
+.story .sec-title h3 {
+  color: var(--white100);
+  width: 50%;
+  word-break: keep-all;
+}
+
+.story p {
+  width: 50%;
+  font-size: clamp(1.8rem, 2.2vw, 2rem);
+  color: var(--white70);
+  word-break: keep-all;
+  margin-top: 2.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.story b {
+  font-size: clamp(2rem, 2.2vw, 2.2rem);
+  font-weight: 600;
+  color: var(--white100);
+}
+
+.tip {
+  margin: 6.25vw 0;
+}
+
+.tip-list {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.tip-list li {
+  /* border: 1px solid #000; */
+  width: 31.5rem;
+  aspect-ratio: 1/1.6825;
+  flex: 1 0 30%;
+  aspect-ratio: 1/0.9464;
+  padding: 3rem;
+  word-break: keep-all;
+  border-radius: 10px;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  text-align: center;
+}
+
+.tip-list li:hover {
+  justify-content: center;
+}
+
+.tip-list li:nth-child(1) {
+  background-image: url(https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/raw-material/rawmaterial-purity-v02.jpg);
+}
+.tip-list li:nth-child(2) {
+  background-image: url(https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/about/about-think.jpg);
+}
+.tip-list li:nth-child(3) {
+  background-image: url(https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/raw-material/rawmaterial-ppm-v02.jpg);
+}
+
+.tip-list li::after {
+  content: "";
+  transition: 0.7s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(192, 199, 156, 0),
+    rgba(192, 199, 156, 0),
+    rgba(192, 199, 156, 0.7)
+  );
+}
+
+.tip-list li:hover::after {
+  content: "";
+  height: 100%;
+  background: var(--main-color70);
+}
+
+.tip-list li strong {
+  /* font-size: 2.8rem; */
+  font-size: clamp(2rem, 2vw, 2.6rem);
+  font-weight: 700;
+  color: var(--white100);
+  position: relative;
+  z-index: 1;
+  top: 80%;
+  transition: 0.4s;
+}
+
+.tip-list li p {
+  margin-top: 2rem;
+  color: var(--white70);
+  position: relative;
+  z-index: 1;
+  top: 120%;
+}
+
+.tip-list li:hover strong {
+  /* font-size: 3rem; */
+  font-size: clamp(2.2rem, 2vw, 2.8rem);
+  top: 35%;
+}
+
+.tip-list li:hover p {
+  top: 35%;
+  transition: 0.6s;
+}
+
+.online {
+  padding: 6.25vw 0;
+  background: var(--main-color20);
+}
+
+.online-slider-wrap {
+  width: 100%;
+}
+
+.online-slider {
+  width: 100%;
+}
+
+.online .swiper-wrapper {
+  width: 100%;
+}
+
+.online-txt p {
+  margin-top: 2.2727vw;
+  /* margin-top: 3rem; */
+  width: 50%;
+}
+
+.online-slider {
+  margin-top: 4rem;
+}
+
+.online-item {
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.online-item::after {
+  transition: 0.4s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color70);
+  opacity: 0;
+}
+
+.online-item:hover::after {
+  opacity: 1;
+}
+
+.online-item strong {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: var(--white100);
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s;
+  /* font-size: 3rem; */
+  font-size: clamp(2.4rem, 14.7783%, 3rem);
+  font-weight: 700;
+  z-index: 1;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.online-item i {
+  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 8.867%, 1.8rem);
+  font-weight: 400;
+}
+
+.online-item:hover strong {
+  opacity: 1;
+}
+
+onlinee-slider-wrap .swiper-pagination {
+  position: relative; /* 변경: absolute에서 relative로 */
+  bottom: -5rem; /* 필요에 따라 조정 */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.8rem;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4%);
+  }
+}
+
+@media (max-width: 1800px) {
+  .vison-title::before,
+  .vison-title::after {
+    width: 18rem;
+    height: 13rem;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 1400px) {
+  .vison-title::before,
+  .vison-title::after {
+    display: none;
+  }
+
+  .tip-list {
+    flex-direction: column;
+  }
+
+  .tip-list br {
+    display: none;
+  }
+
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.3333;
+  }
+
+  .tip-list li p {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .vip-service {
+    justify-content: flex-start;
+  }
+
+  .story p {
+    width: 85%;
+  }
+
+  .online-txt {
+    margin-top: 10rem;
+  }
+
+  .online-txt p {
+    width: 80%;
+  }
+
+  .online .view-more {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .vison-title p {
+    width: 80%;
+  }
+
+  .slider {
+    height: 55vh;
+  }
+
+  .story .sec-title h3 {
+    width: 100%;
+  }
+
+  .store-txt {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .story p {
+    width: 100%;
+  }
+
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.6;
+  }
+
+  .online-txt p {
+    width: 100%;
+  }
+
+  .tip-list li:hover strong {
+    top: 20%;
+  }
+
+  .tip-list li:hover p {
+    top: 20%;
+  }
+}

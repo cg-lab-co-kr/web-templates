@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lanbelle</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="랑벨 공식 홈페이지 | 자연 유래 성분으로 피부에 순한 스킨케어. 건강한 아름다움을 위한 고기능성 화장품을 만나보세요."
+    />
+    <meta
+      name="keywords"
+      content="랑벨, LANBELLE, 자연유래 화장품, 스킨케어, 천연 화장품, 저자극 화장품, 클린 뷰티, 보습, 피부 관리, K-뷰티"
+    />
+    <link rel="canonical" href="https://dany339.github.io/lanbelle/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="랑벨 | 피부를 위한 자연유래 스킨케어" />
+    <meta
+      property="og:description"
+      content="피부를 위한 순한 선택! 랑벨은 자연에서 찾은 성분으로 건강하고 아름다운 피부를 위한 저자극 스킨케어 솔루션을 제공합니다."
+    />
+    <meta property="og:url" content="https://dany339.github.io/lanbelle/" />
+    <meta
+      property="og:image"
+      content="https://www.lanbelle.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="랑벨 | 피부를 위한 자연유래 스킨케어" />
+    <meta
+      name="twitter:description"
+      content="피부를 위한 순한 선택! 랑벨은 자연에서 찾은 성분으로 건강하고 아름다운 피부를 위한 저자극 스킨케어 솔루션을 제공합니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.lanbelle.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">Lanbelle</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="products.html">PRODUCTS</a>
+            <ul class="submenu">
+              <li><a href="products.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#pride">랑벨의 효능</a></li>
+              <li><a href="brand.html#story">BRAND STORY</a></li>
+              <li><a href="brand.html#history">랑벨의 원료</a></li>
+              <li><a href="brand.html#illustration">ONLINE SHOP</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <div class="sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+          </div>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="products.html">PRODUCTS</a>
+            <ul class="mobile-submenu">
+              <li><a href="products.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#pride">랑벨의 효능</a></li>
+              <li><a href="brand.html#story">BRAND STORY</a></li>
+              <li><a href="brand.html#history">랑벨의 원료</a></li>
+              <li><a href="brand.html#illustration">ONLINE SHOP</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="event.html">NEWS</a>
+            <ul class="mobile-submenu">
+              <li><a href="event.html#sns">NEWS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <li class="mobile-sns-ico-list">
+            <button class="btn-instagram">
+              <i class="hidden">인스타그램</i>
+            </button>
+            <button class="btn-facebook">
+              <i class="hidden">페이스북</i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <aside class="breadcrumb">
+      <button class="prev"><i class="hidden">이전</i></button>
+      <p>인기메뉴</p>
+      <button class="next"><i class="hidden">다음</i></button>
+    </aside>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <div class="visual-title">
+            <h2>LANBELLE</h2>
+            <p>
+              랑벨은 틀에 얽매이지 않고 완전히 차별화 된 제품을 선보입니다. 나쁜
+              건 빼고, 좋은 것은 더 많이 담아 만들었습니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/simple-perfection/perfection-banner.jpg"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu">
+        <!-- (.menu-txt>strong+(ul.menu-txt-list>li*6>h3+p)+a.btn-more)+(.menu-con>ul>li*6>(figure>img)+p) -->
+        <div class="inner">
+          <div class="slider-menu-wrap" data-aos="fade-right">
+            <div class="swiper menu-txt-slider">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>EGF + FGF 앰플</h3>
+                  <p>
+                    프리미엄 EGF와 FGF 10ppm 고농축 원액을 그대로 배합해 피부의
+                    표피층과 진피층을 촘촘하게 채워주도록 만든 랑벨의
+                    시그니쳐입니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>LANBIO OIL</h3>
+                  <p>
+                    랑벨이 선별한 프리미엄 타마누의 기능을 고스란히 피부에
+                    전하기 위해 만들어진 제품입니다. 랑바이오 오일은 페이셜
+                    오일계의 황제입니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>CLEANSING GEL</h3>
+                  <p>
+                    코코넛 천연유래 계면활성제로 안전하고 깨끗하게 세정할 수
+                    있습니다. 병풀추출물이 피부를 진정시키고 위치하젤추출물이
+                    모공정리를 도와 세안 후에도 촉촉함이 남아 있습니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>EGF + FGF<br />AMPULE</h3>
+                  <p>
+                    EGF + FGF 앰플은 피부 진정을 돕는 병풀추출물 베이스에
+                    프리미엄 EGF와 FGF를 충분히 블렌딩하여 피부의 표피층과
+                    진피층을 촘촘하게 채워주도록 만든 고농축 앰플입니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>VITAMIN CELL CREAM</h3>
+                  <p>
+                    비타민셀 크림은 천연식물오일이 영양을 공급하고
+                    인삼캘러스배양추출물(식물줄기세포배양액)이 피부 탄력을
+                    배가시킵니다. 미백/주름개선 기능성 스킨케어 제품입니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-con-slider-wrap"
+              data-aos="fade-left"
+              data-aod-delay="800"
+            >
+              <div class="swiper menu-con-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/product/lanstamanucream-intro-01.jpg"
+                        alt="EGF + FGF 앰플"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>EGF + FGF 앰플</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/product/egfampule-intro-01.jpg"
+                        alt="LANBIO OIL"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>LANBIO OIL</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/product/lanbiooil-intro-01.jpg?v2.0"
+                        alt="CLEANSING GEL"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>CLEANSING GEL</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://lanbelle.studio-jt.co.kr/wp-content/themes/lanbelle/images/sub/product/vitamincellcream-intro-01.jpg"
+                        alt="EGF + FGF AMPULE"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>EGF + FGF AMPULE</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/10/visual-clangell.jpg"
+                        alt="VITAMIN CELL CREAM"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>VITAMIN CELL CREAM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+
+      <!-- s: allergie -->
+      <section class="allergie" id="ingredient">
+        <!-- .inner>(.allergie-txt>(.sec-title>strong+h3)+p+a.view-more)+.sllergie-slider-wrap>.allergie-list>.allergie-item*14>(figure>img)+strong -->
+        <div class="inner">
+          <div class="allergie-txt">
+            <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+              <strong>주요 성분</strong>
+              <h3>좋은 것들을 아낌없이 담았습니다</h3>
+            </div>
+            <a
+              href="#"
+              class="view-more"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              >VIEW MORE</a
+            >
+          </div>
+          <div class="allergie-slider-wrap">
+            <div
+              class="allergie-slider swiper"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-egf.jpg"
+                      alt="EGF/FGF"
+                    />
+                  </figure>
+                  <strong>EGF/FGF</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-15.jpg"
+                      alt="히알루론산"
+                    />
+                  </figure>
+                  <strong>히알루론산</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-asiatic-pennywort.jpg"
+                      alt="병풀추출물"
+                    />
+                  </figure>
+                  <strong>병풀추출물</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-betaglucan.jpg"
+                      alt="베타-글루칸"
+                    />
+                  </figure>
+                  <strong>베타-글루칸</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-19.jpg"
+                      alt="인삼추출물"
+                    />
+                  </figure>
+                  <strong>인삼추출물</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/Sargassum-Fusiforme-Extract.jpg"
+                      alt="톳추출물"
+                    />
+                  </figure>
+                  <strong>톳추출물</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-01.jpg"
+                      alt="캐모마일꽃추출물"
+                    />
+                  </figure>
+                  <strong>캐모마일꽃추출물</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-10.jpg"
+                      alt="워터린"
+                    />
+                  </figure>
+                  <strong>워터린</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/11/component-15.jpg"
+                      alt="인삼캘러스배양액"
+                    />
+                  </figure>
+                  <strong>인삼캘러스배양액</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-argan.jpg"
+                      alt="아르간트리커넬오일"
+                    />
+                  </figure>
+                  <strong>아르간트리커넬오일</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-hohobaseed.jpg"
+                      alt="호호바씨오일"
+                    />
+                  </figure>
+                  <strong>호호바씨오일</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-sheabutter.jpg"
+                      alt="쿠푸아쿠씨버터"
+                    />
+                  </figure>
+                  <strong>쿠푸아쿠씨버터</strong>
+                </div>
+                <div class="swiper-slide allergie-item">
+                  <figure>
+                    <img
+                      src="https://lanbelle.studio-jt.co.kr/wp-content/uploads/2017/09/component-damaskrose.jpg"
+                      alt="다마스크장미꽃"
+                    />
+                  </figure>
+                  <strong>다마스크장미꽃</strong>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: allergie -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a
+                href="https://lanbelle.studio-jt.co.kr/%ea%b0%9c%ec%9d%b8%ec%a0%95%eb%b3%b4%ec%b2%98%eb%a6%ac%eb%b0%a9%ec%b9%a8/"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a href="https://lanbelle.studio-jt.co.kr/shop/mou-b2b-oem/"
+                >기업용 대량 구매 및 B2B 안내</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <div class="sns-ico-list">
+              <button class="btn-instagram">
+                <i class="hidden">인스타그램</i>
+              </button>
+              <button class="btn-facebook">
+                <i class="hidden">페이스북</i>
+              </button>
+            </div>
+            <p>
+              제조판매업자 (주)탐라타마누 사업자번호 828-81-00407 통신판매신고
+              제 2016-경기성남-0739호
+            </p>
+            <p>
+              〒 13493 경기도 성남시 분당구 판교역로 240, 517-4호 (삼평동,
+              삼환하이펙스 A동)
+            </p>
+            <p>
+              개인정보관리책임자 박애란 전화 +82.31.705.6715 이메일
+              realskincare@lanbelle.com
+            </p>
+            <p>&copy; 2017 LANBELLE.ALL RIGHTS RESERVED.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="Lanbelle" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>
