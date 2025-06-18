@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brunch bean</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="브런치빈 | 감각적인 브런치와 스페셜티 커피를 즐기는 공간. 신선한 재료로 만든 건강한 브런치 메뉴와 함께 여유로운 시간을 보내세요."
+    />
+    <meta
+      name="keywords"
+      content="브런치빈, Brunchbean, 브런치, 스페셜티 커피, 카페, 샌드위치, 토스트, 브런치 맛집, 여유로운 카페, 건강한 음식"
+    />
+    <link rel="canonical" href="https://dany339.github.io/brunchbean/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="브런치빈 | 감각적인 브런치 & 스페셜티 커피"
+    />
+    <meta
+      property="og:description"
+      content="여유로운 일상을 위한 한 끼! 브런치빈에서 신선한 재료로 만든 브런치와 향긋한 스페셜티 커피를 즐겨보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/brunchbean/" />
+    <meta
+      property="og:image"
+      content="https://www.brunchbean.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="브런치빈 | 감각적인 브런치 & 스페셜티 커피"
+    />
+    <meta
+      name="twitter:description"
+      content="여유로운 일상을 위한 한 끼! 브런치빈에서 신선한 재료로 만든 브런치와 향긋한 스페셜티 커피를 즐겨보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.brunchbean.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/inquiry.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/inquiry.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">Brunch bean</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#tip">CONCEPT</a></li>
+              <li><a href="brand.html#app-benefit">GO TOGETHER</a></li>
+              <li><a href="brand.html#vip">AREA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#sns">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">NOTICE</a>
+            <ul class="submenu">
+              <li><a href="notice.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <button class="btn-language">KOR</button>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#tip">CONCEPT</a></li>
+              <li><a href="brand.html#app-benefit">GO TOGETHER</a></li>
+              <li><a href="brand.html#evip">AREA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#sns">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">NOTICE</a>
+            <ul class="mobile-submenu">
+              <li><a href="notice.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread">HOME > NOTICE</strong>
+          <div class="visual-title">
+            <h2>NOTICE</h2>
+            <p>예비 가맹주님들이 많이 물어보시는 질문들을 모아보았습니다.</p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic3.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: faq -->
+      <section class="faq" id="faq">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>FAQ</strong>
+            <h3>가맹 개설 FAQ</h3>
+          </div>
+
+          <div class="faq-wrap" data-aos="fade-up" data-aos-delay="400">
+            <!-- .info-wrap>ul>li*5>(i.hidden{question}+.faq-title>strong+h4)+.answer-wrap>i.hidden{answer}+p -->
+            <div class="info-wrap" data-aos="fade-up" data-aos-delay="500">
+              <ul>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>
+                        [점포 보유 시]<br />점포선정은 어떠한 방식으로
+                        이루어지나요?
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <i>A</i>
+                      <p>
+                        본사에서 상권 분석(배후환경 및 수요, 접근성, 임대료
+                        등)과 입점 가능 여부를 검토한 가맹점주님과 협의 하여
+                        진행합니다
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>
+                        [점포 미보유 시]<br />점포 선정은 어떠한 방식으로
+                        이루어지나요?
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <i>A</i>
+                      <p>
+                        희망점포를 가맹점주님께서 직접 확인·조사하여 선정하는
+                        것을 원칙으로 하고 있으며, 희망점포가 위치한 상권 및
+                        입점 요건에 맞는지 판단하여 점포선정을 함께 진행합니다.
+                        <br /><br />
+                        다만, 점포선정에 어려움이 있는 가맹점주님의 경우 입점
+                        희망 지역과 예상 투자금액을 고려하여 본사 점포개발팀과
+                        협의 하여 진행합니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>식자재 공급은 어떻게 이루어지나요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <i>A</i>
+                      <p>
+                        안정적인 통합물류스시템을 통하여 매장에서 PC 또는
+                        모바일로 손쉽게 주문할 수 있습니다. 본사에서 적정 재고와
+                        품질유지, 가격경쟁력 유지에 힘써 가맹점주님의 수익을
+                        극대화 하기 위해 노력하고 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>매장 오픈 후 사후관리는 어떻게 이루어지나요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <i>A</i>
+                      <p>
+                        본사의 주기적인 신메뉴 개발 및 이벤트 진행, 담당
+                        슈퍼바이저의 방문과 경영지도를 통해 가맹점관리와 매출
+                        향상을 위한 사후관리가 이루어지고 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>가맹 계약 후 점포 오픈까지 얼마나 걸리나요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <i>A</i>
+                      <p>
+                        점포의 규모 및 특성에 따라 차이가 있지만 일반적으로
+                        가맹계약 후 약 8~10주의 기간이 소요됩니다. 이 기간 동안
+                        본사 교육, 인테리어 공사, 인허가 및 관련 제반 법규 사항
+                        처리 등이 이루어집니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>주요 고객층과 매출시간대가 언제인가요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <i>A</i>
+                      <p>
+                        브런치 카페 특성상 20대~50대 여성분이 주 고객층이며,
+                        주말에는 가족과 커플 등 다양한 고객층이 유입되고
+                        있습니다.<br /><br />주요 매출 시간대의 경우 오전
+                        10시부터 오후 3시까지 매우 긴 편으로 점심 매출이
+                        안정화되면서, 본사 마케팅 및 이벤트 등을 통한 저녁 외식
+                        유입과 배달 매출 또한 주 매출 군을 이루고 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>매장의 매출과 수익률은 어떻게 되나요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <i>A</i>
+                      <p>
+                        매출액과 수익률은 상권과 입지 조건, 운영형태에 따라
+                        차이가 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq-title">
+                    <i>Q</i>
+                    <div class="faq-txt">
+                      <h4>브런치빈 관련하여 문의는 어떻게 하나요?</h4>
+                    </div>
+                  </div>
+                  <div class="answer-wrap">
+                    <div class="answer-con">
+                      <i>A</i>
+                      <p>
+                        매출액과 수익률은 상권과 입지 조건, 운영형태에 따라
+                        차이가 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: faq -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="index.html">BUNCHBEAN</a>
+            </li>
+            <li>
+              <a href="menu.html">MENU</a>
+            </li>
+            <li>
+              <a href="brand.html">BRAND</a>
+            </li>
+            <li>
+              <a href="store.html">STORE</a>
+            </li>
+            <li>
+              <a href="notice.html">NOTICE</a>
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">타파스빈</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              법인명 (상호) : (주)91컴퍼니 대표자 : 장준기, 한용 사업자등록번호
+              : 289-88-02045
+            </p>
+            <p>
+              주소 : 인천광역시 연수구 인천타워대로 323, A동 29층 2904호, 2905호
+            </p>
+            <p>대표번호 : 1577-4248 팩스 : 0504-090-3232</p>
+            <p>COPYRIGHT &copy; 2024 91Company CO.LTD. All rights reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="Brunch bean" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+    <a href="#talk" class="btn-talk"><i class="hidden">TALK</i></a>
+  </body>
+</html>

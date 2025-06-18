@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brunch bean</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="브런치빈 | 감각적인 브런치와 스페셜티 커피를 즐기는 공간. 신선한 재료로 만든 건강한 브런치 메뉴와 함께 여유로운 시간을 보내세요."
+    />
+    <meta
+      name="keywords"
+      content="브런치빈, Brunchbean, 브런치, 스페셜티 커피, 카페, 샌드위치, 토스트, 브런치 맛집, 여유로운 카페, 건강한 음식"
+    />
+    <link rel="canonical" href="https://dany339.github.io/brunchbean/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="브런치빈 | 감각적인 브런치 & 스페셜티 커피"
+    />
+    <meta
+      property="og:description"
+      content="여유로운 일상을 위한 한 끼! 브런치빈에서 신선한 재료로 만든 브런치와 향긋한 스페셜티 커피를 즐겨보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/brunchbean/" />
+    <meta
+      property="og:image"
+      content="https://www.brunchbean.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="브런치빈 | 감각적인 브런치 & 스페셜티 커피"
+    />
+    <meta
+      name="twitter:description"
+      content="여유로운 일상을 위한 한 끼! 브런치빈에서 신선한 재료로 만든 브런치와 향긋한 스페셜티 커피를 즐겨보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.brunchbean.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/rewards.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">Brunch bean</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#tip">CONCEPT</a></li>
+              <li><a href="brand.html#app-benefit">GO TOGETHER</a></li>
+              <li><a href="brand.html#vip">AREA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#sns">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">NOTICE</a>
+            <ul class="submenu">
+              <li><a href="notice.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <button class="btn-language">KOR</button>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#tip">CONCEPT</a></li>
+              <li><a href="brand.html#app-benefit">GO TOGETHER</a></li>
+              <li><a href="brand.html#evip">AREA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#sns">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">NOTICE</a>
+            <ul class="mobile-submenu">
+              <li><a href="notice.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread">HOME > STORE</strong>
+          <div class="visual-title">
+            <h2>STORE</h2>
+            <p>브랜치빈의 다양한 매장들을 확인해보세요!</p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/e6dc877c9f943.jpg"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: sns -->
+      <section class="sns" id="sns">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down">
+            <strong>STORE</strong>
+            <h3>전국에 있는 브랜치빈을 방문해보세요!</h3>
+          </div>
+          <div class="sns-wrap">
+            <div class="sns-tab-con">
+              <ul class="sns-tab" data-aos="fade-up" data-aos-delay="200">
+                <li><a href="#">전체</a></li>
+                <li><a href="#">오픈예정</a></li>
+              </ul>
+            </div>
+            <div class="sns-list-wrap">
+              <div class="sns-list">
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/0bec68599be77.jpg"
+                      alt="[BRUNCHBEAN] 백운호수점"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>[BRUNCHBEAN] 백운호수점</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/379fa9303ac92.jpg"
+                      alt="[BRUNCHBEAN] 화성봉담점"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>[BRUNCHBEAN] 화성봉담점</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/04a07daab375e.jpeg"
+                      alt="[BRUNCHBEAN] 서산점"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>[BRUNCHBEAN] 서산점</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/7d962045a3d1b.jpg"
+                      alt="[BRUNCHBEAN] 대전둔산점"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>[BRUNCHBEAN] 대전둔산점</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/e6dc877c9f943.jpg"
+                      alt="[BRUNCHBEAN] 도안호수공원점"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>[BRUNCHBEAN] 도안호수공원점</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/b2373c087025b.jpg"
+                      alt="[BRUNCHBEAN] 과천점"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>[BRUNCHBEAN] 과천점</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/e97c17277dcf1.jpg"
+                      alt="[BRUNCHBEAN] 개포점"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>[BRUNCHBEAN] 개포점</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/4632fec5694b5.png"
+                      alt="[BRUNCHBEAN] 이천점"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>[BRUNCHBEAN] 이천점</p>
+                  </div>
+                </div>
+                <div class="sns-item">
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/7bc0a91e66e76.jpg"
+                      alt="[BRUNCHBEAN] 서울대입구역점"
+                    />
+                  </figure>
+                  <div class="sns-txt">
+                    <p>[BRUNCHBEAN] 서울대입구역점</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sns-list">
+                <p>준비중입니다.</p>
+              </div>
+
+              <div class="pagination" data-aos="fade-up">
+                <a href="" class="prev"><i class="hidden">이전</i></a>
+                <a href="" class="on">1</a>
+                <a href="">2</a>
+                <a href="" class="next"><i class="hidden">다음</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: sns -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="index.html">BUNCHBEAN</a>
+            </li>
+            <li>
+              <a href="menu.html">MENU</a>
+            </li>
+            <li>
+              <a href="brand.html">BRAND</a>
+            </li>
+            <li>
+              <a href="store.html">STORE</a>
+            </li>
+            <li>
+              <a href="notice.html">NOTICE</a>
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">타파스빈</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              법인명 (상호) : (주)91컴퍼니 대표자 : 장준기, 한용 사업자등록번호
+              : 289-88-02045
+            </p>
+            <p>
+              주소 : 인천광역시 연수구 인천타워대로 323, A동 29층 2904호, 2905호
+            </p>
+            <p>대표번호 : 1577-4248 팩스 : 0504-090-3232</p>
+            <p>COPYRIGHT &copy; 2024 91Company CO.LTD. All rights reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="Brunch bean" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

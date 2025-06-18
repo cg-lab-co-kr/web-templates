@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brunch bean</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="브런치빈 | 감각적인 브런치와 스페셜티 커피를 즐기는 공간. 신선한 재료로 만든 건강한 브런치 메뉴와 함께 여유로운 시간을 보내세요."
+    />
+    <meta
+      name="keywords"
+      content="브런치빈, Brunchbean, 브런치, 스페셜티 커피, 카페, 샌드위치, 토스트, 브런치 맛집, 여유로운 카페, 건강한 음식"
+    />
+    <link rel="canonical" href="https://dany339.github.io/brunchbean/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="브런치빈 | 감각적인 브런치 & 스페셜티 커피"
+    />
+    <meta
+      property="og:description"
+      content="여유로운 일상을 위한 한 끼! 브런치빈에서 신선한 재료로 만든 브런치와 향긋한 스페셜티 커피를 즐겨보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/brunchbean/" />
+    <meta
+      property="og:image"
+      content="https://www.brunchbean.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="브런치빈 | 감각적인 브런치 & 스페셜티 커피"
+    />
+    <meta
+      name="twitter:description"
+      content="여유로운 일상을 위한 한 끼! 브런치빈에서 신선한 재료로 만든 브런치와 향긋한 스페셜티 커피를 즐겨보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.brunchbean.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/brand.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/brand.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">Brunch bean</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#tip">CONCEPT</a></li>
+              <li><a href="brand.html#app-benefit">GO TOGETHER</a></li>
+              <li><a href="brand.html#vip">AREA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#sns">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">NOTICE</a>
+            <ul class="submenu">
+              <li><a href="notice.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <button class="btn-language">KOR</button>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#tip">CONCEPT</a></li>
+              <li><a href="brand.html#app-benefit">GO TOGETHER</a></li>
+              <li><a href="brand.html#evip">AREA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#sns">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">NOTICE</a>
+            <ul class="mobile-submenu">
+              <li><a href="notice.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread">HOME > BRAND</strong>
+          <div class="visual-title">
+            <h2>BRAND</h2>
+            <p>
+              SNS용 일회성 브런치 카페가 아닌, 부담없이 자주 가고 싶은 ‘데일리
+              브런치 카페’로 만들어나가겠습니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic2.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: vision -->
+      <section class="vision" id="vision" data-aos="fade-down">
+        <div class="inner">
+          <div class="sec-title"><strong>BRAND VISION</strong></div>
+          <div class="vison-title" data-aos="fade-down" data-aos-delay="200">
+            <h4>BRUNCH BEAN</h4>
+            <p data-aos="fade-up" data-aos-delay="400">
+              Brunch bean은 ‘밥 대신 브런치 먹는 그날까지’라는 슬로건에 맞추어
+              매일 먹을 수 있는 브런치 카페를 지향합니다. 가격만 비싼 브런치
+              카페보다 ‘아침 & 점심’ 브런치의 본질에 집중하여 합리적인 가격, 그
+              이상의 가치를 추구합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- //e: vision -->
+
+      <!-- s: tip -->
+      <section class="tip" id="tip">
+        <!-- .inner>(.sec-title>strong+h3)+ul.tip-list>li*4>strong+p -->
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="600">
+            <strong>CONCEPT</strong>
+            <h3>브런치빈은 노력합니다.</h3>
+          </div>
+          <ul class="tip-list">
+            <li data-aos="fade-up" data-aos-delay="650">
+              <strong>유행타지 않는 카페</strong>
+              <p>
+                사진만 찍으로 가는 SNS 용 카페가 아닌, 부담 없이 가고 싶은
+                ‘데일리 브런치 카페’
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="650">
+              <strong>합리적인 가격</strong>
+              <p>
+                ‘아침 겸 점심’ 브런치의 본질에 집중하여 합리적인 가격, 그 이상의
+                가치를 추구합니다.
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="650">
+              <strong>남녀노소 즐기는 카페</strong>
+              <p>
+                가격, 맛, 분위기. 모든 방면에서 다양한 연령대가 부담 없이 즐길
+                수 있는 브런치 카페
+              </p>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="650">
+              <strong>브런치의 대중화</strong>
+              <p>
+                ‘밥 대신 브런치 먹는 그 날까지’라는 슬로건에 맞추어 매일 먹을 수
+                있는 브런치 카페를 지향합니다.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: tip -->
+
+      <!-- s: app-benefit -->
+      <section class="app-benefit" id="app-benefit" data-aos="fade-up">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="200">
+            <strong>애슐리 APP</strong>
+            <h3>앱 하나로 즐기는 애슐리의 모든 혜택!</h3>
+          </div>
+          <a
+            href="rewards.html#app"
+            class="view-more"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            >VIEW MORE</a
+          >
+          <!-- ul.app-con>li*6>(figure>img)+dl>dt+dd -->
+          <div class="app-con">
+            <div data-aos="fade-up" data-aos-delay="300">
+              <div class="app-icon">
+                <dl class="app-icon-1">
+                  <dt>가맹문의</dt>
+                  <dd>
+                    브런치빈의 사업과 회사소개 및 투자계획, 개설 상담을
+                    진행합니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <div class="app-icon">
+                <dl class="app-icon-2">
+                  <dt>전문 점포개발팀 배정</dt>
+                  <dd>
+                    본사 전문 점포개발팀을 배정, 오픈에 필요한 정보를 제공합니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <div class="app-icon">
+                <dl class="app-icon-3">
+                  <dt>지역 추천 및 점포 선점</dt>
+                  <dd>
+                    지역, 현장 방문 조사를 통해 매장 입지 및 상권을 파악해
+                    분석합니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <div class="app-icon">
+                <dl class="app-icon-4">
+                  <dt>점포 계약 및 가맹 계약</dt>
+                  <dd>점포 계약 및 가맹점 계약을 체결합니다</dd>
+                </dl>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <div class="app-icon">
+                <dl class="app-icon-5">
+                  <dt>인테리어 및 공사 진행</dt>
+                  <dd>
+                    인테리어 콘셉트 설정 후 투자비를 산출하여 공사를 진행합니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <div class="app-icon">
+                <dl class="app-icon-6">
+                  <dt>체계적인 본사 교육</dt>
+                  <dd>점포 운영에 필요한 모든 교육 진행합니다.</dd>
+                </dl>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <div class="app-icon">
+                <dl class="app-icon-7">
+                  <dt>온보딩 기간</dt>
+                  <dd>영업 노하우와 초도물품, 집기 등을 지원해 드립니다</dd>
+                </dl>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <div class="app-icon">
+                <dl class="app-icon-8">
+                  <dt>그랜드 오픈</dt>
+                  <dd>
+                    본사 오픈팀이 개점을 지원하며 매장 오픈 행사를 진행합니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <div class="app-icon">
+                <dl class="app-icon-9">
+                  <dt>사후관리</dt>
+                  <dd>
+                    주기적 관리를 통해 메뉴 개편과 상권 보호까지 도와드립니다
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: app-benefit -->
+
+      <!-- s: vip -->
+      <section class="vip" id="vip">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down">
+            <strong>AREA</strong>
+            <h3>위수지역 안내</h3>
+          </div>
+          <ul class="vip-service">
+            <li data-aos="fade-up" data-aos-delay="200">
+              <dl>
+                <dt>영업권역 보장</dt>
+                <dd>넓은 상권 보호구역 지정으로 안정적인 영업권역 보장</dd>
+              </dl>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <dl>
+                <dt>가맹점간의 경쟁 완화</dt>
+                <dd>넓은 지역권을 보장함으로써 가맹점간의 경쟁 완화</dd>
+              </dl>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <dl>
+                <dt>독점 상권 보호</dt>
+                <dd>지역별로 독점 상권을 보호해드립니다.</dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: vip -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="index.html">BUNCHBEAN</a>
+            </li>
+            <li>
+              <a href="menu.html">MENU</a>
+            </li>
+            <li>
+              <a href="brand.html">BRAND</a>
+            </li>
+            <li>
+              <a href="store.html">STORE</a>
+            </li>
+            <li>
+              <a href="notice.html">NOTICE</a>
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">타파스빈</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              법인명 (상호) : (주)91컴퍼니 대표자 : 장준기, 한용 사업자등록번호
+              : 289-88-02045
+            </p>
+            <p>
+              주소 : 인천광역시 연수구 인천타워대로 323, A동 29층 2904호, 2905호
+            </p>
+            <p>대표번호 : 1577-4248 팩스 : 0504-090-3232</p>
+            <p>COPYRIGHT &copy; 2024 91Company CO.LTD. All rights reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="Brunch bean" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brunch bean</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="브런치빈 | 감각적인 브런치와 스페셜티 커피를 즐기는 공간. 신선한 재료로 만든 건강한 브런치 메뉴와 함께 여유로운 시간을 보내세요."
+    />
+    <meta
+      name="keywords"
+      content="브런치빈, Brunchbean, 브런치, 스페셜티 커피, 카페, 샌드위치, 토스트, 브런치 맛집, 여유로운 카페, 건강한 음식"
+    />
+    <link rel="canonical" href="https://dany339.github.io/brunchbean/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="브런치빈 | 감각적인 브런치 & 스페셜티 커피"
+    />
+    <meta
+      property="og:description"
+      content="여유로운 일상을 위한 한 끼! 브런치빈에서 신선한 재료로 만든 브런치와 향긋한 스페셜티 커피를 즐겨보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/brunchbean/" />
+    <meta
+      property="og:image"
+      content="https://www.brunchbean.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="브런치빈 | 감각적인 브런치 & 스페셜티 커피"
+    />
+    <meta
+      name="twitter:description"
+      content="여유로운 일상을 위한 한 끼! 브런치빈에서 신선한 재료로 만든 브런치와 향긋한 스페셜티 커피를 즐겨보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.brunchbean.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">Brunch bean</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#tip">CONCEPT</a></li>
+              <li><a href="brand.html#app-benefit">GO TOGETHER</a></li>
+              <li><a href="brand.html#vip">AREA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#sns">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">NOTICE</a>
+            <ul class="submenu">
+              <li><a href="notice.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <button class="btn-language">KOR</button>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#tip">CONCEPT</a></li>
+              <li><a href="brand.html#app-benefit">GO TOGETHER</a></li>
+              <li><a href="brand.html#evip">AREA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#sns">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">NOTICE</a>
+            <ul class="mobile-submenu">
+              <li><a href="notice.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <aside class="breadcrumb">
+      <button class="prev"><i class="hidden">이전</i></button>
+      <p>인기메뉴</p>
+      <button class="next"><i class="hidden">다음</i></button>
+    </aside>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <div class="visual-title">
+            <h2>BRUNCH BEAN</h2>
+            <p>
+              ‘밥 대신 브런치’라는 슬로건처럼 매일 먹을 수 있는 브런치 카페를
+              지향합니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://cdn.imweb.me/thumbnail/20240827/f45bba2a99488.jpg"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu">
+        <!-- (.menu-txt>strong+(ul.menu-txt-list>li*6>h3+p)+a.btn-more)+(.menu-con>ul>li*6>(figure>img)+p) -->
+        <div class="inner">
+          <div class="slider-menu-wrap" data-aos="fade-right">
+            <div class="swiper menu-txt-slider">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide menu-text-card">
+                  <strong>GOALS</strong>
+                  <h3>All day brunch Always coffee</h3>
+                  <p>
+                    합리적인 가격과 휴양지에서 먹는듯한 인테리어로, 사진만을
+                    위한 카페가 아닌 진짜 ‘데일리 브런치 카페’
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >자세히 알아보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>GOALS</strong>
+                  <h3>Ethos</h3>
+                  <p>
+                    클래식한 메뉴와 특색 있는 메뉴들을 합리적인 가격으로 한곳에
+                    담아냈습니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >자세히 알아보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>GOALS</strong>
+                  <h3>Fragrance</h3>
+                  <p>
+                    방문하신 고객 한 분, 한 분에게 더 많은 배려를 담아,
+                    브런치빈과 함께하는 소중한 시간을 더욱 즐기실 수 있도록
+                    진심을 전합니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >자세히 알아보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>GOALS</strong>
+                  <h3>Brand Identity</h3>
+                  <p>
+                    밥 대신 브런치를 먹을 수 있는 그날까지 브런치빈은 매일
+                    고민하며 연구합니다. 우리나라 브런치의 새로운 문화를
+                    브런치빈이 선도합니다.
+                  </p>
+                  <a href="menu.html" class="btn-more"
+                    >자세히 알아보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-con-slider-wrap"
+              data-aos="fade-left"
+              data-aod-delay="800"
+            >
+              <div class="swiper menu-con-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/thumbnail/20220902/af694843c075a.png"
+                        alt="All day brunch Always coffee"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>All day brunch Always coffee</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/thumbnail/20240827/f45bba2a99488.jpg"
+                        alt="Ethos"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>Ethos</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/thumbnail/20221130/9ba8210906e17.jpg"
+                        alt="Fragrance"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>Fragrance</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/thumbnail/20220902/cbe0b1ecf6ed2.png"
+                        alt="Brand Identity"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>Brand Identity</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+
+      <!-- s: event -->
+      <section class="event">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>BRUNCH BEAN</strong>
+            <h3>새로운 소식들을 만나보세요!</h3>
+          </div>
+
+          <!-- .event-tab>(ul.tab-list>li*2>a)+a.more -->
+          <div class="tab-con">
+            <ul class="tab-item event-tab">
+              <li data-aos="fade-up" data-aos-delay="150">
+                <a class="on" href="#">SNS</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <a href="#">INTERIOR</a>
+              </li>
+            </ul>
+            <a
+              href="rewards.html#sns"
+              class="view-more"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              >VIEW MORE</a
+            >
+          </div>
+        </div>
+
+        <!-- .event-list>ul.event-i>li*10>a>figure>img -->
+        <div class="event-lists" data-aos="fade-up" data-aos-delay="600">
+          <div class="event-list">
+            <div class="swiper event-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://scontent-nrt1-1.cdninstagram.com/v/t51.75761-15/477293910_18002486000725371_6198962780074903262_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=1-7&_nc_sid=18de74&_nc_ohc=bAQxXR-AR9kQ7kNvgG1yqWG&_nc_oc=AdjrGmOx5_uLhuJvs8THfccAFZaBe_wyHFj0-U7c610Cgz5WdpS5dh_Dbybv5doYluY&_nc_zt=23&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AUHWgFYcErbMYjVo-Jta5jh&oh=00_AYCfDh98B2mfXR6utyocV-IWcmlQdOWjO__q-d0CuNg6rQ&oe=67B0BC39"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://scontent-nrt1-2.cdninstagram.com/v/t51.75761-15/478970163_18002485958725371_8341510542242233362_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=1-7&_nc_sid=18de74&_nc_ohc=EYmJUuGYnjAQ7kNvgFU9uQg&_nc_oc=AdhInz7UpYloiZmOp5OwiGySI_iGcOMWtxtO27UAfIGlc0tm-rf1C21y9jDSw3KICIk&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AUHWgFYcErbMYjVo-Jta5jh&oh=00_AYC-QLzrpdL0Kj8zTJFVaxS6mFLn1vo-8INX95EOUh9F5w&oe=67B0B8A9"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://scontent-nrt1-2.cdninstagram.com/v/t51.75761-15/476847315_18002485913725371_6435305791289105441_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=cEiBd99oN2EQ7kNvgEONPps&_nc_oc=AdjMgPtohqw_5yioBxYnnTNVgP5htDV8zzGG7xfHIb1FcMV0YrGxT6o8wsJGGWmfZAM&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AUHWgFYcErbMYjVo-Jta5jh&oh=00_AYAeZ2sbIfnIxq92RSlykixlyF4eYz6IqORH-UZUWnkQFg&oe=67B0C882"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://scontent-nrt1-2.cdninstagram.com/v/t51.75761-15/476740070_18002485850725371_8047814351828156849_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=1-7&_nc_sid=18de74&_nc_ohc=6KVof2Jkz_EQ7kNvgE08o2a&_nc_oc=Adgqa74lRKCM6meqazKq0AZcwuzzfmzSqtAWpbMRGUkI6Q9x_HgKXbhLZVg-HollfMU&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AUHWgFYcErbMYjVo-Jta5jh&oh=00_AYC4eSaCShihBq3R48V5hBZXYw2FhdPDvMOE654YulSz4Q&oe=67B0C237"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://scontent-nrt1-1.cdninstagram.com/v/t51.75761-15/476930887_18002485838725371_4143170538134423463_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=1-7&_nc_sid=18de74&_nc_ohc=wdovNlm_lQMQ7kNvgE2hEsV&_nc_oc=AdgBdlg_ljv1WKYGjLohIEBqqgf9Gi0PacbMuMWS5lGLbBZ7VbPH3WG8L5Lok_RBS80&_nc_zt=23&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AUHWgFYcErbMYjVo-Jta5jh&oh=00_AYDy0s82GfBSBH4cwzrwj6iGpTSwxbLekFZ4crfJNQUmMA&oe=67B0C9D2"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://scontent-nrt1-1.cdninstagram.com/v/t51.75761-15/476753627_18002485712725371_1615338118926180721_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=1-7&_nc_sid=18de74&_nc_ohc=09H0DK3u1-cQ7kNvgECEfLJ&_nc_oc=Adh4Ynx4Z5TUsHwlnt4tIUXusZDXvPwOkVCFSsb_aTLUDU_BvvyhqOlOsrRnmHUh5zo&_nc_zt=23&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AUHWgFYcErbMYjVo-Jta5jh&oh=00_AYCuq99cOXgAX4rINB6DIgChJC_Nkm5bK-l_I-kcHzb9oA&oe=67B0C68E"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://scontent-nrt1-2.cdninstagram.com/v/t51.75761-15/476299545_18001907453725371_1900865650937668926_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=1-7&_nc_sid=18de74&_nc_ohc=1O5cJM5BWkIQ7kNvgHEl8Qq&_nc_oc=AdgQPzFynXeCC9lmofgP5VTN3t-X9dF2dZv5OOSaWFZz_STYMVkKn2sxG1VbT4_KcNw&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AKrmOSdFt3nnyluxuyMhmcS&oh=00_AYC86GvTsJSk6L1iqMcXbPkj0eJBtl_f44yJD_qQePsHxw&oe=67B1C8B0"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://scontent-nrt1-1.cdninstagram.com/v/t51.75761-15/469832052_17995013723725371_2767659643143151665_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=1-7&_nc_sid=18de74&_nc_ohc=SFwjbcAmfNYQ7kNvgFRFKK1&_nc_oc=AdiQHszo7VbKmC514scKUR38_oqco9fu-nCeVdzM_iU--WzzV5SSua5iBbq5ZNGHWc4&_nc_zt=23&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AKrmOSdFt3nnyluxuyMhmcS&oh=00_AYCm3FaDYy095L7QCHv1A5kkAI51VoCpUs9t3HY5YoC0qA&oe=67B1B70E"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://scontent-nrt1-2.cdninstagram.com/v/t51.29350-15/457135849_1746005656207809_5101522269394923876_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=1-7&_nc_sid=18de74&_nc_ohc=8vU0aOCKvscQ7kNvgEK6yTq&_nc_oc=AdhuwKRAY7NnUCcEDzH8D2zJ6OFS9Eph3PzzYSpImW3KTZOxnOkNGt--Ebtqne4R2CI&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=AKrmOSdFt3nnyluxuyMhmcS&oh=00_AYAcjpjJ3J1i2rOa5UtNcO1-5XQlnSxwQSF1Tq8FsVqDTw&oe=67B1E478"
+                        alt=""
+                      />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event-list">
+            <div class="swiper event-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/thumbnail/20240524/ed7eb501a147c.jpg"
+                        alt="청라점"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/thumbnail/20240524/4e2819d7ab825.jpg"
+                        alt="영종도점"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/thumbnail/20240524/f3161d6f3983a.jpg"
+                        alt="송도점"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/thumbnail/20240524/a383576a0aef8.jpg"
+                        alt="운정점"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/0bec68599be77.jpg"
+                        alt="백운호수점"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/07170395d044d.jpg"
+                        alt="구로디지털단지역점"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/d96c41933763a.png"
+                        alt="용인기흥구청점"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://cdn.imweb.me/upload/S20211221a6135a72d1112/06b50ed3f8121.png"
+                        alt="산본점"
+                      />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: event -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="index.html">BUNCHBEAN</a>
+            </li>
+            <li>
+              <a href="menu.html">MENU</a>
+            </li>
+            <li>
+              <a href="brand.html">BRAND</a>
+            </li>
+            <li>
+              <a href="store.html">STORE</a>
+            </li>
+            <li>
+              <a href="notice.html">NOTICE</a>
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">타파스빈</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              법인명 (상호) : (주)91컴퍼니 대표자 : 장준기, 한용 사업자등록번호
+              : 289-88-02045
+            </p>
+            <p>
+              주소 : 인천광역시 연수구 인천타워대로 323, A동 29층 2904호, 2905호
+            </p>
+            <p>대표번호 : 1577-4248 팩스 : 0504-090-3232</p>
+            <p>COPYRIGHT &copy; 2024 91Company CO.LTD. All rights reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="Brunch bean" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brunch bean</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="브런치빈 | 감각적인 브런치와 스페셜티 커피를 즐기는 공간. 신선한 재료로 만든 건강한 브런치 메뉴와 함께 여유로운 시간을 보내세요."
+    />
+    <meta
+      name="keywords"
+      content="브런치빈, Brunchbean, 브런치, 스페셜티 커피, 카페, 샌드위치, 토스트, 브런치 맛집, 여유로운 카페, 건강한 음식"
+    />
+    <link rel="canonical" href="https://dany339.github.io/brunchbean/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="브런치빈 | 감각적인 브런치 & 스페셜티 커피"
+    />
+    <meta
+      property="og:description"
+      content="여유로운 일상을 위한 한 끼! 브런치빈에서 신선한 재료로 만든 브런치와 향긋한 스페셜티 커피를 즐겨보세요."
+    />
+    <meta property="og:url" content="https://dany339.github.io/brunchbean/" />
+    <meta
+      property="og:image"
+      content="https://www.brunchbean.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="브런치빈 | 감각적인 브런치 & 스페셜티 커피"
+    />
+    <meta
+      name="twitter:description"
+      content="여유로운 일상을 위한 한 끼! 브런치빈에서 신선한 재료로 만든 브런치와 향긋한 스페셜티 커피를 즐겨보세요."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.brunchbean.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">Brunch bean</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#tip">CONCEPT</a></li>
+              <li><a href="brand.html#app-benefit">GO TOGETHER</a></li>
+              <li><a href="brand.html#vip">AREA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#sns">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">NOTICE</a>
+            <ul class="submenu">
+              <li><a href="notice.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <button class="btn-language">KOR</button>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="menu.html">MENU</a>
+            <ul class="mobile-submenu">
+              <li><a href="menu.html#menu">MENU</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#vision">BRAND VISION</a></li>
+              <li><a href="brand.html#tip">CONCEPT</a></li>
+              <li><a href="brand.html#app-benefit">GO TOGETHER</a></li>
+              <li><a href="brand.html#evip">AREA</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#sns">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">NOTICE</a>
+            <ul class="mobile-submenu">
+              <li><a href="notice.html#faq">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread">HOME > MENU</strong>
+          <div class="visual-title">
+            <h2>MENU</h2>
+            <p>
+              매일 먹을 수 있는 브런치 카페를 지향하고 있습니다. 브런치빈은
+              ‘데일리 브런치 카페’가 되기 위해 노력하겠습니다.
+            </p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic1.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu" id="menu">
+        <div class="inner">
+          <div class="menu-title">
+            <h3 data-aos="fade-down">MENU</h3>
+          </div>
+
+          <ul class="menu-tab" data-aos="fade-up" data-aos-delay="400">
+            <li>
+              <a href="#"><p>시즌메뉴</p></a>
+            </li>
+            <li>
+              <a href="#"><p>플래터</p></a>
+            </li>
+            <li>
+              <a href="#"><p>브런치</p></a>
+            </li>
+            <li>
+              <a href="#"><p>파스타</p></a>
+            </li>
+            <li>
+              <a href="#"><p>샐러드</p></a>
+            </li>
+            <li>
+              <a href="#"><p>음료</p></a>
+            </li>
+          </ul>
+
+          <!-- .menu-con>ul.menu-list>div*7>(figure>img)+p+p -->
+          <div class="menu-cons">
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20250210/b97e8932abc2a.png"
+                      alt="스프링 가든 플래터"
+                    />
+                  </figure>
+                  <p>스프링 가든 플래터</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20250210/c46e7a2669b98.png"
+                      alt="곤드레 바지락 리조또"
+                    />
+                  </figure>
+                  <p>곤드레 바지락 리조또</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20250210/5e289400483d2.png"
+                      alt="씨푸드 크림 파피요트"
+                    />
+                  </figure>
+                  <p>씨푸드 크림 파피요트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20250210/046286037baa6.png"
+                      alt="스프링 오픈 샌드위치"
+                    />
+                  </figure>
+                  <p>스프링 오픈 샌드위치</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20250210/36db42dfe2009.png"
+                      alt="보코치니 가든 파스타"
+                    />
+                  </figure>
+                  <p>보코치니 가든 파스타</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20250210/e91e251a34732.png"
+                      alt="스프링 라벤더 에이드"
+                    />
+                  </figure>
+                  <p>스프링 라벤더 에이드</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20250210/aced11ba019dc.png"
+                      alt="가든 플라워 에이드"
+                    />
+                  </figure>
+                  <p>가든 플라워 에이드</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20250210/f12a5671dd1b4.png"
+                      alt="블루밍 리치 티"
+                    />
+                  </figure>
+                  <p>블루밍 리치 티</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/68fa8ceb68c2e.png"
+                      alt="마이 플래터"
+                    />
+                  </figure>
+                  <p>마이 플래터</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/a5958cbe44d66.png"
+                      alt="쉐어 플래터"
+                    />
+                  </figure>
+                  <p>쉐어 플래터</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/449eec2f04710.png"
+                      alt="파티 플래터"
+                    />
+                  </figure>
+                  <p>파티 플래터</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/d50c195ffc928.png"
+                      alt="김치 필라프"
+                    />
+                  </figure>
+                  <p>김치 필라프</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/48f726feee8c4.png"
+                      alt="단호박 떡뇨끼"
+                    />
+                  </figure>
+                  <p>단호박 떡뇨끼</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/56386ca0964d4.png"
+                      alt="데리야끼 치킨라이스"
+                    />
+                  </figure>
+                  <p>데리야끼 치킨라이스</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/c65e8ae632543.png"
+                      alt="베리 프렌치토스트"
+                    />
+                  </figure>
+                  <p>베리 프렌치토스트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/e7fe294788346.png"
+                      alt="비프퀘사디아"
+                    />
+                  </figure>
+                  <p>비프퀘사디아</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/1b73e16fe5ac2.png"
+                      alt="스크램블 치킨 토스트"
+                    />
+                  </figure>
+                  <p>스크램블 치킨 토스트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/01498c5b9b0f4.png"
+                      alt="스파이시 쉬림프 리조또"
+                    />
+                  </figure>
+                  <p>스파이시 쉬림프 리조또</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/88e888cc81518.png"
+                      alt="오리엔탈 쉬림프 라이스"
+                    />
+                  </figure>
+                  <p>오리엔탈 쉬림프 라이스</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/9ba2777496776.png"
+                      alt="크리스피 치킨 리조또"
+                    />
+                  </figure>
+                  <p>크리스피 치킨 리조또</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20250211/d73bd07b1e159.png"
+                      alt="천가선"
+                    />
+                  </figure>
+                  <p>천가선</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/799068b776055.png"
+                      alt="라구토니"
+                    />
+                  </figure>
+                  <p>라구토니</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/9b21f4740b9ca.png"
+                      alt="바질토니"
+                    />
+                  </figure>
+                  <p>바질토니</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/4bf0a9cb1c0f9.png"
+                      alt="토마토 부라타 썬셋"
+                    />
+                  </figure>
+                  <p>토마토 부라타 썬셋</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/42a897c6218f5.png"
+                      alt="쉬림프 알리오 올리오"
+                    />
+                  </figure>
+                  <p>쉬림프 알리오 올리오</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/9301b2b71335d.png"
+                      alt="스파이시 쉬림프 파스타"
+                    />
+                  </figure>
+                  <p>스파이시 쉬림프 파스타</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/5f60a484d91a8.png"
+                      alt="들기름 참나물 파스타"
+                    />
+                  </figure>
+                  <p>들기름 참나물 파스타</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/a301c78096028.png"
+                      alt="크림뵈르"
+                    />
+                  </figure>
+                  <p>크림뵈르</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/a42828f829c75.png"
+                      alt="클래식 까르보나라"
+                    />
+                  </figure>
+                  <p>클래식 까르보나라</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/4e932e334359f.png"
+                      alt="그릴 비프 파니니"
+                    />
+                  </figure>
+                  <p>그릴 비프 파니니</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/1419a75c53086.png"
+                      alt="더블 치즈 파니니"
+                    />
+                  </figure>
+                  <p>더블 치즈 파니니</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/30e53ef81ae38.png"
+                      alt="리코타 잠봉 샌드위치"
+                    />
+                  </figure>
+                  <p>리코타 잠봉 샌드위치</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/bc3b92ffb5028.png"
+                      alt="리코타 크랜베리 파니니"
+                    />
+                  </figure>
+                  <p>리코타 크랜베리 파니니</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/4cfc2cf97cdf5.png"
+                      alt="골드코스트"
+                    />
+                  </figure>
+                  <p>골드코스트</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20241210/13a01c91d42e1.png"
+                      alt="크리스피 치킨버거"
+                    />
+                  </figure>
+                  <p>크리스피 치킨버거</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/40e5748b913a1.png"
+                      alt="리코타 갈릭 쉬림프"
+                    />
+                  </figure>
+                  <p>리코타 갈릭 쉬림프</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/94c225bd981c8.png"
+                      alt="버거딥&포테이토"
+                    />
+                  </figure>
+                  <p>버거딥&포테이토</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/8dbada402778a.png"
+                      alt="쏠 베리 페어"
+                    />
+                  </figure>
+                  <p>쏠 베리 페어</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240723/79f81a6b6a880.png"
+                      alt="옐로클렌즈주스"
+                    />
+                  </figure>
+                  <p>옐로클렌즈주스</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240729/d1121c7109779.png"
+                      alt="스트로베리 망고스무디"
+                    />
+                  </figure>
+                  <p>스트로베리 망고스무디</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240729/276ab050503ce.png"
+                      alt="말차 티라미수"
+                    />
+                  </figure>
+                  <p>말차 티라미수</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240729/f115996a14089.png"
+                      alt="오트연유콜드브루"
+                    />
+                  </figure>
+                  <p>오트연유콜드브루</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240729/a9c725b13b2e3.png"
+                      alt="페어에일"
+                    />
+                  </figure>
+                  <p>페어에일</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://cdn.imweb.me/thumbnail/20240729/6216f7f694c22.png"
+                      alt="복숭아 아이스티"
+                    />
+                  </figure>
+                  <p>복숭아 아이스티</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="index.html">BUNCHBEAN</a>
+            </li>
+            <li>
+              <a href="menu.html">MENU</a>
+            </li>
+            <li>
+              <a href="brand.html">BRAND</a>
+            </li>
+            <li>
+              <a href="store.html">STORE</a>
+            </li>
+            <li>
+              <a href="notice.html">NOTICE</a>
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">타파스빈</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              법인명 (상호) : (주)91컴퍼니 대표자 : 장준기, 한용 사업자등록번호
+              : 289-88-02045
+            </p>
+            <p>
+              주소 : 인천광역시 연수구 인천타워대로 323, A동 29층 2904호, 2905호
+            </p>
+            <p>대표번호 : 1577-4248 팩스 : 0504-090-3232</p>
+            <p>COPYRIGHT &copy; 2024 91Company CO.LTD. All rights reserved.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="Brunch bean" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>
