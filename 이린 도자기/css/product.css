@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 버튼들 */
+.lend-tabmenu {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+
+  margin-bottom: 5%;
+}
+
+.lend-tabmenu button {
+  width: 23.9rem;
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5rem;
+  background: var(--btn);
+  color: var(--Light-100);
+  font-size: 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  width: 15.7237%;
+  font-size: clamp(1.8rem, 1.302vw, 2.5rem);
+}
+
+.lend-tabmenu button:hover,
+.lend-tabmenu button.on {
+  background: var(--main-color);
+}
