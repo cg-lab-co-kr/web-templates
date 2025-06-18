@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sansim</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="산심 공식 홈페이지 | 자연의 에너지를 담은 산심 화장품. 피부를 위한 강인한 생명력, 고기능성 한방 스킨케어를 경험하세요."
+    />
+    <meta
+      name="keywords"
+      content="산심, SANSIM, 산삼 화장품, 한방 화장품, 스킨케어, 안티에이징, 자연유래 성분, 한방 뷰티, 피부 관리, 건강한 피부"
+    />
+    <link rel="canonical" href="https://dany339.github.io/sansim/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="산심 | 산삼의 생명력을 담은 한방 스킨케어"
+    />
+    <meta
+      property="og:description"
+      content="자연의 깊은 에너지를 피부에! 산심은 산삼의 강인한 생명력을 담아 건강하고 아름다운 피부를 위한 고기능성 한방 스킨케어를 제공합니다."
+    />
+    <meta property="og:url" content="https://dany339.github.io/sansim/" />
+    <meta
+      property="og:image"
+      content="https://www.sansim.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="산심 | 산삼의 생명력을 담은 한방 스킨케어"
+    />
+    <meta
+      name="twitter:description"
+      content="자연의 깊은 에너지를 피부에! 산심은 산삼의 강인한 생명력을 담아 건강하고 아름다운 피부를 위한 고기능성 한방 스킨케어를 제공합니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.sansim.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">Sansim</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="products.html">PRODUCTS</a>
+            <ul class="submenu">
+              <li><a href="products.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#tip">BRAND</a></li>
+              <li><a href="brand.html#event">BEAUTY TALK</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">CUSTOMER</a>
+            <ul class="submenu">
+              <li><a href="notice.html#notice">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <button class="btn-language">KOR</button>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="products.html">PRODUCTS</a>
+            <ul class="mobile-submenu">
+              <li><a href="products.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#tip">BRAND</a></li>
+              <li><a href="brand.html#event">BEAUTY TALK</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">CUSTOMER</a>
+            <ul class="mobile-submenu">
+              <li><a href="notice.html#notice">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <aside class="breadcrumb">
+      <button class="prev"><i class="hidden">이전</i></button>
+      <p>인기메뉴</p>
+      <button class="next"><i class="hidden">다음</i></button>
+    </aside>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <div class="visual-title">
+            <h2>SANSIM</h2>
+            <p>피로에 지친 피부를 청량하게 채워줄 특별한 힘!</p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img
+            src="https://www.sansim.co.kr/img/brand/brandstory_visu3.jpg"
+            alt=""
+          />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu">
+        <!-- (.menu-txt>strong+(ul.menu-txt-list>li*6>h3+p)+a.btn-more)+(.menu-con>ul>li*6>(figure>img)+p) -->
+        <div class="inner">
+          <div class="slider-menu-wrap" data-aos="fade-right">
+            <div class="swiper menu-txt-slider">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>미백 설 크림</h3>
+                  <p>SANSIM BRIGHTENING CREAM</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>천가선 진 앰플</h3>
+                  <p>CHEONGASUN JIN AMPOULE</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>명휘 커버 쿠션</h3>
+                  <p>MYEONGHUI COVER CUSHION</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>자양상</h3>
+                  <p>JA YANG SANG</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>백년삼 스네일 크림</h3>
+                  <p>WILD GINSENG SNAIL CREAM</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>자양로</h3>
+                  <p>JA YANG RO</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>명윤수 앰플</h3>
+                  <p>MYEONGYEONSU AMPULE</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+                <div class="swiper-slide menu-text-card">
+                  <strong>PRODUCTS</strong>
+                  <h3>천가선</h3>
+                  <p>CHEONGASUN</p>
+                  <a href="menu.html" class="btn-more"
+                    >더 많은 제품보기<span class="btn-more-con"
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span
+                      ><span class="btn-more-item"></span></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="menu-con-slider-wrap"
+              data-aos="fade-left"
+              data-aod-delay="800"
+            >
+              <div class="swiper menu-con-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/product/20240109103916751_360x360_%EB%AF%B8%EB%B0%B1%EC%84%A4.jpg"
+                        alt="미백 설 크림"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>미백 설 크림</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/product/20190408090105062_%EC%B2%9C%EA%B0%80%EC%84%A0%EC%A7%84%EC%95%B0%ED%94%8C_360.jpg"
+                        alt="천가선 진 앰플"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>천가선 진 앰플</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/product/20231219161625279_360x360_01.png"
+                        alt="명휘 커버 쿠션"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>명휘 커버 쿠션</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/product/20230905154746543_360x360_2.png"
+                        alt="자양상"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>자양상</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/product/20230524090743637_360x360_1.png"
+                        alt="백년삼 스네일 크림"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>백년삼 스네일 크림</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/product/20220513152417182_360x360_4.png"
+                        alt="자양로"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>자양로</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/product/20211201172827947_360.png"
+                        alt="명윤수 앰플"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>명윤수 앰플</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide menu-card">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/product/20170220112443673_20170217172533371_%EC%82%B0%EC%8B%AC_%EC%B2%9C%EA%B0%80%EC%84%A0_360.jpg"
+                        alt="천가선"
+                      />
+                    </figure>
+                    <div class="menu-name">
+                      <p>천가선</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+
+      <!-- s: event -->
+      <section class="event">
+        <div class="inner">
+          <div class="sec-title" data-aos="fade-down" data-aos-delay="100">
+            <strong>WEBZINE</strong>
+            <h3>산심의 웹진을 확인해보세요!</h3>
+          </div>
+        </div>
+
+        <!-- .event-list>ul.event-i>li*10>a>figure>img -->
+        <div class="event-lists" data-aos="fade-up" data-aos-delay="600">
+          <div class="event-list">
+            <div class="swiper event-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/webzine/20250206160429268_204x305.jpg"
+                        alt="FEBRUARY"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/webzine/20241227163339380_204x305.jpg"
+                        alt="JANUARY"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/webzine/20241227162425550_204x305.jpg"
+                        alt="DECEMBER"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/webzine/20241104120153505_204x305.jpg"
+                        alt="NOVEMBER"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/webzine/20240930143240828_204x305.jpg"
+                        alt="OCTOBER"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/webzine/20240902103827408_204x305.jpg"
+                        alt="SEPTEMBER"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/webzine/20240729133903555_204x305.jpg"
+                        alt="AUGUST"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <figure>
+                      <img
+                        src="https://www.sansim.co.kr/upload/webzine/20240702103407838_204x305.jpg"
+                        alt="JULY"
+                      />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: event -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://www.apgroup.com/int/ko/">회사소개</a>
+            </li>
+            <li>
+              <a
+                href="https://www.amoremall.com/kr/ko/beautypoint/app/footer/privacy.do"
+                >개인정보취급처리방침</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.apgroup.com/int/ko/misc/terms/cctv-policies-and-procedures.html"
+                >영상정보처리방침</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">한국화장품</a></li>
+              <li><a href="#">효움</a></li>
+              <li><a href="#">시크릿네이처</a></li>
+              <li><a href="#">한국화장품제조</a></li>
+              <li><a href="#">글로벌 에코 더샘</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              한국화장품㈜ 대표이사 : 이용준 주소 : 03188 서울특별시 종로구
+              청계천로 35
+            </p>
+            <p>고객상담실 TEL : 080-023-2221 / FAX : 02-737-3322</p>
+            <p>2015 &copy; HANKOOK COSMETICS CO. LTD. ALL RIGHTS RESERVED.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="Sansim" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>

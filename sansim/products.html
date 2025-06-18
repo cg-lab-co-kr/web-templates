@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sansim</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+
+    <!-- 기본 SEO 메타 태그 -->
+    <meta
+      name="description"
+      content="산심 공식 홈페이지 | 자연의 에너지를 담은 산심 화장품. 피부를 위한 강인한 생명력, 고기능성 한방 스킨케어를 경험하세요."
+    />
+    <meta
+      name="keywords"
+      content="산심, SANSIM, 산삼 화장품, 한방 화장품, 스킨케어, 안티에이징, 자연유래 성분, 한방 뷰티, 피부 관리, 건강한 피부"
+    />
+    <link rel="canonical" href="https://dany339.github.io/sansim/" />
+
+    <!-- Open Graph 메타 태그 (SNS 최적화) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="산심 | 산삼의 생명력을 담은 한방 스킨케어"
+    />
+    <meta
+      property="og:description"
+      content="자연의 깊은 에너지를 피부에! 산심은 산삼의 강인한 생명력을 담아 건강하고 아름다운 피부를 위한 고기능성 한방 스킨케어를 제공합니다."
+    />
+    <meta property="og:url" content="https://dany339.github.io/sansim/" />
+    <meta
+      property="og:image"
+      content="https://www.sansim.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <!-- Twitter Card 메타 태그 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="산심 | 산삼의 생명력을 담은 한방 스킨케어"
+    />
+    <meta
+      name="twitter:description"
+      content="자연의 깊은 에너지를 피부에! 산심은 산삼의 강인한 생명력을 담아 건강하고 아름다운 피부를 위한 고기능성 한방 스킨케어를 제공합니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.sansim.co.kr/images/main/menu_queensplus_on.gif"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav>
+        <h1 class="logo">
+          <a href="index.html"><i class="hidden">Sansim</i></a>
+        </h1>
+        <ul class="gnb">
+          <li>
+            <a href="products.html">PRODUCTS</a>
+            <ul class="submenu">
+              <li><a href="products.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="submenu">
+              <li><a href="brand.html#tip">BRAND</a></li>
+              <li><a href="brand.html#event">BEAUTY TALK</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">CUSTOMER</a>
+            <ul class="submenu">
+              <li><a href="notice.html#notice">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="util-menu">
+          <button class="btn-language">KOR</button>
+          <button class="btn-menu">
+            <i class="hidden">메뉴</i
+            ><span class="menu-bar"
+              ><span class="bar1"></span><span class="bar2"></span
+              ><span class="bar3"></span
+            ></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu">
+        <button class="btn-close">
+          <i class="hidden">닫기</i
+          ><span class="close-bar"
+            ><span class="bar1"></span><span class="bar2"></span
+          ></span>
+        </button>
+        <ul class="mobile-gnb">
+          <li>
+            <a href="products.html">PRODUCTS</a>
+            <ul class="mobile-submenu">
+              <li><a href="products.html#products">PRODUCTS</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="brand.html">BRAND</a>
+            <ul class="mobile-submenu">
+              <li><a href="brand.html#tip">BRAND</a></li>
+              <li><a href="brand.html#event">BEAUTY TALK</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="store.html">STORE</a>
+            <ul class="mobile-submenu">
+              <li><a href="store.html#map">STORE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="notice.html">CUSTOMER</a>
+            <ul class="mobile-submenu">
+              <li><a href="notice.html#notice">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- s: visual -->
+      <section class="visual">
+        <div class="inner">
+          <strong class="bread">Home > 제품</strong>
+          <div class="visual-title">
+            <h2>PRODUCTS</h2>
+            <p>SANSIM만의 고민이 만들어낸 특별한 제품들을 만나보세요.</p>
+          </div>
+        </div>
+        <figure class="visual-pic">
+          <img src="./img/visual-pic1.jpg" alt="" />
+        </figure>
+      </section>
+      <!-- //e: visual -->
+
+      <!-- s: menu -->
+      <section class="menu" id="products">
+        <div class="inner">
+          <div class="menu-title">
+            <h3 data-aos="fade-down">PRODUCTS</h3>
+          </div>
+
+          <ul class="menu-tab" data-aos="fade-up" data-aos-delay="400">
+            <li>
+              <a href="#"><p>천가선</p></a>
+            </li>
+            <li>
+              <a href="#"><p>양명</p></a>
+            </li>
+            <li>
+              <a href="#"><p>명윤수</p></a>
+            </li>
+            <li>
+              <a href="#"><p>미백 설</p></a>
+            </li>
+            <li>
+              <a href="#"><p>스페셜</p></a>
+            </li>
+            <li>
+              <a href="#"><p>명휘</p></a>
+            </li>
+            <li>
+              <a href="#"><p>클렌징</p></a>
+            </li>
+            <li>
+              <a href="#"><p>용현</p></a>
+            </li>
+          </ul>
+
+          <!-- .menu-con>ul.menu-list>div*7>(figure>img)+p+p -->
+          <div class="menu-cons">
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20170217172557173_%EC%82%B0%EC%8B%AC_%EC%B2%9C%EA%B0%80%EC%84%A0_%EB%B3%B4%EC%96%91%EC%88%98_360.jpg"
+                      alt="천가선 보양수"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHEONGASUN</p>
+                  </div>
+                  <p>천가선 보양수</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20170217172619169_%EC%82%B0%EC%8B%AC_%EC%B2%9C%EA%B0%80%EC%84%A0_%EB%B3%B4%EC%96%91%EC%95%A1_360.jpg"
+                      alt="천가선 보양액"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHEONGASUN</p>
+                  </div>
+                  <p>천가선 보양액</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20170217172702270_%EC%82%B0%EC%8B%AC_%EC%B2%9C%EA%B0%80%EC%84%A0_%EC%95%84%EC%9D%B4%ED%81%AC%EB%A6%BC_360.jpg"
+                      alt="천가선 아이크림"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHEONGASUN</p>
+                  </div>
+                  <p>천가선 아이크림</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20170220112443673_20170217172533371_%EC%82%B0%EC%8B%AC_%EC%B2%9C%EA%B0%80%EC%84%A0_360.jpg"
+                      alt="천가선"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHEONGASUN</p>
+                  </div>
+                  <p>천가선</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20190408090105062_%EC%B2%9C%EA%B0%80%EC%84%A0%EC%A7%84%EC%95%B0%ED%94%8C_360.jpg"
+                      alt="천가선 진 앰플"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CHEONGASUN</p>
+                  </div>
+                  <p>천가선 진 앰플</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20240611173015276_360x360_01.png"
+                      alt="양명수"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>YANG MYUNG</p>
+                  </div>
+                  <p>양명수</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20240611173044337_360x360_02.png"
+                      alt="양명액"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>YANG MYUNG</p>
+                  </div>
+                  <p>양명액</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20220513152417182_360x360_4.png"
+                      alt="자양로"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>YANG MYUNG</p>
+                  </div>
+                  <p>자양로</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20230524090701704_360x360_2.png"
+                      alt="청안상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>YANG MYUNG</p>
+                  </div>
+                  <p>청안상</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20230905154746543_360x360_2.png"
+                      alt="자양상"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>YANG MYUNG</p>
+                  </div>
+                  <p>자양상</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20240109103852267_360x360_%EB%AA%85%EC%9C%A4%EC%88%98.jpg"
+                      alt="명윤수 크림"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGYEONSU</p>
+                  </div>
+                  <p>명윤수 크림</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20211201172827947_360.png"
+                      alt="명윤수 앰플"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGYEONSU</p>
+                  </div>
+                  <p>명윤수 앰플</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20211103093431600_360x360_1.jpg"
+                      alt="명윤수 수면팩"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGYEONSU</p>
+                  </div>
+                  <p>명윤수 수면팩</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20210608103951276_thumb_564x564_2.png"
+                      alt="산심 명윤수액"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGYEONSU</p>
+                  </div>
+                  <p>산심 명윤수액</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20210608103715911_thumb_564x564_1.png"
+                      alt="산심 명윤수"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGYEONSU</p>
+                  </div>
+                  <p>산심 명윤수</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20230524090517640_360x360_4.png"
+                      alt="명윤수 멀티 스틱방"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGYEONSU</p>
+                  </div>
+                  <p>명윤수 멀티 스틱방</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20240229153807824_360x360.png"
+                      alt="명윤수 선크림"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGYEONSU</p>
+                  </div>
+                  <p>명윤수 선크림</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20230524091518646_360x360_3.png"
+                      alt="미백 설 휘안 앰플"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>BRIGHTENING</p>
+                  </div>
+                  <p>미백 설 휘안 앰플</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20240109103916751_360x360_%EB%AF%B8%EB%B0%B1%EC%84%A4.jpg"
+                      alt="미백 설 크림"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>BRIGHTENING</p>
+                  </div>
+                  <p>미백 설 크림</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20211103093532246_360x360_2.png"
+                      alt="미백 설 마스크"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>BRIGHTENING</p>
+                  </div>
+                  <p>미백 설 마스크</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20230523172050298_360x360_05.png"
+                      alt="미백 설 톤업 선크림"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>BRIGHTENING</p>
+                  </div>
+                  <p>미백 설 톤업 선크림</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20230524090743637_360x360_1.png"
+                      alt="백년삼 스네일 크림"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>SPECIAL</p>
+                  </div>
+                  <p>백년삼 스네일 크림</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20191230190006943_%EB%AA%85%ED%9C%98_%EB%B2%A0%EC%9D%B4%EC%8A%A4_360x360.jpg"
+                      alt="명휘 베이스"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 베이스</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20191230190114630_%EB%AA%85%ED%9C%98_%ED%8C%8C%EC%9A%B4%EB%8D%B0%EC%9D%B4%EC%85%98_360x360.jpg"
+                      alt="명휘 파운데이션"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 파운데이션</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20200210174315018_%EB%AA%85%ED%9C%98_360x360.jpg"
+                      alt="명휘 트윈케익"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 트윈케익</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20220317140518319_360x360_2.png"
+                      alt="명휘 립세럼 스틱 2호"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 립세럼 스틱 2호</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20220317140117323_360x360_1.png"
+                      alt="명휘 립세럼 스틱 1호"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 립세럼 스틱 1호</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20230804120653197_360x360_01.png"
+                      alt="명휘 립스틱 1호"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 립스틱 1호</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20230804120725386_360x360_02.png"
+                      alt="명휘 립스틱 2호"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 립스틱 2호</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20230802095253915_360x360.png"
+                      alt="명휘 립스틱 3호"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 립스틱 3호</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20241002111808881_360x360_01.png"
+                      alt="명휘 글로우 쿠션"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 글로우 쿠션</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20231219161625279_360x360_01.png"
+                      alt="명휘 커버 쿠션"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 커버 쿠션</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20241002120906023_360x360_02.png"
+                      alt="명휘 립스틱 4호"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>MYEONGHUI</p>
+                  </div>
+                  <p>명휘 립스틱 4호</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20190408090135246_%EC%A0%95%ED%81%B4%EB%A0%8C%EC%A7%95%ED%81%AC%EB%A6%BC_360.jpg"
+                      alt="정 클렌징 크림"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CLEANSING</p>
+                  </div>
+                  <p>정 클렌징 크림</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20200622172825280_360x360.png"
+                      alt="정 클렌징 폼"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CLEANSING</p>
+                  </div>
+                  <p>정 클렌징 폼</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20211123104405676_360x360.png"
+                      alt="청음 한방 여성청결제"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CLEANSING</p>
+                  </div>
+                  <p>청음 한방 여성청결제</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20200622172617816_360x360.png"
+                      alt="정 클렌징 오일 폼"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>CLEANSING</p>
+                  </div>
+                  <p>정 클렌징 오일 폼</p>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-con">
+              <ul class="menu-list">
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20190603111208133_%EC%9A%A9%ED%98%84%EC%88%98(140ml)_320.jpg"
+                      alt="용현수"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>YONG HYUN</p>
+                  </div>
+                  <p>바운</p>
+                </li>
+                <li>
+                  <figure>
+                    <img
+                      src="https://www.sansim.co.kr/upload/product/20190603111147404_%EC%9A%A9%ED%98%84%EC%95%A1(120ml)_320.jpg"
+                      alt="용현액"
+                    />
+                  </figure>
+                  <div class="products-tag">
+                    <p>YONG HYUN</p>
+                  </div>
+                  <p>용현액</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: menu -->
+    </main>
+
+    <footer id="footer">
+      <!-- .inner>(.foot-list>(ul.foot-info>li*3>a)+fieldset>legend+select>option*5)+.foot-con -->
+      <div class="inner">
+        <div class="foot-list">
+          <ul class="foot-info">
+            <li>
+              <a href="https://www.apgroup.com/int/ko/">회사소개</a>
+            </li>
+            <li>
+              <a
+                href="https://www.amoremall.com/kr/ko/beautypoint/app/footer/privacy.do"
+                >개인정보취급처리방침</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.apgroup.com/int/ko/misc/terms/cctv-policies-and-procedures.html"
+                >영상정보처리방침</a
+              >
+            </li>
+          </ul>
+
+          <div class="family">
+            <button type="button" class="btn-family">FAMILY SITE</button>
+            <ul class="family-list">
+              <li><a href="#">한국화장품</a></li>
+              <li><a href="#">효움</a></li>
+              <li><a href="#">시크릿네이처</a></li>
+              <li><a href="#">한국화장품제조</a></li>
+              <li><a href="#">글로벌 에코 더샘</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-con">
+          <address>
+            <p>
+              한국화장품㈜ 대표이사 : 이용준 주소 : 03188 서울특별시 종로구
+              청계천로 35
+            </p>
+            <p>고객상담실 TEL : 080-023-2221 / FAX : 02-737-3322</p>
+            <p>2015 &copy; HANKOOK COSMETICS CO. LTD. ALL RIGHTS RESERVED.</p>
+          </address>
+          <div class="accredit">
+            <figure>
+              <img src="./img/logo.svg" alt="Sansim" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="btn-top"><i class="hidden">TOP</i></a>
+  </body>
+</html>
