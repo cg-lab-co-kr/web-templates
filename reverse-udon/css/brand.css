@@ -1,0 +1,335 @@
+@charset 'utf-8';
+
+.vision {
+  box-shadow: 0px 0px 30px var(--main-color15);
+  padding: 5.8rem 0 14.2rem 0;
+}
+
+.vison-title {
+  margin-top: 9rem;
+  text-align: center;
+  position: relative;
+}
+
+.vison-title::before,
+.vison-title::after {
+  content: "";
+  width: 24.6rem;
+  height: 15rem;
+  position: absolute;
+  background: url(../img/decoration-pic1.svg) no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vison-title::before {
+  left: 0;
+}
+
+.vison-title::after {
+  right: 0;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.vison-title p:nth-child(1) {
+  color: var(--main-color);
+}
+
+.vison-title h4 {
+  font: 8.2rem/1.1 "Poppins", sans-serif;
+  font-size: clamp(4.5rem, 6vw, 8.2rem);
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.vison-title p {
+  margin: 3rem auto 0 auto;
+  width: 50%;
+  word-break: keep-all;
+}
+
+.vip .sec-title {
+  margin-top: 13.4375vw;
+}
+
+.vip-service {
+  margin-top: 12rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.vip-service li {
+  width: 41rem;
+  min-width: 33.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 0 5.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: no-repeat 50% / cover;
+  position: relative;
+  cursor: pointer;
+  word-break: keep-all;
+  box-shadow: 0px 0px 30px rgba(14, 33, 47, 0.55);
+}
+
+.vip-service li:nth-child(1) {
+  background-image: url(https://udon0410.com/wp-content/uploads/2018/10/history03_01.png);
+}
+.vip-service li:nth-child(2) {
+  background-image: url(https://udon0410.com/wp-content/uploads/2018/10/history03_02.png);
+}
+.vip-service li:nth-child(3) {
+  background-image: url(https://udon0410.com/wp-content/uploads/2018/10/history03_03.png);
+}
+
+.vip-service li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-color60);
+  transition: 0.4s;
+}
+
+.vip-service li:hover::after {
+  content: "";
+  background: var(--main-color);
+}
+
+.vip-service dl {
+  position: relative;
+  z-index: 1;
+}
+
+.vip-service dt {
+  font-size: clamp(2.2rem, 2vw, 3rem);
+  font-weight: 700;
+  color: var(--white100);
+  transform: translateY(130%);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dt {
+  transform: translateY(0);
+}
+
+.vip-service dd {
+  margin-top: 2.3rem;
+  transform: translateY(350%);
+  color: var(--white70);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dd {
+  transform: translateY(0);
+}
+
+.story {
+  background: url(https://udon0410.com/wp-content/themes/udon0410/assets/images/history02_01.png)
+    no-repeat 50% / cover;
+  padding: 21.2rem 0 20rem 0;
+  position: relative;
+  /* transform: translateY(-50%); */
+  z-index: 1;
+}
+
+.story::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(64, 21, 25, 1),
+    rgba(64, 21, 25, 0.2)
+  );
+}
+
+.story .sec-title {
+  position: relative;
+  z-index: 1;
+}
+
+.story .sec-title h3 {
+  color: var(--white100);
+  width: 50%;
+  word-break: keep-all;
+}
+
+.story p {
+  width: 50%;
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  color: var(--white70);
+  word-break: keep-all;
+  margin-top: 2.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.story b {
+  font-size: clamp(2rem, 2.2vw, 2.2rem);
+  font-weight: 600;
+  color: var(--white100);
+}
+
+.app-benefit {
+  /* height: 100vh; */
+  padding: 10.6rem 0 10.2rem 0;
+  background: var(--main-color);
+}
+
+.app-benefit .sec-title {
+  color: var(--white100);
+}
+
+.app-benefit .sec-title strong {
+  color: var(--white100);
+}
+
+.app-benefit .view-more {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--white100);
+  right: 0;
+}
+
+.app-benefit .view-more::after {
+  background-image: url(../img/arrow-w-right.png);
+}
+
+.app-con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2.8rem;
+  gap: 2rem;
+}
+
+.app-icon {
+  width: 37.5rem;
+  height: 29.6rem;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+  background: var(--white10);
+  border-radius: 10px;
+  padding: 5rem 4rem;
+  position: relative;
+}
+
+.app-icon:hover {
+  box-shadow: 0 0 10px rgba(250, 255, 242, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+.app-icon dl::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  aspect-ratio: 1/1;
+  background: no-repeat 50%;
+}
+
+.app-icon dl.app-icon-1::before {
+  background-image: url(../img/brand-ico1.png);
+}
+.app-icon dl.app-icon-2::before {
+  background-image: url(../img/brand-ico2.png);
+}
+.app-icon dl.app-icon-3::before {
+  background-image: url(../img/brand-ico3.png);
+}
+.app-icon dl.app-icon-4::before {
+  background-image: url(../img/brand-ico4.png);
+}
+.app-icon dl.app-icon-5::before {
+  background-image: url(../img/brand-ico5.png);
+}
+.app-icon dl.app-icon-6::before {
+  background-image: url(../img/brand-ico6.png);
+}
+.app-icon dl.app-icon-7::before {
+  background-image: url(../img/brand-ico7.png);
+}
+.app-icon dl.app-icon-8::before {
+  background-image: url(../img/brand-ico8.png);
+}
+.app-icon dl.app-icon-9::before {
+  background-image: url(../img/brand-ico9.png);
+}
+.app-icon dl.app-icon-10::before {
+  background-image: url(../img/brand-ico10.png);
+}
+
+.app-icon dl dt {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--white100);
+  margin-top: 1rem;
+}
+
+.app-icon dl dd {
+  margin-top: 1.2rem;
+  color: var(--white60);
+  word-break: keep-all;
+}
+
+@media (max-width: 1800px) {
+  .vison-title::before,
+  .vison-title::after {
+    width: 18rem;
+    height: 13rem;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 1320px) {
+  .vip-service {
+    justify-content: flex-start;
+  }
+
+  .app-con li {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .app-benefit .view-more {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .vison-title::before,
+  .vison-title::after {
+    display: none;
+  }
+
+  .vison-title p {
+    width: 100%;
+  }
+
+  .story .sec-title h3 {
+    width: 100%;
+  }
+
+  .story p {
+    width: 90%;
+  }
+}
